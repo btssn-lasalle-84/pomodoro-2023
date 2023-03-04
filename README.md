@@ -1,5 +1,7 @@
 ![C++ Badge](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=fff&style=plastic) ![Raspberry Pi Badge](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=fff&style=plastic) ![](https://badgen.net/badge/Qt/5.12.8/green)
 
+[![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
+
 # Le projet pomodoro-2023
 
 La **technique Pomodoro** est une technique de gestion du temps développée par Francesco Cirillo à la fin des années 1980. Cette méthode se base sur l'usage d'un minuteur permettant de respecter des périodes de 20 minutes appelées pomodori (qui signifie en italien « tomates »).
@@ -13,4 +15,9 @@ Le système est composé :
 - d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons)
 - d’une tablette tactile (Android) pour le pilotage à distance et la gestion des tâches
 
+---
+Documentation du code : https://btssn-lasalle-84.github.io/pomodoro-2023/
+---
+
+---
 ©️ LaSalle Avignon 2023
