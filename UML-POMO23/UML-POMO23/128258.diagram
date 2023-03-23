@@ -1,0 +1,163 @@
+format 224
+
+classinstance 128642 class_ref 128130 // Utilisateur
+  name ""   xyz 152 4 2005 life_line_z 2000
+classinstance 128770 class_ref 134658 // Pomodoro
+  name ""   xyz 609 4 2005 life_line_z 2000
+textcanvas 129410 "configurerMinuteur()"
+  xyzwh 342 100 2000 132 15
+textcanvas 129922 "reglerDureeTempsTravail()"
+  xyzwh 341 173 2020 174 15
+textcanvas 130434 "reglerDureeTempsPauseCourte()"
+  xyzwh 318 256 2020 217 15
+textcanvas 131330 "reglerDureeTempsPauseLongue()"
+  xyzwh 316 336 2020 222 15
+textcanvas 131842 "reglerNombreCyclesPomodoro()"
+  xyzwh 320 413 2020 211 15
+textcanvas 132354 "reglerNombreRepetitionSession()"
+  xyzwh 325 498 2020 218 15
+fragment 132482 "opt"
+  xyzwh 132 163 2000 605 410
+end
+textcanvas 134786 "selectionnerModeMinuteur()"
+  xyzwh 325 590 2020 192 17
+textcanvas 135298 "selectionnerModeCompteRebours()"
+  xyzwh 305 649 2020 234 15
+textcanvas 135810 "selectionnerModeAlarme()"
+  xyzwh 323 718 2020 173 15
+fragment 135938 "alt"
+  xyzwh 132 573 2000 605 219
+end
+textcanvas 136450 "choisirCouleurTache()"
+  xyzwh 336 808 2020 144 15
+fragment 136578 "Configurer le minuteur"
+  xyzwh 43 -8 2000 739 908
+end
+durationcanvas 128898 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 112 2010 11 40
+end
+durationcanvas 129026 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 112 2010 11 25
+end
+durationcanvas 129538 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 187 2010 11 40
+end
+durationcanvas 129666 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 187 2010 11 25
+end
+durationcanvas 130050 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 269 2010 11 40
+end
+durationcanvas 130178 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 269 2010 11 25
+end
+durationcanvas 130946 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 349 2010 11 40
+end
+durationcanvas 131074 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 349 2010 11 25
+end
+durationcanvas 131458 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 428 2010 11 40
+end
+durationcanvas 131586 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 428 2010 11 25
+end
+durationcanvas 131970 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 511 2010 11 40
+end
+durationcanvas 132098 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 511 2010 11 25
+end
+durationcanvas 134402 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 601 2010 11 40
+end
+durationcanvas 134530 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 601 2010 11 25
+end
+durationcanvas 134914 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 664 2010 11 40
+end
+durationcanvas 135042 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 664 2010 11 25
+end
+durationcanvas 135426 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 732 2010 11 40
+end
+durationcanvas 135554 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 732 2010 11 25
+end
+durationcanvas 136066 classinstance_ref 128642 // :Utilisateur
+  xyzwh 183 822 2010 11 40
+end
+durationcanvas 136194 classinstance_ref 128770 // :Pomodoro
+  xyzwh 645 822 2010 11 25
+end
+msg 129154 synchronous
+  from durationcanvas_ref 128898
+  to durationcanvas_ref 129026
+  yz 112 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 129794 synchronous
+  from durationcanvas_ref 129538
+  to durationcanvas_ref 129666
+  yz 187 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 130306 synchronous
+  from durationcanvas_ref 130050
+  to durationcanvas_ref 130178
+  yz 269 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 131202 synchronous
+  from durationcanvas_ref 130946
+  to durationcanvas_ref 131074
+  yz 349 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 131714 synchronous
+  from durationcanvas_ref 131458
+  to durationcanvas_ref 131586
+  yz 428 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 132226 asynchronous
+  from durationcanvas_ref 131970
+  to durationcanvas_ref 132098
+  yz 511 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 134658 asynchronous
+  from durationcanvas_ref 134402
+  to durationcanvas_ref 134530
+  yz 601 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 135170 synchronous
+  from durationcanvas_ref 134914
+  to durationcanvas_ref 135042
+  yz 664 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 135682 synchronous
+  from durationcanvas_ref 135426
+  to durationcanvas_ref 135554
+  yz 732 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 136322 synchronous
+  from durationcanvas_ref 136066
+  to durationcanvas_ref 136194
+  yz 822 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+line 132610 -_-_ decenter_begin 221
+  from ref 132482 z 2001 to point 735 252
+  line 132994 z 2001 to point 735 251
+  line 132738 z 2001 to point 131 251
+  line 132866 z 2001 to ref 132482
+line 133250 -_-_ decenter_begin 397
+  from ref 132482 z 2001 to point 736 324
+  line 133378 z 2001 to point 131 323
+  line 133506 z 2001 to ref 132482
+line 133634 -_-_ decenter_begin 578
+  from ref 132482 z 2001 to point 737 397
+  line 133762 z 2001 to point 131 397
+  line 133890 z 2001 to ref 132482
+line 134018 -_-_ decenter_begin 773
+  from ref 132482 z 2001 to point 735 479
+  line 134146 z 2001 to point 130 479
+  line 134274 z 2001 to ref 132482
+end
