@@ -1,34 +1,6 @@
-![C++ Badge](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=fff&style=plastic) ![Raspberry Pi Badge](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=fff&style=plastic) ![](https://badgen.net/badge/Qt/5.12.8/green)
+-- LDD (langage de définition de données)
 
-[![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
-
-# Le projet pomodoro-2023
-
-La **technique Pomodoro** est une technique de gestion du temps développée par Francesco Cirillo à la fin des années 1980. Cette méthode se base sur l'usage d'un minuteur permettant de respecter des périodes de 20 minutes appelées pomodori (qui signifie en italien « tomates »).
-
-Francesco Cirillo propose une approche se basant notamment sur un minuteur mécanique. L’idée du projet est donc de conserver un “objet concret” pour en faire un minuteur connecté.
-
-![](images/methode-pomodoro.png)
-
-Le système est composé :
-
-- d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons)
-- d’une tablette tactile (Android) pour le pilotage à distance et la gestion des tâches
-
----
-
-## Documentation du code
-
-https://btssn-lasalle-84.github.io/pomodoro-2023/
-
-## Base de données
-
-Base de données SQLite :
-
-![](sql/pomodoro-v0.1.png)
-
-```sql
--- Supprime les tables (si besoin)
+-- Supprime les tables
 
 DROP TABLE IF EXISTS Preferences;
 DROP TABLE IF EXISTS Pomodoro;
@@ -137,7 +109,12 @@ CREATE TABLE IF NOT EXISTS Preferences (
 );
 
 -- ---------------------------------------------------------------------
-```
 
----
-©️ LaSalle Avignon 2023
+-- Pour les tests
+
+INSERT INTO Tache (titre,description,dateCreation,dateDebut,dateFin,position, terminee) VALUES ('Planifier les tâches','Identifier et prioriser les tâches',DATETIME('now'),'2023-03-30 08:15:00','2023-03-30 08:40:00',1,1);
+INSERT INTO Tache (titre,description,dateCreation,position) VALUES ('Maquette IHM','Définir une interface Homme-Machine',DATETIME('now'),1);
+INSERT INTO Tache (titre,description,dateCreation,position) VALUES ('Classes du domaine','Réaliser le diagramme de classes du domaine',DATETIME('now'),2);
+INSERT INTO Tache (titre,description,dateCreation,position) VALUES ('Implémenter squelettes','Coder les squelettes des classes',DATETIME('now'),3);
+
+INSERT INTO Preferences (nom,prenom,idPomodoro,idModele) VALUES ('HIRSCH','Pierre',0,1);
