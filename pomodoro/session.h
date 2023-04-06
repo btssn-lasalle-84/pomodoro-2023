@@ -1,10 +1,9 @@
 #ifndef SESSION_H
 #define SESSION_H
 
-
 class Session
 {
-public:
+  public:
     Session();
 };
 

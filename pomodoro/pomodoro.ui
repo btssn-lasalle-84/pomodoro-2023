@@ -289,7 +289,7 @@ color: rgb(255, 255, 255);</string>
      <widget class="QWidget" name="ecranConfiguration">
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayoutPageCourse"/>
+        <layout class="QVBoxLayout" name="verticalLayoutPageConfiguration"/>
        </item>
       </layout>
      </widget>

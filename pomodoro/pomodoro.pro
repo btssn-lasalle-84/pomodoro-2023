@@ -5,25 +5,25 @@ CONFIG += c++11
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
-    Tache.cpp \
     basededonnees.cpp \
     cycle.cpp \
     pomodoro.cpp \
     main.cpp \
-    session.cpp
+    session.cpp \
+    tache.cpp
 
 HEADERS += \
-    Tache.h \
     basededonnees.h \
     cycle.h \
     pomodoro.h \
-    session.h
+    session.h \
+    tache.h
 
 FORMS += \
     Cycle.ui \
     Session.ui \
-    Tache.ui \
-    pomodoro.ui
+    pomodoro.ui \
+    tache.ui
 
 
 RESOURCES += \
