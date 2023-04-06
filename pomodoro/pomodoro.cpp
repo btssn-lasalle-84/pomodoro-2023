@@ -7,8 +7,8 @@
  */
 
 #include "pomodoro.h"
-#include "ui_pomodoro.h"
 #include "basededonnees.h"
+#include "ui_pomodoro.h"
 
 /**
  * @brief Constructeur de la classe Pomodoro

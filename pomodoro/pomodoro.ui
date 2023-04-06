@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GUIPomodoro</class>
+ <class>Pomodoro</class>
  <widget class="QWidget" name="Pomodoro">
   <property name="geometry">
    <rect>
@@ -13,45 +13,278 @@
   <property name="windowTitle">
    <string>Pomodoro</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(217, 20, 20);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
     <widget class="QStackedWidget" name="ecrans">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <widget class="QWidget" name="ecranAccueil">
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayoutPageConnexion">
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayoutEnTete">
-           <property name="bottomMargin">
-            <number>0</number>
-           </property>
-           <item>
-            <widget class="QLabel" name="labelTitre">
-             <property name="text">
-              <string>Pomodoro</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayoutCentre"/>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayoutPied"/>
-         </item>
-        </layout>
-       </item>
-      </layout>
+      <widget class="QPushButton" name="editerCycle">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>492</y>
+         <width>550</width>
+         <height>112</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Éditer un cycle</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="editerSession">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>634</y>
+         <width>550</width>
+         <height>112</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>550</width>
+         <height>112</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>550</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Éditer une session</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="connexionBluetooth">
+       <property name="geometry">
+        <rect>
+         <x>1320</x>
+         <y>350</y>
+         <width>550</width>
+         <height>384</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Connexion Bluetooth</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="modeCompteRebours">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>860</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);</string>
+       </property>
+       <property name="text">
+        <string>Mode Compte à Rebours</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="modeChrono">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>900</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);</string>
+       </property>
+       <property name="text">
+        <string>Mode Chronomètre</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="modeAlarme">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>940</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);</string>
+       </property>
+       <property name="text">
+        <string>Mode Alarme</string>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="Timer">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>270</y>
+         <width>271</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>950</x>
+         <y>270</y>
+         <width>311</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>291</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Tâche en cours : Nom de la tâche&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Cycle en cours : Nom du cycle (numéro du cycle)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Session en cours : Nom de la session&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="editerTache">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>350</y>
+         <width>550</width>
+         <height>112</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>550</width>
+         <height>112</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Éditer une tâche</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelTitre">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-10</y>
+         <width>1920</width>
+         <height>209</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1920</width>
+         <height>209</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>60</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Pomodoro</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="demarrerCompteRebours">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>450</y>
+         <width>336</width>
+         <height>336</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Démarrer/Pause/Arrêt</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="ecranConfiguration">
       <layout class="QVBoxLayout" name="verticalLayout_5">
