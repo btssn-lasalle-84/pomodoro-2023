@@ -1,6 +1,3 @@
-#ifndef POMODORO_H
-#define POMODORO_H
-
 /**
  * @file pomodoro.h
  *
@@ -8,6 +5,8 @@
  * @author Pierre HIRSCH
  * @version 0.1
  */
+#ifndef POMODORO_H
+#define POMODORO_H
 
 #include <QtWidgets>
 
@@ -15,7 +14,7 @@
  * @def RASPBERRY_PI
  * @brief Pour le mode plein écran sur la Raspberry Pi
  */
-//#define RASPBERRY_PI
+#define RASPBERRY_PI
 
 namespace Ui
 {
@@ -38,7 +37,9 @@ class Pomodoro : public QWidget
     enum Ecran
     {
         Accueil,
-        Configuration,
+        Tache,
+        Cycle,
+        Session,
         NbEcrans
     };
 
@@ -57,7 +58,7 @@ class Pomodoro : public QWidget
   public slots:
     void afficherEcran(Pomodoro::Ecran ecran);
     void afficherEcranAccueil();
-    void afficherEcranConfiguration();
+    void afficherEcranTache();
 };
 
 #endif // POMODORO_H

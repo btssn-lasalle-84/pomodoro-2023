@@ -21,8 +21,8 @@ Pomodoro::Pomodoro(QWidget* parent) : QWidget(parent), ui(new Ui::GUIPomodoro)
     qDebug() << Q_FUNC_INFO;
 
     ouvrirBaseDeDonnees();
-    connecterSignauxSlots();
     initialiserGui();
+    connecterSignauxSlots();
 }
 
 /**
@@ -53,6 +53,7 @@ void Pomodoro::afficherEcran(Pomodoro::Ecran ecran)
  */
 void Pomodoro::afficherEcranAccueil()
 {
+    ui->labelTitre->setText("Pomodoro");
     afficherEcran(Pomodoro::Ecran::Accueil);
 }
 
@@ -60,9 +61,10 @@ void Pomodoro::afficherEcranAccueil()
  * @fn Pomodoro::afficherEcranConfiguration()
  * @brief Affiche l'écran de configuration
  */
-void Pomodoro::afficherEcranConfiguration()
+void Pomodoro::afficherEcranTache()
 {
-    afficherEcran(Pomodoro::Ecran::Configuration);
+    ui->labelTitre->setText("Édition d'une tâche");
+    afficherEcran(Pomodoro::Ecran::Tache);
 }
 
 void Pomodoro::initialiserGui()
@@ -89,6 +91,20 @@ void Pomodoro::ouvrirBaseDeDonnees()
     qDebug() << Q_FUNC_INFO << bddPomodoro->estOuverte();
 }
 
+/**
+ * @fn Pomodoro::connecterSignauxSlots()
+ * @brief Connecte les signaux aux slots pour l'application
+ */
 void Pomodoro::connecterSignauxSlots()
 {
+    connect(ui->boutonEditionTache, SIGNAL(clicked(bool)), this, SLOT(afficherEcranTache()));
+    // Pour les tests
+    connect(ui->boutonValidationEditionTache,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(afficherEcranAccueil()));
+    connect(ui->boutonAnnulationEditionTache,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(afficherEcranAccueil()));
 }
