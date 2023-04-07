@@ -1,0 +1,23 @@
+format 224
+
+classcanvas 128042 class_ref 134826 // Pomodoro
+  classdiagramsettings member_max_width 0 end
+  xyz 212 67 2000
+end
+classcanvas 128170 class_ref 134570 // BaseDeDonnees
+  classdiagramsettings member_max_width 0 end
+  xyz 1309 74 3005
+end
+relationcanvas 128298 relation_ref 134570 // <unidirectional association>
+  from ref 128170 z 3006 to point 1279 74
+  line 128426 z 3006 to point 1279 104
+  line 128554 z 3006 to ref 128170
+  role_a_pos 1239 78 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128682 relation_ref 134826 // <unidirectional association>
+  from ref 128042 z 3006 to ref 128170
+  role_a_pos 1105 233 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

@@ -6,12 +6,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     basededonnees.cpp \
+    cycle.cpp \
     pomodoro.cpp \
-    main.cpp
+    main.cpp \
+    session.cpp \
+    tache.cpp
 
 HEADERS += \
     basededonnees.h \
-    pomodoro.h
+    cycle.h \
+    pomodoro.h \
+    session.h \
+    tache.h
 
 FORMS += \
     pomodoro.ui
