@@ -20,10 +20,7 @@ HEADERS += \
     tache.h
 
 FORMS += \
-    Cycle.ui \
-    Session.ui \
-    pomodoro.ui \
-    tache.ui
+    pomodoro.ui
 
 
 RESOURCES += \

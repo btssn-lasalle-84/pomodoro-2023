@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Pomodoro</class>
- <widget class="QWidget" name="Pomodoro">
+ <class>GUIPomodoro</class>
+ <widget class="QWidget" name="GUIPomodoro">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -36,13 +36,16 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
    <widget class="QWidget" name="ecranAccueil">
     <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
        <x>30</x>
        <y>350</y>
-       <width>552</width>
+       <width>578</width>
        <height>401</height>
       </rect>
      </property>
@@ -200,8 +203,8 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>870</x>
        <y>860</y>
-       <width>195</width>
-       <height>111</height>
+       <width>372</width>
+       <height>146</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -450,7 +453,7 @@ background-color: rgb(255, 0, 0);</string>
        <x>20</x>
        <y>510</y>
        <width>691</width>
-       <height>72</height>
+       <height>140</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -496,7 +499,7 @@ background-color: rgb(136, 138, 133);</string>
       <rect>
        <x>1290</x>
        <y>360</y>
-       <width>551</width>
+       <width>552</width>
        <height>391</height>
       </rect>
      </property>
@@ -586,7 +589,7 @@ color: rgb(255, 255, 255);</string>
        <x>90</x>
        <y>500</y>
        <width>541</width>
-       <height>72</height>
+       <height>140</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -618,7 +621,7 @@ p, li { white-space: pre-wrap; }
       <rect>
        <x>1290</x>
        <y>370</y>
-       <width>551</width>
+       <width>552</width>
        <height>391</height>
       </rect>
      </property>
@@ -808,7 +811,7 @@ background-color: rgb(255, 0, 0);</string>
        <x>90</x>
        <y>450</y>
        <width>651</width>
-       <height>41</height>
+       <height>140</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -850,7 +853,7 @@ background-color: rgb(136, 138, 133);</string>
        <x>420</x>
        <y>490</y>
        <width>321</width>
-       <height>41</height>
+       <height>66</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -878,7 +881,7 @@ background-color: rgb(255, 0, 0);</string>
        <x>90</x>
        <y>310</y>
        <width>521</width>
-       <height>91</height>
+       <height>140</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -903,7 +906,7 @@ p, li { white-space: pre-wrap; }
       <rect>
        <x>1260</x>
        <y>270</y>
-       <width>551</width>
+       <width>552</width>
        <height>391</height>
       </rect>
      </property>
