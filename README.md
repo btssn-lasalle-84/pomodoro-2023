@@ -2,7 +2,18 @@
 
 [![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
 
+[![qt-build](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg?branch=main)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml)
+
 # Le projet pomodoro-2023
+
+- [Le projet pomodoro-2023](#le-projet-pomodoro-2023)
+  - [Documentation du code](#documentation-du-code)
+  - [Base de données](#base-de-données)
+  - [Versions](#versions)
+    - [0.1](#01)
+  - [Auteur](#auteur)
+
+---
 
 La **technique Pomodoro** est une technique de gestion du temps développée par Francesco Cirillo à la fin des années 1980. Cette méthode se base sur l'usage d'un minuteur permettant de respecter des périodes de 20 minutes appelées pomodori (qui signifie en italien « tomates »).
 
@@ -12,8 +23,8 @@ Francesco Cirillo propose une approche se basant notamment sur un minuteur méca
 
 Le système est composé :
 
-- d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons)
-- d’une tablette tactile (Android) pour le pilotage à distance et la gestion des tâches
+- d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons) [Étudiant EC]
+- d’une application sur Raspberry Pi et écran tactile pour le pilotage à distance et la gestion des tâches [Étudiant IR]
 
 ---
 
@@ -138,6 +149,18 @@ CREATE TABLE IF NOT EXISTS Preferences (
 
 -- ---------------------------------------------------------------------
 ```
+
+## Versions
+
+### 0.1
+
+![](images/jira-tickets-v0.1.png)
+
+![](images/screenshot-pomodoro-v0.1.png)
+
+## Auteur
+
+- Étudiant IR : Pierre HIRSCH
 
 ---
 ©️ LaSalle Avignon 2023

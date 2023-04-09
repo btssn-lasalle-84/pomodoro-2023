@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro:  Fichier source de pomodoro.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('pomodoro_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pomodoro.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pomodoro_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pomodoro_8h.html">pomodoro.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basededonnees_8h.html">basededonnees.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ui_pomodoro.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a0bf8572427a036e2865917a3d1159162">   19</a></span>&#160;<a class="code" href="class_pomodoro.html#a0bf8572427a036e2865917a3d1159162">Pomodoro::Pomodoro</a>(<a class="code" href="class_q_widget.html">QWidget</a>* parent) : <a class="code" href="class_q_widget.html">QWidget</a>(parent), ui(new <a class="code" href="namespace_ui.html">Ui</a>::GUIPomodoro)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">ouvrirBaseDeDonnees</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">initialiserGui</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">connecterSignauxSlots</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">   34</a></span>&#160;<a class="code" href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">Pomodoro::~Pomodoro</a>()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">Pomodoro::afficherEcran</a>(<a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Pomodoro::Ecran</a> ecran)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;ecrans-&gt;setCurrentIndex(ecran);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Pomodoro::afficherEcranAccueil</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Pomodoro&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Accueil);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Pomodoro::afficherEcranTache</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Édition d&#39;une tâche&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Tache);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">Pomodoro::initialiserGui</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef RASPBERRY_PI</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    showFullScreen();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    setFixedSize(qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).width(),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).height());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// showMaximized();</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">Pomodoro::ouvrirBaseDeDonnees</a>()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a> = <a class="code" href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">ouvrir</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">estOuverte</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">Pomodoro::connecterSignauxSlots</a>()</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEditionTache, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>()));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Pour les tests</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonValidationEditionTache,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonAnnulationEditionTache,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="ttc" id="abasededonnees_8h_html"><div class="ttname"><a href="basededonnees_8h.html">basededonnees.h</a></div><div class="ttdoc">Déclaration de la classe BaseDeDonnees.</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a1797e248ed8a7fb220bc7a29565fe397"><div class="ttname"><a href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">BaseDeDonnees::estOuverte</a></div><div class="ttdeci">bool estOuverte()</div><div class="ttdoc">Retourne l'état d'ouverture à la base de données.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00122">basededonnees.cpp:122</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a1cea5a739386ba076c7f265205e82608"><div class="ttname"><a href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a></div><div class="ttdeci">static BaseDeDonnees * getInstance()</div><div class="ttdoc">Définition méthode getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00047">basededonnees.cpp:47</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a457401c0816b888c77ce915997545f4e"><div class="ttname"><a href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a></div><div class="ttdeci">static void detruireInstance()</div><div class="ttdoc">Définition méthode detruireInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00064">basededonnees.cpp:64</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_afd42c2c410192c28e1094c66e874cb9b"><div class="ttname"><a href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">BaseDeDonnees::ouvrir</a></div><div class="ttdeci">bool ouvrir(QString nomBase=FICHIER_BDD)</div><div class="ttdoc">Définition méthode ouvrir()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00084">basededonnees.cpp:84</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a0bf8572427a036e2865917a3d1159162"><div class="ttname"><a href="class_pomodoro.html#a0bf8572427a036e2865917a3d1159162">Pomodoro::Pomodoro</a></div><div class="ttdeci">Pomodoro(QWidget *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00019">pomodoro.cpp:19</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a3f0531555dd62f4aaf4e929d0ec5a3e2"><div class="ttname"><a href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">Pomodoro::afficherEcran</a></div><div class="ttdeci">void afficherEcran(Pomodoro::Ecran ecran)</div><div class="ttdoc">Selectionne et affiche l'écran.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00045">pomodoro.cpp:45</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a4ec0cae3c2696613adf0906a17416a23"><div class="ttname"><a href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Pomodoro::afficherEcranAccueil</a></div><div class="ttdeci">void afficherEcranAccueil()</div><div class="ttdoc">Affiche l'écran d'accueil.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00054">pomodoro.cpp:54</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cf"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Pomodoro::Ecran</a></div><div class="ttdeci">Ecran</div><div class="ttdoc">Les différents écrans de la GUI.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00037">pomodoro.h:38</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7c36845d9abfaec6a81d7a2bc3ff0469"><div class="ttname"><a href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Pomodoro::afficherEcranTache</a></div><div class="ttdeci">void afficherEcranTache()</div><div class="ttdoc">Affiche l'écran d'une tâche.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00064">pomodoro.cpp:64</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a81ec2d88bcec88334fb564cde73290c5"><div class="ttname"><a href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">Pomodoro::ouvrirBaseDeDonnees</a></div><div class="ttdeci">void ouvrirBaseDeDonnees()</div><div class="ttdoc">Instancie l'objet et l'accès à base de données.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00087">pomodoro.cpp:87</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a9f6afe6622b36052b5d175176aed6f21"><div class="ttname"><a href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">Pomodoro::connecterSignauxSlots</a></div><div class="ttdeci">void connecterSignauxSlots()</div><div class="ttdoc">Connecte les signaux aux slots pour l'application.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00098">pomodoro.cpp:98</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_aab04bb630bd15697721d362adca29c28"><div class="ttname"><a href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">Pomodoro::initialiserGui</a></div><div class="ttdeci">void initialiserGui()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00070">pomodoro.cpp:70</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ad75fcf23785ded5be18767f6b69f2165"><div class="ttname"><a href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">Pomodoro::~Pomodoro</a></div><div class="ttdeci">~Pomodoro()</div><div class="ttdoc">Destructeur de la classe Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00034">pomodoro.cpp:34</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ae133064a0e59324ef99412cce66d7dc0"><div class="ttname"><a href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">Pomodoro::bddPomodoro</a></div><div class="ttdeci">BaseDeDonnees * bddPomodoro</div><div class="ttdoc">l'objet BaseDeDonnees</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00052">pomodoro.h:52</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_af60663c23b68b195a8a4b0cebc5769b5"><div class="ttname"><a href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">Pomodoro::ui</a></div><div class="ttdeci">Ui::GUIPomodoro * ui</div><div class="ttdoc">la fenêtre graphique associée à cette classe</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00051">pomodoro.h:51</a></div></div>
+<div class="ttc" id="aclass_q_widget_html"><div class="ttname"><a href="class_q_widget.html">QWidget</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00019">pomodoro.h:20</a></div></div>
+<div class="ttc" id="apomodoro_8h_html"><div class="ttname"><a href="pomodoro_8h.html">pomodoro.h</a></div><div class="ttdoc">Déclaration de la classe Pomodoro.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_372818afe09c84bc40c08830a0caadc2.html">pomodoro</a></li><li class="navelem"><a class="el" href="pomodoro_8cpp.html">pomodoro.cpp</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

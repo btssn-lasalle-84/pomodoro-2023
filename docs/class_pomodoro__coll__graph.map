@@ -1,0 +1,5 @@
+<map id="Pomodoro" name="Pomodoro">
+<area shape="rect" id="node1" title="Affiche les différents écrans de l&#39;application Pomodoro." alt="" coords="5,307,195,487"/>
+<area shape="rect" id="node2" href="$class_q_widget.html" title=" " alt="" coords="14,86,93,163"/>
+<area shape="rect" id="node3" href="$class_base_de_donnees.html" title="Déclaration de la classe permettant l&#39;accès à la base de données SQLite." alt="" coords="117,5,275,244"/>
+</map>

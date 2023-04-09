@@ -58,8 +58,8 @@ void Pomodoro::afficherEcranAccueil()
 }
 
 /**
- * @fn Pomodoro::afficherEcranConfiguration()
- * @brief Affiche l'écran de configuration
+ * @fn Pomodoro::afficherEcranTache()
+ * @brief Affiche l'écran d'une tâche
  */
 void Pomodoro::afficherEcranTache()
 {

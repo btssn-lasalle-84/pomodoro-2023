@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro:  Fichier source de pomodoro.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('pomodoro_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pomodoro.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pomodoro_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef POMODORO_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define POMODORO_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="pomodoro_8h.html#afae691acd2419684ef9acadf7bf54a5a">   17</a></span>&#160;<span class="preprocessor">#define RASPBERRY_PI</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespace_ui.html">   19</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>GUIPomodoro;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_pomodoro.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pomodoro.html">Pomodoro</a> : <span class="keyword">public</span> <a class="code" href="class_q_widget.html">QWidget</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">   37</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Ecran</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">   39</a></span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Accueil</a>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">   40</a></span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Tache</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">   41</a></span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Cycle</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">   42</a></span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Session</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">NbEcrans</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">   44</a></span>&#160;    };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_pomodoro.html#a0bf8572427a036e2865917a3d1159162">Pomodoro</a>(<a class="code" href="class_q_widget.html">QWidget</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">~Pomodoro</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">   51</a></span>&#160;    Ui::GUIPomodoro* <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>;          </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">   52</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>*   <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">initialiserGui</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">ouvrirBaseDeDonnees</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">connecterSignauxSlots</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(<a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Pomodoro::Ecran</a> ecran);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// POMODORO_H</span></div>
+<div class="ttc" id="aclass_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdoc">Déclaration de la classe permettant l'accès à la base de données SQLite.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00029">basededonnees.h:30</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html"><div class="ttname"><a href="class_pomodoro.html">Pomodoro</a></div><div class="ttdoc">Affiche les différents écrans de l'application Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00030">pomodoro.h:31</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a0bf8572427a036e2865917a3d1159162"><div class="ttname"><a href="class_pomodoro.html#a0bf8572427a036e2865917a3d1159162">Pomodoro::Pomodoro</a></div><div class="ttdeci">Pomodoro(QWidget *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00019">pomodoro.cpp:19</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a3f0531555dd62f4aaf4e929d0ec5a3e2"><div class="ttname"><a href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">Pomodoro::afficherEcran</a></div><div class="ttdeci">void afficherEcran(Pomodoro::Ecran ecran)</div><div class="ttdoc">Selectionne et affiche l'écran.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00045">pomodoro.cpp:45</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a4ec0cae3c2696613adf0906a17416a23"><div class="ttname"><a href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Pomodoro::afficherEcranAccueil</a></div><div class="ttdeci">void afficherEcranAccueil()</div><div class="ttdoc">Affiche l'écran d'accueil.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00054">pomodoro.cpp:54</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cf"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Pomodoro::Ecran</a></div><div class="ttdeci">Ecran</div><div class="ttdoc">Les différents écrans de la GUI.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00037">pomodoro.h:38</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Pomodoro::Accueil</a></div><div class="ttdeci">@ Accueil</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00039">pomodoro.h:39</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Pomodoro::Cycle</a></div><div class="ttdeci">@ Cycle</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00041">pomodoro.h:41</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">Pomodoro::NbEcrans</a></div><div class="ttdeci">@ NbEcrans</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00044">pomodoro.h:43</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Pomodoro::Session</a></div><div class="ttdeci">@ Session</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00042">pomodoro.h:42</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Pomodoro::Tache</a></div><div class="ttdeci">@ Tache</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00040">pomodoro.h:40</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7c36845d9abfaec6a81d7a2bc3ff0469"><div class="ttname"><a href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Pomodoro::afficherEcranTache</a></div><div class="ttdeci">void afficherEcranTache()</div><div class="ttdoc">Affiche l'écran d'une tâche.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00064">pomodoro.cpp:64</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a81ec2d88bcec88334fb564cde73290c5"><div class="ttname"><a href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">Pomodoro::ouvrirBaseDeDonnees</a></div><div class="ttdeci">void ouvrirBaseDeDonnees()</div><div class="ttdoc">Instancie l'objet et l'accès à base de données.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00087">pomodoro.cpp:87</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a9f6afe6622b36052b5d175176aed6f21"><div class="ttname"><a href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">Pomodoro::connecterSignauxSlots</a></div><div class="ttdeci">void connecterSignauxSlots()</div><div class="ttdoc">Connecte les signaux aux slots pour l'application.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00098">pomodoro.cpp:98</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_aab04bb630bd15697721d362adca29c28"><div class="ttname"><a href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">Pomodoro::initialiserGui</a></div><div class="ttdeci">void initialiserGui()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00070">pomodoro.cpp:70</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ad75fcf23785ded5be18767f6b69f2165"><div class="ttname"><a href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">Pomodoro::~Pomodoro</a></div><div class="ttdeci">~Pomodoro()</div><div class="ttdoc">Destructeur de la classe Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00034">pomodoro.cpp:34</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ae133064a0e59324ef99412cce66d7dc0"><div class="ttname"><a href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">Pomodoro::bddPomodoro</a></div><div class="ttdeci">BaseDeDonnees * bddPomodoro</div><div class="ttdoc">l'objet BaseDeDonnees</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00052">pomodoro.h:52</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_af60663c23b68b195a8a4b0cebc5769b5"><div class="ttname"><a href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">Pomodoro::ui</a></div><div class="ttdeci">Ui::GUIPomodoro * ui</div><div class="ttdoc">la fenêtre graphique associée à cette classe</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00051">pomodoro.h:51</a></div></div>
+<div class="ttc" id="aclass_q_widget_html"><div class="ttname"><a href="class_q_widget.html">QWidget</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00019">pomodoro.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_372818afe09c84bc40c08830a0caadc2.html">pomodoro</a></li><li class="navelem"><a class="el" href="pomodoro_8h.html">pomodoro.h</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>
