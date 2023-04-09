@@ -1,4 +1,4 @@
-name: Make Qt
+name: qt-build
 
 on:
   push:
