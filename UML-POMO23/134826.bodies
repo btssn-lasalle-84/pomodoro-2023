@@ -1,0 +1,44 @@
+class Pomodoro
+!!!136106.cpp!!!	Pomodoro(inout parent : QWidget = nullptr)
+    qDebug() << Q_FUNC_INFO;
+
+    ouvrirBaseDeDonnees();
+    initialiserGui();
+    connecterSignauxSlots();
+!!!136234.cpp!!!	~Pomodoro()
+    delete ui;
+    BaseDeDonnees::detruireInstance();
+    qDebug() << Q_FUNC_INFO;
+!!!136362.cpp!!!	initialiserGui() : void
+    ui->setupUi(this);
+#ifdef RASPBERRY_PI
+    showFullScreen();
+#else
+    setFixedSize(qApp->desktop()->availableGeometry(this).width(),
+                 qApp->desktop()->availableGeometry(this).height());
+    // showMaximized();
+#endif
+    afficherEcranAccueil();
+!!!136490.cpp!!!	ouvrirBaseDeDonnees() : void
+    bddPomodoro = BaseDeDonnees::getInstance();
+    bddPomodoro->ouvrir();
+    qDebug() << Q_FUNC_INFO << bddPomodoro->estOuverte();
+!!!136618.cpp!!!	connecterSignauxSlots() : void
+    connect(ui->boutonEditionTache, SIGNAL(clicked(bool)), this, SLOT(afficherEcranTache()));
+    // Pour les tests
+    connect(ui->boutonValidationEditionTache,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(afficherEcranAccueil()));
+    connect(ui->boutonAnnulationEditionTache,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(afficherEcranAccueil()));
+!!!136746.cpp!!!	afficherEcran(in ecran : Pomodoro::Ecran) : void
+    ui->ecrans->setCurrentIndex(ecran);
+!!!136874.cpp!!!	afficherEcranAccueil() : void
+    ui->labelTitre->setText("Pomodoro");
+    afficherEcran(Pomodoro::Ecran::Accueil);
+!!!137002.cpp!!!	afficherEcranTache() : void
+    ui->labelTitre->setText("Édition d'une tâche");
+    afficherEcran(Pomodoro::Ecran::Tache);

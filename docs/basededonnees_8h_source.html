@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro:  Fichier source de basededonnees.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('basededonnees_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">basededonnees.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="basededonnees_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASEDEDONNEES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASEDEDONNEES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QtSql/QtSql&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QtSql/QSqlDatabase&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//#define DEBUG_BDD</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="basededonnees_8h.html#adcea6df9ca5ab2420ac9cdf5d8570ab6">   20</a></span>&#160;<span class="preprocessor">#define FICHIER_BDD &quot;pomodoro.sqlite&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>* <a class="code" href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">getInstance</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>           <a class="code" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">detruireInstance</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">ouvrir</a>(QString nomBase = <a class="code" href="basededonnees_8h.html#adcea6df9ca5ab2420ac9cdf5d8570ab6">FICHIER_BDD</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">estOuverte</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/* uniquement pour les requêtes UPDATE, INSERT et DELETE */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#aa8de5f8f8bb17edc43f5c0ee33712081">executer</a>(QString requete);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/* uniquement pour les requêtes SELECT */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(QString requete, QString&amp; donnees);          <span class="comment">// 1 -&gt; 1</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(QString requete, QStringList&amp; donnees);      <span class="comment">// 1 -&gt; 1..*</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(QString requete, QVector&lt;QString&gt;&amp; donnees); <span class="comment">// 1..* -&gt; 1</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">recuperer</a>(QString               requete,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                   QVector&lt;QStringList&gt;&amp; donnees); <span class="comment">// 1..* -&gt; 1..*</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_base_de_donnees.html#ac4d0c514f439b3a19dc35c159955373a">BaseDeDonnees</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_base_de_donnees.html#a5dc474cdbe003644fb0ca7b8f2ec6b93">~BaseDeDonnees</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a3e738dcf443370c46a541677ab619f06">   51</a></span>&#160;    QSqlDatabase          <a class="code" href="class_base_de_donnees.html#a3e738dcf443370c46a541677ab619f06">db</a>;      </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#adf2f80dac25cf41e624d52bb7ae82cac">   52</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>* <a class="code" href="class_base_de_donnees.html#adf2f80dac25cf41e624d52bb7ae82cac">bdd</a>;     </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a5099ecb2922bb31d84cd5d4505298a29">   53</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span>            <a class="code" href="class_base_de_donnees.html#a5099ecb2922bb31d84cd5d4505298a29">nbAcces</a>; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BASEDEDONNEES_H</span></div>
+<div class="ttc" id="abasededonnees_8h_html_adcea6df9ca5ab2420ac9cdf5d8570ab6"><div class="ttname"><a href="basededonnees_8h.html#adcea6df9ca5ab2420ac9cdf5d8570ab6">FICHIER_BDD</a></div><div class="ttdeci">#define FICHIER_BDD</div><div class="ttdoc">Le fichier de base de données SQLite.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00020">basededonnees.h:20</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdoc">Déclaration de la classe permettant l'accès à la base de données SQLite.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00029">basededonnees.h:30</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a1797e248ed8a7fb220bc7a29565fe397"><div class="ttname"><a href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">BaseDeDonnees::estOuverte</a></div><div class="ttdeci">bool estOuverte()</div><div class="ttdoc">Retourne l'état d'ouverture à la base de données.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00122">basededonnees.cpp:122</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a1cea5a739386ba076c7f265205e82608"><div class="ttname"><a href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a></div><div class="ttdeci">static BaseDeDonnees * getInstance()</div><div class="ttdoc">Définition méthode getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00047">basededonnees.cpp:47</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a3e738dcf443370c46a541677ab619f06"><div class="ttname"><a href="class_base_de_donnees.html#a3e738dcf443370c46a541677ab619f06">BaseDeDonnees::db</a></div><div class="ttdeci">QSqlDatabase db</div><div class="ttdoc">pour la connexion à la base de données MySQL</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00051">basededonnees.h:51</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a457401c0816b888c77ce915997545f4e"><div class="ttname"><a href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a></div><div class="ttdeci">static void detruireInstance()</div><div class="ttdoc">Définition méthode detruireInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00064">basededonnees.cpp:64</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a5099ecb2922bb31d84cd5d4505298a29"><div class="ttname"><a href="class_base_de_donnees.html#a5099ecb2922bb31d84cd5d4505298a29">BaseDeDonnees::nbAcces</a></div><div class="ttdeci">static int nbAcces</div><div class="ttdoc">compte le nombre d'accès à l'instance unique</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00053">basededonnees.h:53</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a5dc474cdbe003644fb0ca7b8f2ec6b93"><div class="ttname"><a href="class_base_de_donnees.html#a5dc474cdbe003644fb0ca7b8f2ec6b93">BaseDeDonnees::~BaseDeDonnees</a></div><div class="ttdeci">~BaseDeDonnees()</div><div class="ttdoc">Définition du destructeur de la classe BaseDeDonnees.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00033">basededonnees.cpp:33</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a77539baad389f5acf754cd2cd452403e"><div class="ttname"><a href="class_base_de_donnees.html#a77539baad389f5acf754cd2cd452403e">BaseDeDonnees::recuperer</a></div><div class="ttdeci">bool recuperer(QString requete, QString &amp;donnees)</div><div class="ttdoc">Exécute une requête SQL de type SELECT et récupère un champ d'un seul enregistrement.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00181">basededonnees.cpp:181</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_aa8de5f8f8bb17edc43f5c0ee33712081"><div class="ttname"><a href="class_base_de_donnees.html#aa8de5f8f8bb17edc43f5c0ee33712081">BaseDeDonnees::executer</a></div><div class="ttdeci">bool executer(QString requete)</div><div class="ttdoc">Exécute une requête SQL de type UPDATE, INSERT et DELETE.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00134">basededonnees.cpp:134</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_ac4d0c514f439b3a19dc35c159955373a"><div class="ttname"><a href="class_base_de_donnees.html#ac4d0c514f439b3a19dc35c159955373a">BaseDeDonnees::BaseDeDonnees</a></div><div class="ttdeci">BaseDeDonnees()</div><div class="ttdoc">Définition du constructeur par défaut de la classe BaseDeDonnees.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00020">basededonnees.cpp:20</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_adf2f80dac25cf41e624d52bb7ae82cac"><div class="ttname"><a href="class_base_de_donnees.html#adf2f80dac25cf41e624d52bb7ae82cac">BaseDeDonnees::bdd</a></div><div class="ttdeci">static BaseDeDonnees * bdd</div><div class="ttdoc">pointeur sur l'instance unique</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00052">basededonnees.h:52</a></div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_afd42c2c410192c28e1094c66e874cb9b"><div class="ttname"><a href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">BaseDeDonnees::ouvrir</a></div><div class="ttdeci">bool ouvrir(QString nomBase=FICHIER_BDD)</div><div class="ttdoc">Définition méthode ouvrir()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00084">basededonnees.cpp:84</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_372818afe09c84bc40c08830a0caadc2.html">pomodoro</a></li><li class="navelem"><a class="el" href="basededonnees_8h.html">basededonnees.h</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

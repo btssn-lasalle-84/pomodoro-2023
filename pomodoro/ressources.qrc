@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="rond-rouge.png">images/rond-rouge.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>pomodoro.qss</file>
+    </qresource>
+</RCC>
