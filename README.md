@@ -2,7 +2,7 @@
 
 [![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
 
-[![qt-build](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg?branch=main)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml)
+[![Make Qt](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml)
 
 # Le projet pomodoro-2023
 
