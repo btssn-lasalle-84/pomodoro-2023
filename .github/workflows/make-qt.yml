@@ -22,8 +22,8 @@ jobs:
 
       - name: Run qmake
         run: |
-          cd src && qmake
+          cd pomodoro && qmake
 
       - name: Run make
         run: |
-          cd src && make
+          cd pomodoro && make
