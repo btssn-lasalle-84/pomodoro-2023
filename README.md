@@ -1,6 +1,6 @@
-![C++ Badge](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=fff&style=plastic) ![Raspberry Pi Badge](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=fff&style=plastic) ![](https://badgen.net/badge/Qt/5.12.8/green)
+![C++ Badge](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=fff&style=plastic) ![Raspberry Pi Badge](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=fff&style=plastic)
 
-[![qt-build](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml) [![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
+![](https://badgen.net/badge/Qt/5.12.8/green) [![qt-build](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml) [![pages-build-deployment](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop)](https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment)
 
 # Le projet pomodoro-2023
 
