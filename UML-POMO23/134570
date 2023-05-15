@@ -1,6 +1,6 @@
 format 224
 "pomodoro" // pomodoro
-  revision 1
+  revision 2
   modified_by 42 "tv"
   // class settings
   
@@ -651,8 +651,8 @@ ${body}}
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${typeprefix}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "//@fn Pomodoro::afficherEcranConfiguration()
-//@brief Affiche l'écran de configuration
+	cpp_def "//@fn Pomodoro::afficherEcranTache()
+//@brief Affiche l'écran d'une tâche
 //
 
 ${inline}${typeprefix}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{

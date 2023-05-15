@@ -1,0 +1,49 @@
+format 224
+
+classinstance 128042 class_ref 134826 // Pomodoro
+  name ""   xyz 327 4 2000 life_line_z 2000
+classinstance 128426 class_ref 134570 // BaseDeDonnees
+  name ""   xyz 756 4 2000 life_line_z 2000
+durationcanvas 128170 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 93 2010 11 162
+end
+durationcanvas 128554 classinstance_ref 128426 // :BaseDeDonnees
+  xyzwh 871 146 2010 11 25
+end
+durationcanvas 128810 classinstance_ref 128426 // :BaseDeDonnees
+  xyzwh 871 208 2010 11 25
+end
+durationcanvas 129066 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 312 2010 11 40
+end
+durationcanvas 129322 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 400 2010 11 40
+end
+reflexivemsg 128298 synchronous
+  to durationcanvas_ref 128170
+  yz 93 2015 msg operation_ref 136490 // "ouvrirBaseDeDonnees() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 412 63
+msg 128682 synchronous
+  from durationcanvas_ref 128170
+  to durationcanvas_ref 128554
+  yz 146 2015 msg operation_ref 134570 // "getInstance() : BaseDeDonnees"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 554 116
+msg 128938 synchronous
+  from durationcanvas_ref 128170
+  to durationcanvas_ref 128810
+  yz 208 2015 msg operation_ref 134826 // "ouvrir(in nomBase : QString = FICHIER_BDD) : bool"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 594 178
+reflexivemsg 129194 synchronous
+  to durationcanvas_ref 129066
+  yz 312 2015 msg operation_ref 136362 // "initialiserGui() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 411 285
+reflexivemsg 129450 synchronous
+  to durationcanvas_ref 129322
+  yz 400 2015 msg operation_ref 136618 // "connecterSignauxSlots() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 411 370
+end
