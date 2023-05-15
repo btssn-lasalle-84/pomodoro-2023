@@ -1,6 +1,6 @@
 format 224
 "UML-POMO23"
-  revision 6
+  revision 7
   modified_by 42 "tv"
   cpp_root_dir "../"
 
@@ -442,4 +442,31 @@ format 224
   end
 
   package_ref 134570 // pomodoro
+
+  usecaseview 134570 "UML-POMO23-Sequences"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    sequencediagram 141098 "Démarrer"
+      sequencediagramsettings end
+      overlapping_bars size A0
+    end
+  end
 end
