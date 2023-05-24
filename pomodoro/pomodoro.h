@@ -40,7 +40,7 @@ class Pomodoro : public QWidget
         Tache,
         Cycle,
         Session,
-        NbEcrans
+        NbEcrans,
     };
 
   public:
@@ -50,6 +50,8 @@ class Pomodoro : public QWidget
   private:
     Ui::GUIPomodoro* ui;          //!< la fenêtre graphique associée à cette classe
     BaseDeDonnees*   bddPomodoro; //!< l'objet BaseDeDonnees
+    int tempsRestant;
+    QTimer* compteRebours;
 
     void initialiserGui();
     void ouvrirBaseDeDonnees();
@@ -59,6 +61,14 @@ class Pomodoro : public QWidget
     void afficherEcran(Pomodoro::Ecran ecran);
     void afficherEcranAccueil();
     void afficherEcranTache();
+    void afficherEcranCycle();
+    void afficherEcranSession();
+    void afficherTexteTache();
+    void compteReboursAJour();
+  private slots:
+    void on_boutonGestionPomodoro_clicked();
+    void on_boutonArret_clicked();
+    void on_boutonPause_clicked();
 };
 
 #endif // POMODORO_H
