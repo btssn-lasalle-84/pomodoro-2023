@@ -17,14 +17,15 @@
  * @fn Pomodoro::Pomodoro
  * @param parent nullptr pour définir la fenêtre principale de l'application
  */
-Pomodoro::Pomodoro(QWidget* parent) : QWidget(parent), ui(new Ui::GUIPomodoro)
+Pomodoro::Pomodoro(QWidget* parent) :
+    QWidget(parent), ui(new Ui::GUIPomodoro), bddPomodoro(nullptr), tempsRestant(0),
+    compteRebours(nullptr), pomodoro(false), pause(false)
 {
     qDebug() << Q_FUNC_INFO;
 
     ouvrirBaseDeDonnees();
     initialiserGui();
     connecterSignauxSlots();
-
 }
 
 /**
@@ -95,12 +96,11 @@ void Pomodoro::initialiserGui()
     showFullScreen();
 #else
     setFixedSize(qApp->desktop()->availableGeometry(this).width(),
-                 w² qApp->desktop()->availableGeometry(this).height());
+                 qApp->desktop()->availableGeometry(this).height());
     // showMaximized();
 #endif
     afficherEcranAccueil();
 }
-
 
 /**
  * @fn Pomodoro::ouvrirBaseDeDonnees()
@@ -119,6 +119,7 @@ void Pomodoro::ouvrirBaseDeDonnees()
  */
 void Pomodoro::connecterSignauxSlots()
 {
+    connect(ui->boutonGestionPomodoro, SIGNAL(clicked(bool)), this, SLOT(demarrerPomodoro()));
     connect(ui->boutonEditionTache, SIGNAL(clicked(bool)), this, SLOT(afficherEcranTache()));
     // Pour les tests
     connect(ui->boutonValidationEditionTache,
@@ -145,131 +146,134 @@ void Pomodoro::connecterSignauxSlots()
     connect(ui->boutonEcranTache_2, SIGNAL(clicked(bool)), this, SLOT(afficherEcranTache()));
     connect(ui->boutonEcranCycle, SIGNAL(clicked(bool)), this, SLOT(afficherEcranCycle()));
     connect(ui->boutonEcranAccueil_2, SIGNAL(clicked(bool)), this, SLOT(afficherEcranAccueil()));
-
 }
 
-void Pomodoro::on_boutonGestionPomodoro_clicked()
+void Pomodoro::demarrerPomodoro()
 {
-    QPushButton* boutonPause = new QPushButton("Pause", this);
-    QPushButton* boutonArret = new QPushButton("Arrêt", this);
+    gererBoutonPomodoro();
 
-    boutonPause->setStyleSheet("background-color:red; color:white;");
-    boutonArret->setStyleSheet("background-color:red; color:white;");
+    // déjà démarré ?
+    if(pomodoro)
+        return;
 
-    ui->verticalLayoutPomodoro->addWidget(boutonPause);
-    ui->verticalLayoutPomodoro->addWidget(boutonArret);
-
-    ui->verticalLayoutPomodoro->removeWidget(ui->boutonGestionPomodoro);
-    ui->boutonGestionPomodoro->deleteLater();
-
-    if (ui->boutonModeCompteARebours->isChecked())
+    if(ui->boutonModeCompteARebours->isChecked())
     {
-        // Définir la durée initiale à 20 minutes (1200 secondes)
-    int initialTime = 20 * 60;
-    tempsRestant = initialTime;
+#ifdef DEMO
+        tempsRestant = DUREE_POMODORO;
+#else
+        tempsRestant = DUREE_POMODORO * 60;
+#endif
+        qDebug() << Q_FUNC_INFO << "CompteARebours"
+                 << "tempsRestant" << tempsRestant;
+    }
+    else if(ui->boutonModeChronometre->isChecked())
+    {
+        tempsRestant = 0;
+        qDebug() << Q_FUNC_INFO << "Chronometre"
+                 << "tempsRestant" << tempsRestant;
+    }
 
-        // Mettre à jour l'affichage initial du compte à rebours
-    compteReboursAJour();
-
-        // Créer le QTimer s'il n'existe pas déjà
-    if (!compteRebours)
+    if(compteRebours == nullptr)
     {
         compteRebours = new QTimer(this);
-        compteRebours->setInterval(1000); // Mettre à jour le compte à rebours toutes les secondes
+        compteRebours->setInterval(TOUTES_LES_SECONDES);
 
-            // Connecter le signal timeout du QTimer au slot updateCountdown
-        connect(compteRebours, &QTimer::timeout, this, &Pomodoro::compteReboursAJour);
+        // Connecter le signal timeout du QTimer au slot
+        connect(compteRebours, &QTimer::timeout, this, &Pomodoro::mettreAJourAffichageDuree);
     }
 
-        // Démarrer le QTimer
+    mettreAJourAffichageDuree();
     compteRebours->start();
-    }
-
-    else if (ui->boutonModeChronometre->isChecked())
-    {
-        // Définir la durée initiale à 0 secondes
-        int initialTime = 0;
-        tempsRestant = initialTime;
-
-        // Mettre à jour l'affichage initial du chronomètre
-        int minutes = tempsRestant / 60000;
-        int seconds = (tempsRestant / 1000) % 60;
-        QString timeString = QString("%1:%2").arg(QString::number(minutes).rightJustified(2, '0'), QString::number(seconds).rightJustified(2, '0'));
-        ui->Timer->display(timeString);
-
-        // Créer le QTimer s'il n'existe pas déjà
-        if (!compteRebours)
-        {
-            compteRebours = new QTimer(this);
-            compteRebours->setInterval(1000); // Mettre à jour le chronomètre toutes les 1000 millisecondes (1 seconde)
-
-            // Connecter le signal timeout du QTimer au slot updateCountdown
-            connect(compteRebours, &QTimer::timeout, this, &Pomodoro::compteReboursAJour);
-        }
-
-        // Démarrer le QTimer
-        compteRebours->start();
-    }
+    pomodoro = true;
+    ui->boutonModeCompteARebours->setEnabled(false);
+    ui->boutonModeChronometre->setEnabled(false);
+    qDebug() << Q_FUNC_INFO << "pomodoro" << pomodoro;
 }
-    // Dans la méthode updateCountdown()
-void Pomodoro::compteReboursAJour()
+
+void Pomodoro::mettreAJourAffichageDuree()
+{
+    if(pause)
+        return;
+
+    QString temps;
+    if(ui->boutonModeCompteARebours->isChecked())
     {
         // Vérifier si le temps restant est écoulé
-        if (tempsRestant <= 0)
+        if(tempsRestant <= 0)
         {
-            // Arrêter le QTimer
-            compteRebours->stop();
-
-            // Définir la durée à 5 minutes (300 secondes)
-            int newTime = 5 * 60;
-            tempsRestant = newTime;
-
-            // Mettre à jour l'affichage du compte à rebours
-            compteReboursAJour();
-            return;
+            arreterPomodoro();
         }
 
         // Calculer les minutes et les secondes
-        int minutes = tempsRestant / 60;
-        int seconds = tempsRestant % 60;
+        int minutes  = tempsRestant / 60;
+        int secondes = tempsRestant % 60;
 
         // Convertir les minutes et les secondes en chaînes de caractères avec le format "mm:ss"
-        QString timeString = QString("%1:%2").arg(QString::number(minutes).rightJustified(2, '0'), QString::number(seconds).rightJustified(2, '0'));
+        temps = QString("%1:%2").arg(QString::number(minutes).rightJustified(2, '0'),
+                                     QString::number(secondes).rightJustified(2, '0'));
 
-        // Afficher le compte à rebours dans le QLCDNumber
-        ui->Timer->display(timeString);
+        ui->affichageDuree->display(temps);
+        qDebug() << Q_FUNC_INFO << "CompteARebours" << temps;
 
         // Réduire le temps restant d'une seconde
-        tempsRestant--;
-
-
-        // Vérifier si le QRadioButton "boutonModeChronometre" est toujours coché
-        if (ui->boutonModeChronometre->isChecked())
-        {
-            // Augmenter le temps restant de 1 seconde
-            tempsRestant += 1000;
-
-            // Mettre à jour l'affichage du chronomètre
-            int minutes = tempsRestant / 60000;
-            int seconds = (tempsRestant / 1000) % 60;
-            QString timeString = QString("%1:%2").arg(QString::number(minutes).rightJustified(2, '0'), QString::number(seconds).rightJustified(2, '0'));
-            ui->Timer->display(timeString);
-        }
+        tempsRestant -= 1;
     }
+    else if(ui->boutonModeChronometre->isChecked())
+    {
+        // Vérifier si le temps a atteint la durée
+#ifdef DEMO
+        if(tempsRestant >= DUREE_POMODORO)
+#else
+        if(tempsRestant >= DUREE_POMODORO * 60)
+#endif
+        {
+            arreterPomodoro();
+        }
 
-void Pomodoro::on_boutonArret_clicked()
-{
-    // Arrêter le compte à rebours en stoppant le QTimer
-    compteRebours->stop();
+        // Mettre à jour l'affichage du chronomètre
+        int minutes  = tempsRestant / 60;
+        int secondes = tempsRestant % 60;
+        temps        = QString("%1:%2").arg(QString::number(minutes).rightJustified(2, '0'),
+                                     QString::number(secondes).rightJustified(2, '0'));
 
-    // Réinitialiser le compte à rebours à 0
-    ui->Timer->display("00:00");
+        ui->affichageDuree->display(temps);
+        qDebug() << Q_FUNC_INFO << "Chronometre" << temps;
 
-    // Réafficher le bouton "boutonGestionPomodoro"
-    ui->boutonGestionPomodoro->show();;
+        // Augmenter le temps restant de 1 seconde
+        tempsRestant += 1;
+    }
 }
 
-void Pomodoro::on_boutonPause_clicked()
+void Pomodoro::arreterPomodoro()
 {
+    if(compteRebours)
+        compteRebours->stop();
+    tempsRestant = 0;
+    pomodoro     = false;
+    pause        = false;
+    ui->boutonGestionPomodoro->setText("Démarrer");
+    ui->boutonModeCompteARebours->setEnabled(true);
+    ui->boutonModeChronometre->setEnabled(true);
+    qDebug() << Q_FUNC_INFO << "pomodoro" << pomodoro;
+}
 
+void Pomodoro::gererBoutonPomodoro()
+{
+    if(ui->boutonGestionPomodoro->text() == "Démarrer")
+    {
+        pause = false;
+        ui->boutonGestionPomodoro->setText("Mettre en pause");
+        ui->affichageDuree->setStyleSheet(
+          "background-color: rgb(255, 0, 0);color: rgb(255, 255, 255);border: 2px solid rgb(113, "
+          "113, 113);border-width: 2px;border-radius: 10px;");
+    }
+    else if(ui->boutonGestionPomodoro->text() == "Mettre en pause")
+    {
+        pause = true;
+        ui->boutonGestionPomodoro->setText("Démarrer");
+        ui->affichageDuree->setStyleSheet(
+          "background-color: rgb(0, 255, 0);color: rgb(255, 255, 255);border: 2px solid rgb(113, "
+          "113, 113);border-width: 2px;border-radius: 10px;");
+    }
+    qDebug() << Q_FUNC_INFO << "pause" << pause;
 }
