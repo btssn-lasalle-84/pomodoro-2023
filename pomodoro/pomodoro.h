@@ -14,7 +14,7 @@
  * @def RASPBERRY_PI
  * @brief Pour le mode plein écran sur la Raspberry Pi
  */
-//#define RASPBERRY_PI
+#define RASPBERRY_PI
 
 // Valeur par défaut (en minutes)
 #define DUREE_POMODORO        20 // 01 à 59

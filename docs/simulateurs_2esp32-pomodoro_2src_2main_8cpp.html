@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro: Référence du fichier main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.2</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('simulateurs_2esp32-pomodoro_2src_2main_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier simulateurs/esp32-pomodoro/src/main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &quot;BluetoothSerial.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="afficheur_8h_source.html">afficheur.h</a>&gt;</code><br />
+<code>#include &quot;pomodoro.h&quot;</code><br />
+</div>
+<p><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a83e2a7e139df2dae26c242ed5fdf7271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a83e2a7e139df2dae26c242ed5fdf7271">ADRESSE_I2C_OLED</a>&#160;&#160;&#160;0x3c</td></tr>
+<tr class="memdesc:a83e2a7e139df2dae26c242ed5fdf7271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adresse I2C de l'OLED.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a83e2a7e139df2dae26c242ed5fdf7271">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83e2a7e139df2dae26c242ed5fdf7271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfa02a0239641b1d72f064c6ec9d2eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1dfa02a0239641b1d72f064c6ec9d2eb">BROCHE_I2C_SCL</a>&#160;&#160;&#160;22</td></tr>
+<tr class="memdesc:a1dfa02a0239641b1d72f064c6ec9d2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broche SCL.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1dfa02a0239641b1d72f064c6ec9d2eb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1dfa02a0239641b1d72f064c6ec9d2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042c8c50af05d0a598bc4aa708af00a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a042c8c50af05d0a598bc4aa708af00a0">BROCHE_I2C_SDA</a>&#160;&#160;&#160;21</td></tr>
+<tr class="memdesc:a042c8c50af05d0a598bc4aa708af00a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broche SDA.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a042c8c50af05d0a598bc4aa708af00a0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a042c8c50af05d0a598bc4aa708af00a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></td></tr>
+<tr class="memdesc:ad72dbcf6d0153db1b8d8a58001feed83"><td class="mdescLeft">&#160;</td><td class="mdescRight">A définir si on désire les message de debug sur le port série.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24243ead145ae4c56871479f3b619ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ac24243ead145ae4c56871479f3b619ec">GPIO_LED_ORANGE</a>&#160;&#160;&#160;17</td></tr>
+<tr class="memdesc:ac24243ead145ae4c56871479f3b619ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trame OK.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ac24243ead145ae4c56871479f3b619ec">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac24243ead145ae4c56871479f3b619ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307518a8ea489365096d16acef22809c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a307518a8ea489365096d16acef22809c">GPIO_LED_ROUGE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a307518a8ea489365096d16acef22809c"><td class="mdescLeft">&#160;</td><td class="mdescRight">En attente.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a307518a8ea489365096d16acef22809c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a307518a8ea489365096d16acef22809c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3e6d6a71e072761c6cb6210dbb0177"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a8b3e6d6a71e072761c6cb6210dbb0177">GPIO_LED_VERTE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:a8b3e6d6a71e072761c6cb6210dbb0177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trame START.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a8b3e6d6a71e072761c6cb6210dbb0177">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b3e6d6a71e072761c6cb6210dbb0177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2640fe11457473dfbc483aecef0802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aff2640fe11457473dfbc483aecef0802">GPIO_SW1</a>&#160;&#160;&#160;12</td></tr>
+<tr class="memdesc:aff2640fe11457473dfbc483aecef0802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour simuler un tir (non utilisé)  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aff2640fe11457473dfbc483aecef0802">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aff2640fe11457473dfbc483aecef0802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2091acea53218648a2f1537eb4ce92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#abe2091acea53218648a2f1537eb4ce92">GPIO_SW2</a>&#160;&#160;&#160;14</td></tr>
+<tr class="memdesc:abe2091acea53218648a2f1537eb4ce92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour simuler joueur suivant.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#abe2091acea53218648a2f1537eb4ce92">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abe2091acea53218648a2f1537eb4ce92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a11debc633c690ca19cb27df5f971d73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a11debc633c690ca19cb27df5f971d73d">loop</a> ()</td></tr>
+<tr class="memdesc:a11debc633c690ca19cb27df5f971d73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boucle principale.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a11debc633c690ca19cb27df5f971d73d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a11debc633c690ca19cb27df5f971d73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d04139db3a5ad5713ecbd14d97da879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1d04139db3a5ad5713ecbd14d97da879">setup</a> ()</td></tr>
+<tr class="memdesc:a1d04139db3a5ad5713ecbd14d97da879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les ressources.  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1d04139db3a5ad5713ecbd14d97da879">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1d04139db3a5ad5713ecbd14d97da879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa34c65563db5dbe5d13867416bc177da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_afficheur.html">Afficheur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aa34c65563db5dbe5d13867416bc177da">afficheur</a> (<a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a83e2a7e139df2dae26c242ed5fdf7271">ADRESSE_I2C_OLED</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a042c8c50af05d0a598bc4aa708af00a0">BROCHE_I2C_SDA</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1dfa02a0239641b1d72f064c6ec9d2eb">BROCHE_I2C_SCL</a>)</td></tr>
+<tr class="memdesc:aa34c65563db5dbe5d13867416bc177da"><td class="mdescLeft">&#160;</td><td class="mdescRight">afficheur OLED SSD1306  <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aa34c65563db5dbe5d13867416bc177da">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa34c65563db5dbe5d13867416bc177da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="a83e2a7e139df2dae26c242ed5fdf7271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e2a7e139df2dae26c242ed5fdf7271">&#9670;&nbsp;</a></span>ADRESSE_I2C_OLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADRESSE_I2C_OLED&#160;&#160;&#160;0x3c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adresse I2C de l'OLED. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00018">18</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1dfa02a0239641b1d72f064c6ec9d2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfa02a0239641b1d72f064c6ec9d2eb">&#9670;&nbsp;</a></span>BROCHE_I2C_SCL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BROCHE_I2C_SCL&#160;&#160;&#160;22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Broche SCL. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a042c8c50af05d0a598bc4aa708af00a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042c8c50af05d0a598bc4aa708af00a0">&#9670;&nbsp;</a></span>BROCHE_I2C_SDA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BROCHE_I2C_SDA&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Broche SDA. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad72dbcf6d0153db1b8d8a58001feed83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72dbcf6d0153db1b8d8a58001feed83">&#9670;&nbsp;</a></span>DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A définir si on désire les message de debug sur le port série. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00010">10</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac24243ead145ae4c56871479f3b619ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24243ead145ae4c56871479f3b619ec">&#9670;&nbsp;</a></span>GPIO_LED_ORANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_LED_ORANGE&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trame OK. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00014">14</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a307518a8ea489365096d16acef22809c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307518a8ea489365096d16acef22809c">&#9670;&nbsp;</a></span>GPIO_LED_ROUGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_LED_ROUGE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>En attente. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b3e6d6a71e072761c6cb6210dbb0177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3e6d6a71e072761c6cb6210dbb0177">&#9670;&nbsp;</a></span>GPIO_LED_VERTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_LED_VERTE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trame START. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00015">15</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aff2640fe11457473dfbc483aecef0802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2640fe11457473dfbc483aecef0802">&#9670;&nbsp;</a></span>GPIO_SW1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_SW1&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pour simuler un tir (non utilisé) </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00016">16</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe2091acea53218648a2f1537eb4ce92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2091acea53218648a2f1537eb4ce92">&#9670;&nbsp;</a></span>GPIO_SW2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_SW2&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pour simuler joueur suivant. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00017">17</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a11debc633c690ca19cb27df5f971d73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11debc633c690ca19cb27df5f971d73d">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boucle principale. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00075">75</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    String    trame;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992">TypeTrame</a> typeTrame;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    String    champType;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46b">TypePause</a> typePause;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a14afb9f045f1a8022a1e7ecb8ddb45c8">estConnecte</a>())</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a944c8ef97e629ad70b99be446eb6083a">traiterBoutonPomodoro</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a2fd8e6e6c7fc7cbcce1ba0592e2d5250">lireTrame</a>(trame))</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        typeTrame = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a42c9d0c5b4564583fb1dedc6853fb967">verifierTrame</a>(trame);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>(typeTrame &gt; <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992afefee5bdbd73040bc3cc2b77bf5726f1">Inconnu</a> &amp;&amp; typeTrame &lt; <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a2efb433b91f2096f994e2eea61c7c8b8">NB_TRAMES</a>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            Serial.println(<span class="stringliteral">&quot;Trame : &quot;</span> + <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a64f596e3fd7fa8f07618c98623fe68d0">getNomTrame</a>(typeTrame));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="comment">// POMODORO, USER, BELL, TASK, REST, STOP, RESET, WAIT, DARN, HEARTBEAT,</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// STATE, ERROR, ACK, &quot;P&quot;,      &quot;U&quot;,  &quot;B&quot;,  &quot;T&quot;,  &quot;R&quot;,  &quot;S&quot;,  &quot;X&quot;, &quot;W&quot;,</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">//&quot;D&quot;,  &quot;H&quot;,       &quot;E&quot;,   &quot;F&quot;,   &quot;A&quot;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">switch</span>(typeTrame)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992afefee5bdbd73040bc3cc2b77bf5726f1">TypeTrame::Inconnu</a>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ae35c743602cfcc1086c230b7b25a4a0e">ERREUR_TRAME_INCONNUE</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a68c432604516b228cf9645c9546d2d4c">TypeTrame::POMODORO</a>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    Serial.println(<span class="stringliteral">&quot;Configuration POMODORO&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#aa9d9fe56fc05f9038b6f74e807eefbb8">configurerPomodoro</a>(trame))</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a1b8fae74282af3e3140f49386606b264">ERREUR_CONFIGURATION</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992ae2d30a195cee6b2961cc2c23ea4b520b">TypeTrame::USER</a>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    Serial.println(<span class="stringliteral">&quot;Configuration UTILISATEUR&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ab6de61d8f5b3f4d20ba3b44803b127a3">configurerUtilisateur</a>(trame))</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a1b8fae74282af3e3140f49386606b264">ERREUR_CONFIGURATION</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a9b1ed7d9244144b7a44adfa64333a630">TypeTrame::BELL</a>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                Serial.println(<span class="stringliteral">&quot;Configuration SONNERIE&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a1eb1fb6a48dce65772f5a8c1e14422c2">configurerSonnette</a>(trame))</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a1b8fae74282af3e3140f49386606b264">ERREUR_CONFIGURATION</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992adcd8fc0dfcbc905dcb6267c36b20bfd7">TypeTrame::TASK</a>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ab97733da6ee2c6cb1bf0cebb572419b6">configrerTache</a>(trame))</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        <span class="keywordtype">int</span> duree = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a88f8575469a003dedd1334e2fdefaf8f">getDuree</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#af15bf1140c328b0bc928542af1716c8b">setDuree</a>(duree);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                        Serial.println(<span class="stringliteral">&quot;Démarrage tâche&quot;</span>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a125f69f0a22a8ac6acb290a0944b1731">ERREUR_PARAMETRE</a>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992abef79e7f2944e3dd059dd12302802bd6">TypeTrame::REST</a>: <span class="comment">// Pause</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                champType = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a1706a3962342de4ebe0cda91d8d82514">extraireChamp</a>(trame, <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad678a0a645f8fdf9a8c6b2c08e8ea379">CHAMP_TYPE_PAUSE</a>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#ifdef DEBUG_VERIFICATION</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                Serial.print(<span class="stringliteral">&quot;type = &quot;</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                Serial.println(champType);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                typePause = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a0a99679b3a89f78f8832e3a77add9302">verifierTypePause</a>(champType);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">switch</span>(typePause)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46ba630457427b87360be22af1c400b21081">COURTE</a>:</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a>)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                            <span class="keywordtype">int</span> duree = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a7101368b11cf3be59bc5cace0e5bb8d7">getDureePauseCourte</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a74a47b1178804d16968df958877cd65d">setDureePauseCourte</a>(duree);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                            Serial.println(<span class="stringliteral">&quot;Tâche en pause courte&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46baf296ff262ada07f5b40f8929e5532d0a">LONGUE</a>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a>)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                        {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                            <span class="keywordtype">int</span> duree = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ae7156aa55f107dcd597b4186c0ecddda">getDureePauseLongue</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a58c6454d81a2538472d8ed0d27bb82f1">setDureePauseLongue</a>(duree);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                            Serial.println(<span class="stringliteral">&quot;Tâche en pause longue&quot;</span>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a125f69f0a22a8ac6acb290a0944b1731">ERREUR_PARAMETRE</a>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a679ee5320d66c8322e310daeb2ee99b8">TypeTrame::STOP</a>:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() &gt; <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a32f7c2fcb61c2ecf140743dd7eed8cc8">Termine</a>)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a>)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                        Serial.println(<span class="stringliteral">&quot;Tâche terminée&quot;</span>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a>)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        Serial.println(<span class="stringliteral">&quot;Pause courte terminée&quot;</span>);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a>)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        Serial.println(<span class="stringliteral">&quot;Pause longue terminée&quot;</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a>)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a32f7c2fcb61c2ecf140743dd7eed8cc8">Termine</a>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a>)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25af74bcb2704dd5bfd51bc1cc0fc4ee3dc">FinCourtePause</a>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a>)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25ab6778ecb906b57260f074ca970e1dd7c">FinLonguePause</a>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a4047f7011a5fe3891a4c9dc0c66e0e67">gererModeAutomatique</a>();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a589b7d94a3d91d145720e2fed0eb3a05">TypeTrame::RESET</a>:</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a493ee03615d87c7a9b977e3b452da7b2">reinitialiserPomodoro</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a79a322ccb4b29b85b3cab52dbccefd17">TypeTrame::WAIT</a>:</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a> ||</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                   <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a> ||</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                   <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a>)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a23b0a84fbea2330b80171d641c419c59">Gele</a>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    Serial.println(<span class="stringliteral">&quot;Tâche gelée&quot;</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="comment">// envoyerTrameErreur(ERREUR_TRAME_NON_SUPPORTEE);</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992af0994f6433750faf86ac818468cbfbc0">TypeTrame::DARN</a>: <span class="comment">// Reprise</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a>() == <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a23b0a84fbea2330b80171d641c419c59">Gele</a>)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    String tempsReprise = <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a1706a3962342de4ebe0cda91d8d82514">extraireChamp</a>(trame, 1);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    <span class="keywordflow">switch</span>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a7fb2cf60fdfb2ee2a392c5f500bbbb8b">getEtatPomodoroPrecedent</a>())</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a>:</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#af15bf1140c328b0bc928542af1716c8b">setDuree</a>(tempsReprise.toInt());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                        <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a>:</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a74a47b1178804d16968df958877cd65d">setDureePauseCourte</a>(tempsReprise.toInt());</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a>:</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                            <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a58c6454d81a2538472d8ed0d27bb82f1">setDureePauseLongue</a>(tempsReprise.toInt());</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a7fb2cf60fdfb2ee2a392c5f500bbbb8b">getEtatPomodoroPrecedent</a>());</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    Serial.print(<span class="stringliteral">&quot;Tâche en reprise &quot;</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    Serial.println(tempsReprise);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">// envoyerTrameErreur(ERREUR_TRAME_NON_SUPPORTEE);</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a0f286b0bbc1ee4f20be5136a55cf8923">TypeTrame::HEARTBEAT</a>:</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a2fd6f336d08340583bd620a7f5694c90">TypeTrame::ERROR</a>:</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a>(<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a2625efd4a6e9aecbf8ef93d90db03120">ERREUR_TRAME_NON_SUPPORTEE</a>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a41246e9c8691b7e33bc79b345e06b48e">TypeTrame::ACK</a>:</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                Serial.println(<span class="stringliteral">&quot;Trame invalide !&quot;</span>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a4d6fe430b4ac4f2b185e6d5c9609776d">rafraichirEcran</a>();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a0a99679b3a89f78f8832e3a77add9302"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a0a99679b3a89f78f8832e3a77add9302">verifierTypePause</a></div><div class="ttdeci">TypePause verifierTypePause(String &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00137">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:137</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a14afb9f045f1a8022a1e7ecb8ddb45c8"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a14afb9f045f1a8022a1e7ecb8ddb45c8">estConnecte</a></div><div class="ttdeci">bool estConnecte()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00960">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:960</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a1706a3962342de4ebe0cda91d8d82514"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a1706a3962342de4ebe0cda91d8d82514">extraireChamp</a></div><div class="ttdeci">String extraireChamp(String &amp;trame, unsigned int numeroChamp)</div><div class="ttdoc">Extrait un champ d'une trame Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00272">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:272</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a1eb1fb6a48dce65772f5a8c1e14422c2"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a1eb1fb6a48dce65772f5a8c1e14422c2">configurerSonnette</a></div><div class="ttdeci">bool configurerSonnette(String &amp;trame)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00691">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:691</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a2fd8e6e6c7fc7cbcce1ba0592e2d5250"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a2fd8e6e6c7fc7cbcce1ba0592e2d5250">lireTrame</a></div><div class="ttdeci">bool lireTrame(String &amp;trame)</div><div class="ttdoc">Lit une trame via le Bluetooth.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00063">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:63</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a4047f7011a5fe3891a4c9dc0c66e0e67"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a4047f7011a5fe3891a4c9dc0c66e0e67">gererModeAutomatique</a></div><div class="ttdeci">bool gererModeAutomatique()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:338</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a42c9d0c5b4564583fb1dedc6853fb967"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a42c9d0c5b4564583fb1dedc6853fb967">verifierTrame</a></div><div class="ttdeci">TypeTrame verifierTrame(String &amp;trame)</div><div class="ttdoc">Vérifie si la trame reçue est valide et retorune le type de la trame.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00108">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:108</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a493ee03615d87c7a9b977e3b452da7b2"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a493ee03615d87c7a9b977e3b452da7b2">reinitialiserPomodoro</a></div><div class="ttdeci">void reinitialiserPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00396">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:396</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a4d6fe430b4ac4f2b185e6d5c9609776d"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a4d6fe430b4ac4f2b185e6d5c9609776d">rafraichirEcran</a></div><div class="ttdeci">void rafraichirEcran(uint32_t tempo)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01260">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1260</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a58c6454d81a2538472d8ed0d27bb82f1"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a58c6454d81a2538472d8ed0d27bb82f1">setDureePauseLongue</a></div><div class="ttdeci">void setDureePauseLongue(int duree)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01099">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1099</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a5e416f10c4637b8cdd5dfbb4ec3fefa9"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e416f10c4637b8cdd5dfbb4ec3fefa9">envoyerTrameAcquittement</a></div><div class="ttdeci">void envoyerTrameAcquittement()</div><div class="ttdoc">Envoie une trame d'acquittement via le Bluetooth.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00220">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:220</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a5e5fa7fed7e221a6a4763266f3c0c4d2"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5e5fa7fed7e221a6a4763266f3c0c4d2">setEtatPomodoro</a></div><div class="ttdeci">void setEtatPomodoro(int etat)</div><div class="ttdoc">Met à jour l'état du Pomodoro.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:411</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a64f596e3fd7fa8f07618c98623fe68d0"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a64f596e3fd7fa8f07618c98623fe68d0">getNomTrame</a></div><div class="ttdeci">String getNomTrame(TypeTrame typeTrame)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00166">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:166</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a7101368b11cf3be59bc5cace0e5bb8d7"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a7101368b11cf3be59bc5cace0e5bb8d7">getDureePauseCourte</a></div><div class="ttdeci">int getDureePauseCourte()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01077">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1077</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a74a47b1178804d16968df958877cd65d"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a74a47b1178804d16968df958877cd65d">setDureePauseCourte</a></div><div class="ttdeci">void setDureePauseCourte(int duree)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01094">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1094</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a7fb2cf60fdfb2ee2a392c5f500bbbb8b"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a7fb2cf60fdfb2ee2a392c5f500bbbb8b">getEtatPomodoroPrecedent</a></div><div class="ttdeci">EtatPomodoro getEtatPomodoroPrecedent()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00525">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:525</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a88f8575469a003dedd1334e2fdefaf8f"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a88f8575469a003dedd1334e2fdefaf8f">getDuree</a></div><div class="ttdeci">int getDuree()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01071">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1071</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a944c8ef97e629ad70b99be446eb6083a"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a944c8ef97e629ad70b99be446eb6083a">traiterBoutonPomodoro</a></div><div class="ttdeci">void traiterBoutonPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00713">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:713</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_aa9d9fe56fc05f9038b6f74e807eefbb8"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#aa9d9fe56fc05f9038b6f74e807eefbb8">configurerPomodoro</a></div><div class="ttdeci">bool configurerPomodoro(String &amp;trame)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:635</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ab6de61d8f5b3f4d20ba3b44803b127a3"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ab6de61d8f5b3f4d20ba3b44803b127a3">configurerUtilisateur</a></div><div class="ttdeci">bool configurerUtilisateur(String &amp;trame)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00607">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:607</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ab97733da6ee2c6cb1bf0cebb572419b6"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ab97733da6ee2c6cb1bf0cebb572419b6">configrerTache</a></div><div class="ttdeci">bool configrerTache(String &amp;trame)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00577">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:577</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_abc493f2e28df9c040a5473dab0dc7ffd"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#abc493f2e28df9c040a5473dab0dc7ffd">envoyerTrameErreur</a></div><div class="ttdeci">void envoyerTrameErreur(int code)</div><div class="ttdoc">Envoie une trame d'erreur via le Bluetooth.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00195">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:195</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ac7f3a5979cc911386e0fd2875ff0cd96"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac7f3a5979cc911386e0fd2875ff0cd96">getEtatPomodoro</a></div><div class="ttdeci">EtatPomodoro getEtatPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00520">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:520</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ae7156aa55f107dcd597b4186c0ecddda"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ae7156aa55f107dcd597b4186c0ecddda">getDureePauseLongue</a></div><div class="ttdeci">int getDureePauseLongue()</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01083">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1083</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_af15bf1140c328b0bc928542af1716c8b"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#af15bf1140c328b0bc928542af1716c8b">setDuree</a></div><div class="ttdeci">void setDuree(int duree)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01089">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1089</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25a23b0a84fbea2330b80171d641c419c59"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a23b0a84fbea2330b80171d641c419c59">Gele</a></div><div class="ttdeci">@ Gele</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00077">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:77</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25a32f7c2fcb61c2ecf140743dd7eed8cc8"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a32f7c2fcb61c2ecf140743dd7eed8cc8">Termine</a></div><div class="ttdeci">@ Termine</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00071">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:71</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a501a97258ffdb6b872aac0c5cbd0505d">EnCours</a></div><div class="ttdeci">@ EnCours</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00072">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:72</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a580d84b098692fe8a75330971cb30ab7">EnAttente</a></div><div class="ttdeci">@ EnAttente</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00070">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:70</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25a6f0806893402e79e0824957545189f99">EnCourtePause</a></div><div class="ttdeci">@ EnCourtePause</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00073">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:73</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25ab6778ecb906b57260f074ca970e1dd7c"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25ab6778ecb906b57260f074ca970e1dd7c">FinLonguePause</a></div><div class="ttdeci">@ FinLonguePause</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00076">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:76</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25aee669a361d02eb568bf0a6640384c53b">EnLonguePause</a></div><div class="ttdeci">@ EnLonguePause</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00075">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:75</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a0e93aa118d39096a35211c077019cc25af74bcb2704dd5bfd51bc1cc0fc4ee3dc"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25af74bcb2704dd5bfd51bc1cc0fc4ee3dc">FinCourtePause</a></div><div class="ttdeci">@ FinCourtePause</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00074">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:74</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a10217700011adf18d6f3d0acfdaaa46b"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46b">TypePause</a></div><div class="ttdeci">TypePause</div><div class="ttdoc">Les differents types de pause.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00054">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:55</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a10217700011adf18d6f3d0acfdaaa46ba630457427b87360be22af1c400b21081"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46ba630457427b87360be22af1c400b21081">COURTE</a></div><div class="ttdeci">@ COURTE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00057">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:57</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a10217700011adf18d6f3d0acfdaaa46baf296ff262ada07f5b40f8929e5532d0a"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a10217700011adf18d6f3d0acfdaaa46baf296ff262ada07f5b40f8929e5532d0a">LONGUE</a></div><div class="ttdeci">@ LONGUE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00058">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:58</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a125f69f0a22a8ac6acb290a0944b1731"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a125f69f0a22a8ac6acb290a0944b1731">ERREUR_PARAMETRE</a></div><div class="ttdeci">#define ERREUR_PARAMETRE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00168">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:168</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a1b8fae74282af3e3140f49386606b264"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a1b8fae74282af3e3140f49386606b264">ERREUR_CONFIGURATION</a></div><div class="ttdeci">#define ERREUR_CONFIGURATION</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00169">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:169</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a2625efd4a6e9aecbf8ef93d90db03120"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a2625efd4a6e9aecbf8ef93d90db03120">ERREUR_TRAME_NON_SUPPORTEE</a></div><div class="ttdeci">#define ERREUR_TRAME_NON_SUPPORTEE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00166">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:166</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_a26eaf34cf515f9e79ae72ed8484e6aa9"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a26eaf34cf515f9e79ae72ed8484e6aa9">ERREUR_COMMANDE</a></div><div class="ttdeci">#define ERREUR_COMMANDE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00167">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:167</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad678a0a645f8fdf9a8c6b2c08e8ea379"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad678a0a645f8fdf9a8c6b2c08e8ea379">CHAMP_TYPE_PAUSE</a></div><div class="ttdeci">#define CHAMP_TYPE_PAUSE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00062">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:62</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992">TypeTrame</a></div><div class="ttdeci">TypeTrame</div><div class="ttdoc">Les differents types de trame.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00029">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:30</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a0f286b0bbc1ee4f20be5136a55cf8923"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a0f286b0bbc1ee4f20be5136a55cf8923">HEARTBEAT</a></div><div class="ttdeci">@ HEARTBEAT</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00041">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:41</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a2efb433b91f2096f994e2eea61c7c8b8"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a2efb433b91f2096f994e2eea61c7c8b8">NB_TRAMES</a></div><div class="ttdeci">@ NB_TRAMES</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00048">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:47</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00043">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:43</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a41246e9c8691b7e33bc79b345e06b48e"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a41246e9c8691b7e33bc79b345e06b48e">ACK</a></div><div class="ttdeci">@ ACK</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00044">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:44</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a589b7d94a3d91d145720e2fed0eb3a05"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a589b7d94a3d91d145720e2fed0eb3a05">RESET</a></div><div class="ttdeci">@ RESET</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00038">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:38</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a679ee5320d66c8322e310daeb2ee99b8"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a679ee5320d66c8322e310daeb2ee99b8">STOP</a></div><div class="ttdeci">@ STOP</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00037">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:37</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a68c432604516b228cf9645c9546d2d4c"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a68c432604516b228cf9645c9546d2d4c">POMODORO</a></div><div class="ttdeci">@ POMODORO</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00032">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:32</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a79a322ccb4b29b85b3cab52dbccefd17"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a79a322ccb4b29b85b3cab52dbccefd17">WAIT</a></div><div class="ttdeci">@ WAIT</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00039">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:39</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992a9b1ed7d9244144b7a44adfa64333a630"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992a9b1ed7d9244144b7a44adfa64333a630">BELL</a></div><div class="ttdeci">@ BELL</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00034">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:34</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992abef79e7f2944e3dd059dd12302802bd6"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992abef79e7f2944e3dd059dd12302802bd6">REST</a></div><div class="ttdeci">@ REST</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00036">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:36</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992adcd8fc0dfcbc905dcb6267c36b20bfd7"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992adcd8fc0dfcbc905dcb6267c36b20bfd7">TASK</a></div><div class="ttdeci">@ TASK</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00035">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:35</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992ae2d30a195cee6b2961cc2c23ea4b520b"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992ae2d30a195cee6b2961cc2c23ea4b520b">USER</a></div><div class="ttdeci">@ USER</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00033">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:33</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992af0994f6433750faf86ac818468cbfbc0"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992af0994f6433750faf86ac818468cbfbc0">DARN</a></div><div class="ttdeci">@ DARN</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00040">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:40</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ad794b2a211d6c4ead603d7ebd097a992afefee5bdbd73040bc3cc2b77bf5726f1"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ad794b2a211d6c4ead603d7ebd097a992afefee5bdbd73040bc3cc2b77bf5726f1">Inconnu</a></div><div class="ttdeci">@ Inconnu</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00031">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:31</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_html_ae35c743602cfcc1086c230b7b25a4a0e"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#ae35c743602cfcc1086c230b7b25a4a0e">ERREUR_TRAME_INCONNUE</a></div><div class="ttdeci">#define ERREUR_TRAME_INCONNUE</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00165">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h:165</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00044">ACK</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00034">BELL</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00062">CHAMP_TYPE_PAUSE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00577">configrerTache()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00691">configurerSonnette()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00607">configurerUtilisateur()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00057">COURTE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00040">DARN</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00070">EnAttente</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00072">EnCours</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00073">EnCourtePause</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00075">EnLonguePause</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00220">envoyerTrameAcquittement()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00195">envoyerTrameErreur()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00167">ERREUR_COMMANDE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00169">ERREUR_CONFIGURATION</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00168">ERREUR_PARAMETRE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00165">ERREUR_TRAME_INCONNUE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00166">ERREUR_TRAME_NON_SUPPORTEE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00043">ERROR</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00960">estConnecte()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00272">extraireChamp()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00074">FinCourtePause</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00076">FinLonguePause</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00077">Gele</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">gererModeAutomatique()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01071">getDuree()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01077">getDureePauseCourte()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01083">getDureePauseLongue()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00520">getEtatPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00525">getEtatPomodoroPrecedent()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00166">getNomTrame()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00041">HEARTBEAT</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00031">Inconnu</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00063">lireTrame()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00058">LONGUE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00047">NB_TRAMES</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00032">POMODORO</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01260">rafraichirEcran()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00396">reinitialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00038">RESET</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00036">REST</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01089">setDuree()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01094">setDureePauseCourte()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01099">setDureePauseLongue()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00037">STOP</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00035">TASK</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00071">Termine</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00713">traiterBoutonPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00033">USER</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00108">verifierTrame()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00137">verifierTypePause()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00039">WAIT</a>.</p>
+
+</div>
+</div>
+<a id="a1d04139db3a5ad5713ecbd14d97da879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d04139db3a5ad5713ecbd14d97da879">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise les ressources. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html">simulateurs/esp32-pomodoro/src/main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Serial.begin(115200);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">while</span>(!Serial)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Serial.println(F(<span class="stringliteral">&quot;Simulateur Bluetooth POMODORO&quot;</span>));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    pinMode(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a307518a8ea489365096d16acef22809c">GPIO_LED_ROUGE</a>, OUTPUT);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    pinMode(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ac24243ead145ae4c56871479f3b619ec">GPIO_LED_ORANGE</a>, OUTPUT);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    pinMode(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a8b3e6d6a71e072761c6cb6210dbb0177">GPIO_LED_VERTE</a>, OUTPUT);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    pinMode(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aff2640fe11457473dfbc483aecef0802">GPIO_SW1</a>, INPUT_PULLUP);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    attachInterrupt(digitalPinToInterrupt(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aff2640fe11457473dfbc483aecef0802">GPIO_SW1</a>),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a23774ceec84b22fa712d8be698860cdc">cliquerBoutonPause</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    FALLING);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    pinMode(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#abe2091acea53218648a2f1537eb4ce92">GPIO_SW2</a>, INPUT_PULLUP);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    attachInterrupt(digitalPinToInterrupt(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#abe2091acea53218648a2f1537eb4ce92">GPIO_SW2</a>),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ae0b9c677b22131af3e5a6c1cb1a6fa8a">cliquerBoutonPomodoro</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    FALLING);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    digitalWrite(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a307518a8ea489365096d16acef22809c">GPIO_LED_ROUGE</a>, HIGH);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    digitalWrite(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ac24243ead145ae4c56871479f3b619ec">GPIO_LED_ORANGE</a>, LOW);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    digitalWrite(<a class="code" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a8b3e6d6a71e072761c6cb6210dbb0177">GPIO_LED_VERTE</a>, LOW);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// initialise l&#39;écran</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a85576bcd3eb8a1eeba3e504e9d54dbdf">initialiserEcran</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// initialise le bluetooth</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a67da7b4725daa11250a97047f0e80cd6">initialiserBluetooth</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Initialise les préférences stockées</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ad022d3890009321c20090e2394e6275c">initialiserPreferences</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac931658d449c700badda104804cb1401">afficherAccueil</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a23774ceec84b22fa712d8be698860cdc"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a23774ceec84b22fa712d8be698860cdc">cliquerBoutonPause</a></div><div class="ttdeci">void IRAM_ATTR cliquerBoutonPause()</div><div class="ttdoc">Fonction de callback pour le clic sur le bouton.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00810">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:810</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a67da7b4725daa11250a97047f0e80cd6"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a67da7b4725daa11250a97047f0e80cd6">initialiserBluetooth</a></div><div class="ttdeci">void initialiserBluetooth()</div><div class="ttdoc">Initialise le Bluetooth.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00969">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:969</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a85576bcd3eb8a1eeba3e504e9d54dbdf"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a85576bcd3eb8a1eeba3e504e9d54dbdf">initialiserEcran</a></div><div class="ttdeci">void initialiserEcran()</div><div class="ttdoc">Initialise les ressources pour l'écran.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00857">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:857</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ac931658d449c700badda104804cb1401"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ac931658d449c700badda104804cb1401">afficherAccueil</a></div><div class="ttdeci">void afficherAccueil()</div><div class="ttdoc">Affiche les informations pour l'écran d'accueil.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01204">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1204</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ad022d3890009321c20090e2394e6275c"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ad022d3890009321c20090e2394e6275c">initialiserPreferences</a></div><div class="ttdeci">void initialiserPreferences()</div><div class="ttdoc">Initialise les préférences stockées.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00996">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:996</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_ae0b9c677b22131af3e5a6c1cb1a6fa8a"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#ae0b9c677b22131af3e5a6c1cb1a6fa8a">cliquerBoutonPomodoro</a></div><div class="ttdeci">void IRAM_ATTR cliquerBoutonPomodoro()</div><div class="ttdoc">Fonction de callback pour le clic sur le bouton.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00746">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:746</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2src_2main_8cpp_html_a307518a8ea489365096d16acef22809c"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a307518a8ea489365096d16acef22809c">GPIO_LED_ROUGE</a></div><div class="ttdeci">#define GPIO_LED_ROUGE</div><div class="ttdoc">En attente.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00013">simulateurs/esp32-pomodoro/src/main.cpp:13</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2src_2main_8cpp_html_a8b3e6d6a71e072761c6cb6210dbb0177"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a8b3e6d6a71e072761c6cb6210dbb0177">GPIO_LED_VERTE</a></div><div class="ttdeci">#define GPIO_LED_VERTE</div><div class="ttdoc">Trame START.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00015">simulateurs/esp32-pomodoro/src/main.cpp:15</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2src_2main_8cpp_html_abe2091acea53218648a2f1537eb4ce92"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#abe2091acea53218648a2f1537eb4ce92">GPIO_SW2</a></div><div class="ttdeci">#define GPIO_SW2</div><div class="ttdoc">Pour simuler joueur suivant.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00017">simulateurs/esp32-pomodoro/src/main.cpp:17</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2src_2main_8cpp_html_ac24243ead145ae4c56871479f3b619ec"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#ac24243ead145ae4c56871479f3b619ec">GPIO_LED_ORANGE</a></div><div class="ttdeci">#define GPIO_LED_ORANGE</div><div class="ttdoc">Trame OK.</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00014">simulateurs/esp32-pomodoro/src/main.cpp:14</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2src_2main_8cpp_html_aff2640fe11457473dfbc483aecef0802"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#aff2640fe11457473dfbc483aecef0802">GPIO_SW1</a></div><div class="ttdeci">#define GPIO_SW1</div><div class="ttdoc">Pour simuler un tir (non utilisé)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00016">simulateurs/esp32-pomodoro/src/main.cpp:16</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01204">afficherAccueil()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00810">cliquerBoutonPause()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00746">cliquerBoutonPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00014">GPIO_LED_ORANGE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00013">GPIO_LED_ROUGE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00015">GPIO_LED_VERTE</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00016">GPIO_SW1</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp_source.html#l00017">GPIO_SW2</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00969">initialiserBluetooth()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00857">initialiserEcran()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00996">initialiserPreferences()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="aa34c65563db5dbe5d13867416bc177da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34c65563db5dbe5d13867416bc177da">&#9670;&nbsp;</a></span>afficheur</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_afficheur.html">Afficheur</a> afficheur(<a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a83e2a7e139df2dae26c242ed5fdf7271">ADRESSE_I2C_OLED</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a042c8c50af05d0a598bc4aa708af00a0">BROCHE_I2C_SDA</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1dfa02a0239641b1d72f064c6ec9d2eb">BROCHE_I2C_SCL</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a83e2a7e139df2dae26c242ed5fdf7271">ADRESSE_I2C_OLED</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a042c8c50af05d0a598bc4aa708af00a0">BROCHE_I2C_SDA</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html#a1dfa02a0239641b1d72f064c6ec9d2eb">BROCHE_I2C_SCL</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>afficheur OLED SSD1306 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5089cb05d7d6eec230914696a8cdce07.html">simulateurs</a></li><li class="navelem"><a class="el" href="dir_1e882bc2ad51d066f639f88ba1df7f6d.html">esp32-pomodoro</a></li><li class="navelem"><a class="el" href="dir_a050b74b557d838335377fbc25287c48.html">src</a></li><li class="navelem"><a class="el" href="simulateurs_2esp32-pomodoro_2src_2main_8cpp.html">main.cpp</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="Afficheur" name="Afficheur">
+<area shape="rect" id="node1" title="Déclaration de la classe Afficheur qui permet de gérer l&#39;écran OLED SSD1306." alt="" coords="5,131,167,369"/>
+<area shape="rect" id="node2" href="$class_s_s_d1306_wire.html" title=" " alt="" coords="31,5,141,83"/>
+</map>

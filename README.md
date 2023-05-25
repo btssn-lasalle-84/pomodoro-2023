@@ -6,8 +6,9 @@
 
 - [Le projet pomodoro-2023](#le-projet-pomodoro-2023)
   - [Documentation du code](#documentation-du-code)
-  - [Base de données](#base-de-données)
+  - [Base de données](#base-de-donn%C3%A9es)
   - [Versions](#versions)
+    - [0.2](#02)
     - [0.1](#01)
   - [Auteur](#auteur)
 
@@ -22,7 +23,7 @@ Francesco Cirillo propose une approche se basant notamment sur un minuteur méca
 Le système est composé :
 
 - d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons) [Étudiant EC]
-- d’une application sur Raspberry Pi et écran tactile pour le pilotage à distance et la gestion des tâches [Étudiant IR]
+- d’une application Qt sur Raspberry Pi et écran tactile pour le pilotage à distance et la gestion des tâches [Étudiant IR]
 
 ---
 
@@ -149,6 +150,23 @@ CREATE TABLE IF NOT EXISTS Preferences (
 ```
 
 ## Versions
+
+![](images/livraisons.png)
+
+
+### 0.2
+
+![](images/jira-tickets-v0.2.png)
+
+![](images/screenshot-pomodoro-v0.2-1.png)
+
+![](images/screenshot-pomodoro-v0.2-2.png)
+
+![](images/screenshot-pomodoro-v0.2-3.png)
+
+![](images/screenshot-pomodoro-v0.2-4.png)
+
+![](images/screenshot-pomodoro-v0.2-5.png)
 
 ### 0.1
 
