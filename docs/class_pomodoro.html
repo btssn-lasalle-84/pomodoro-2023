@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projet pomodoro: Référence de la classe Pomodoro</title>
+<title>Projet pomodoro: Référence de la structure Pomodoro</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projet pomodoro
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.2</span>
    </div>
    <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
   </td>
@@ -87,26 +87,28 @@ $(document).ready(function(){initNavTree('class_pomodoro.html',''); initResizabl
   <div class="summary">
 <a href="#pub-slots">Connecteurs publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Champs de données</a> &#124;
 <a href="#pri-types">Types privés</a> &#124;
+<a href="#pri-slots">Connecteurs privés</a> &#124;
 <a href="#pri-methods">Fonctions membres privées</a> &#124;
 <a href="#pri-attribs">Attributs privés</a>  </div>
   <div class="headertitle">
-<div class="title">Référence de la classe Pomodoro</div>  </div>
+<div class="title">Référence de la structure Pomodoro</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Affiche les différents écrans de l'application <a class="el" href="class_pomodoro.html" title="Affiche les différents écrans de l&#39;application Pomodoro.">Pomodoro</a>.  
  <a href="class_pomodoro.html#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="pomodoro_8h_source.html">pomodoro.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe de collaboration de Pomodoro:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pomodoro__coll__graph.png" border="0" usemap="#a_pomodoro_coll__map" alt="Collaboration graph"/></div>
 <map name="a_pomodoro_coll__map" id="a_pomodoro_coll__map">
-<area shape="rect" title="Affiche les différents écrans de l&#39;application Pomodoro." alt="" coords="5,307,195,487"/>
-<area shape="rect" href="class_q_widget.html" title=" " alt="" coords="14,86,93,163"/>
-<area shape="rect" href="class_base_de_donnees.html" title="Déclaration de la classe permettant l&#39;accès à la base de données SQLite." alt="" coords="117,5,275,244"/>
+<area shape="rect" title="Affiche les différents écrans de l&#39;application Pomodoro." alt="" coords="5,307,231,809"/>
+<area shape="rect" href="class_q_widget.html" title=" " alt="" coords="32,86,111,163"/>
+<area shape="rect" href="class_base_de_donnees.html" title="Déclaration de la classe permettant l&#39;accès à la base de données SQLite." alt="" coords="135,5,293,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -118,9 +120,17 @@ Connecteurs publics</h2></td></tr>
 <tr class="memitem:a4ec0cae3c2696613adf0906a17416a23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a> ()</td></tr>
 <tr class="memdesc:a4ec0cae3c2696613adf0906a17416a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'écran d'accueil.  <a href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4ec0cae3c2696613adf0906a17416a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52c6863751634881c91d1d8b876cacd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ab52c6863751634881c91d1d8b876cacd">afficherEcranCycle</a> ()</td></tr>
+<tr class="separator:ab52c6863751634881c91d1d8b876cacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7566a578f95331c2beae99fdbabf4de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ad7566a578f95331c2beae99fdbabf4de">afficherEcranSession</a> ()</td></tr>
+<tr class="separator:ad7566a578f95331c2beae99fdbabf4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c36845d9abfaec6a81d7a2bc3ff0469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a> ()</td></tr>
 <tr class="memdesc:a7c36845d9abfaec6a81d7a2bc3ff0469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'écran d'une tâche.  <a href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a7c36845d9abfaec6a81d7a2bc3ff0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d77e21dc71a95f1f9a9bbbc7eee44d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a15d77e21dc71a95f1f9a9bbbc7eee44d">afficherTexteTache</a> ()</td></tr>
+<tr class="separator:a15d77e21dc71a95f1f9a9bbbc7eee44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d398e4b0749365da3862d8addb94b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a49d398e4b0749365da3862d8addb94b0">mettreAJourAffichageDuree</a> ()</td></tr>
+<tr class="separator:a49d398e4b0749365da3862d8addb94b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
@@ -130,6 +140,41 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad75fcf23785ded5be18767f6b69f2165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">~Pomodoro</a> ()</td></tr>
 <tr class="memdesc:ad75fcf23785ded5be18767f6b69f2165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la classe <a class="el" href="class_pomodoro.html" title="Affiche les différents écrans de l&#39;application Pomodoro.">Pomodoro</a>.  <a href="class_pomodoro.html#ad75fcf23785ded5be18767f6b69f2165">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ad75fcf23785ded5be18767f6b69f2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Champs de données</h2></td></tr>
+<tr class="memitem:a205c5c10f7e96317482a33768260cb9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a205c5c10f7e96317482a33768260cb9d">actif</a> = false</td></tr>
+<tr class="memdesc:a205c5c10f7e96317482a33768260cb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">avec sonnette ou pas  <a href="class_pomodoro.html#a205c5c10f7e96317482a33768260cb9d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a205c5c10f7e96317482a33768260cb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a73988895bb45dc9914f9d56e3c8989"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a4a73988895bb45dc9914f9d56e3c8989">autoPause</a> = false</td></tr>
+<tr class="memdesc:a4a73988895bb45dc9914f9d56e3c8989"><td class="mdescLeft">&#160;</td><td class="mdescRight">passe automatiquement en pause  <a href="class_pomodoro.html#a4a73988895bb45dc9914f9d56e3c8989">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4a73988895bb45dc9914f9d56e3c8989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9334a07767119e1032c17f3e5067b0c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a9334a07767119e1032c17f3e5067b0c0">autoPomodoro</a> = false</td></tr>
+<tr class="separator:a9334a07767119e1032c17f3e5067b0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8062d7264dc0ae58306f784edf4e8b96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a8062d7264dc0ae58306f784edf4e8b96">duree</a></td></tr>
+<tr class="memdesc:a8062d7264dc0ae58306f784edf4e8b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">durée d'un pomodoro en secondes  <a href="class_pomodoro.html#a8062d7264dc0ae58306f784edf4e8b96">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8062d7264dc0ae58306f784edf4e8b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701d88334e37f10a1eb342295a1f866c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25">EtatPomodoro</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a701d88334e37f10a1eb342295a1f866c">etat</a></td></tr>
+<tr class="memdesc:a701d88334e37f10a1eb342295a1f866c"><td class="mdescLeft">&#160;</td><td class="mdescRight">état du pomodoro.  <a href="class_pomodoro.html#a701d88334e37f10a1eb342295a1f866c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a701d88334e37f10a1eb342295a1f866c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008861d71db1a65429250f774a25359f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a008861d71db1a65429250f774a25359f">id</a> = 0</td></tr>
+<tr class="memdesc:a008861d71db1a65429250f774a25359f"><td class="mdescLeft">&#160;</td><td class="mdescRight">l'identifiant  <a href="class_pomodoro.html#a008861d71db1a65429250f774a25359f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a008861d71db1a65429250f774a25359f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ff1b3e28430a22c92974371c617b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ac3ff1b3e28430a22c92974371c617b4a">mode</a></td></tr>
+<tr class="memdesc:ac3ff1b3e28430a22c92974371c617b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">minuteur ou chronomètre  <a href="class_pomodoro.html#ac3ff1b3e28430a22c92974371c617b4a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac3ff1b3e28430a22c92974371c617b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60f9ee1cae5d40acecbf73a0349ebe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ae60f9ee1cae5d40acecbf73a0349ebe9">nbPomodori</a></td></tr>
+<tr class="memdesc:ae60f9ee1cae5d40acecbf73a0349ebe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">nombre de pomodori avant une pause longue  <a href="class_pomodoro.html#ae60f9ee1cae5d40acecbf73a0349ebe9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae60f9ee1cae5d40acecbf73a0349ebe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e1835eece03bae30e359b2cec3108a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a83e1835eece03bae30e359b2cec3108a">pauseCourte</a></td></tr>
+<tr class="memdesc:a83e1835eece03bae30e359b2cec3108a"><td class="mdescLeft">&#160;</td><td class="mdescRight">durée de la pause courte en secondes  <a href="class_pomodoro.html#a83e1835eece03bae30e359b2cec3108a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83e1835eece03bae30e359b2cec3108a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3482d1bcc63a864b104a51a4f8ac0fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a3482d1bcc63a864b104a51a4f8ac0fbc">pauseLongue</a></td></tr>
+<tr class="memdesc:a3482d1bcc63a864b104a51a4f8ac0fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">durée de la pause longue en secondes  <a href="class_pomodoro.html#a3482d1bcc63a864b104a51a4f8ac0fbc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3482d1bcc63a864b104a51a4f8ac0fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee0d286d38a011b790a18cfbf78ab9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a0ee0d286d38a011b790a18cfbf78ab9c">sonnette</a> = false</td></tr>
+<tr class="memdesc:a0ee0d286d38a011b790a18cfbf78ab9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">avec sonnette ou pas  <a href="class_pomodoro.html#a0ee0d286d38a011b790a18cfbf78ab9c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0ee0d286d38a011b790a18cfbf78ab9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Types privés</h2></td></tr>
@@ -144,6 +189,21 @@ Types privés</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7947e9c8c21be9c937ee5a55619cc2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les différents écrans de la GUI.  <a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cf">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a7947e9c8c21be9c937ee5a55619cc2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4482d04c06aae268b9c6553db929c62"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62">Mode</a> { <a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62ac60ca63a242f50cd90bb06d4b47ddd56">Minuteur</a>
+, <a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a272e38dbefcb9d09858eb0f843bc401a">Chronometre</a>
+, <a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a65f4b8ba8dc329c05ccb6befb6f317ac">NbModes</a>
+ }</td></tr>
+<tr class="memdesc:ae4482d04c06aae268b9c6553db929c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les différents modes.  <a href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae4482d04c06aae268b9c6553db929c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Connecteurs privés</h2></td></tr>
+<tr class="memitem:a6b0ee31af9b62170a3c487cd1ea3362b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a6b0ee31af9b62170a3c487cd1ea3362b">arreterPomodoro</a> ()</td></tr>
+<tr class="separator:a6b0ee31af9b62170a3c487cd1ea3362b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dabc5f2c3ca8f519f7388fadfcf4a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a9dabc5f2c3ca8f519f7388fadfcf4a52">demarrerPomodoro</a> ()</td></tr>
+<tr class="separator:a9dabc5f2c3ca8f519f7388fadfcf4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d8392999eb60ea3d95c4171b4604ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#aa8d8392999eb60ea3d95c4171b4604ca">gererBoutonPomodoro</a> ()</td></tr>
+<tr class="separator:aa8d8392999eb60ea3d95c4171b4604ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Fonctions membres privées</h2></td></tr>
@@ -161,14 +221,23 @@ Attributs privés</h2></td></tr>
 <tr class="memitem:ae133064a0e59324ef99412cce66d7dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_base_de_donnees.html">BaseDeDonnees</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a></td></tr>
 <tr class="memdesc:ae133064a0e59324ef99412cce66d7dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">l'objet <a class="el" href="class_base_de_donnees.html" title="Déclaration de la classe permettant l&#39;accès à la base de données SQLite.">BaseDeDonnees</a>  <a href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ae133064a0e59324ef99412cce66d7dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657a602bf33455f9a694aa4644b3d611"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a></td></tr>
+<tr class="separator:a657a602bf33455f9a694aa4644b3d611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac661ddb1a50a802866d24a3330bcf840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a></td></tr>
+<tr class="separator:ac661ddb1a50a802866d24a3330bcf840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f4ce1b09e243075cb53214bd755b6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a></td></tr>
+<tr class="separator:af0f4ce1b09e243075cb53214bd755b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931e5f1c84f4605d7a1228ca5cf4b482"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a></td></tr>
+<tr class="separator:a931e5f1c84f4605d7a1228ca5cf4b482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af60663c23b68b195a8a4b0cebc5769b5"><td class="memItemLeft" align="right" valign="top">Ui::GUIPomodoro *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a></td></tr>
 <tr class="memdesc:af60663c23b68b195a8a4b0cebc5769b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">la fenêtre graphique associée à cette classe  <a href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">Plus de détails...</a><br /></td></tr>
 <tr class="separator:af60663c23b68b195a8a4b0cebc5769b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Affiche les différents écrans de l'application <a class="el" href="class_pomodoro.html" title="Affiche les différents écrans de l&#39;application Pomodoro.">Pomodoro</a>. </p>
+<p>Paramètres d'un pomodoro. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8h_source.html#l00030">30</a> du fichier <a class="el" href="pomodoro_8h_source.html">pomodoro.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00046">46</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
 </div><h2 class="groupheader">Documentation des énumérations membres</h2>
 <a id="a7947e9c8c21be9c937ee5a55619cc2cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7947e9c8c21be9c937ee5a55619cc2cf">&#9670;&nbsp;</a></span>Ecran</h2>
@@ -199,19 +268,58 @@ Attributs privés</h2></td></tr>
 <tr><td class="fieldname"><a id="a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc"></a>NbEcrans&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8h_source.html#l00037">37</a> du fichier <a class="el" href="pomodoro_8h_source.html">pomodoro.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Accueil</a>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Tache</a>,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Cycle</a>,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Session</a>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">NbEcrans</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
-<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Pomodoro::Accueil</a></div><div class="ttdeci">@ Accueil</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00039">pomodoro.h:39</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Pomodoro::Cycle</a></div><div class="ttdeci">@ Cycle</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00041">pomodoro.h:41</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">Pomodoro::NbEcrans</a></div><div class="ttdeci">@ NbEcrans</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00044">pomodoro.h:43</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Pomodoro::Session</a></div><div class="ttdeci">@ Session</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00042">pomodoro.h:42</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Pomodoro::Tache</a></div><div class="ttdeci">@ Tache</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00040">pomodoro.h:40</a></div></div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00053">53</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Accueil</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Tache</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Cycle</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Session</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">NbEcrans</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa108b12618aab5ee8972c09581e33cedf">Pomodoro::Accueil</a></div><div class="ttdeci">@ Accueil</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00055">pomodoro/pomodoro.h:55</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4bb18173603a648ef7f0b69d6975bc63">Pomodoro::Cycle</a></div><div class="ttdeci">@ Cycle</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00057">pomodoro/pomodoro.h:57</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa4c7bf35f5012564823f2eff7b5fc7bcc">Pomodoro::NbEcrans</a></div><div class="ttdeci">@ NbEcrans</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00059">pomodoro/pomodoro.h:59</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa5b28d155698a61356fe184ab7f359849">Pomodoro::Session</a></div><div class="ttdeci">@ Session</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00058">pomodoro/pomodoro.h:58</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040"><div class="ttname"><a href="class_pomodoro.html#a7947e9c8c21be9c937ee5a55619cc2cfa78d42e1c73f12e25fd97ddcde35bd040">Pomodoro::Tache</a></div><div class="ttdeci">@ Tache</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00056">pomodoro/pomodoro.h:56</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4482d04c06aae268b9c6553db929c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4482d04c06aae268b9c6553db929c62">&#9670;&nbsp;</a></span>Mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62">Pomodoro::Mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Les différents modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ae4482d04c06aae268b9c6553db929c62ac60ca63a242f50cd90bb06d4b47ddd56"></a>Minuteur&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae4482d04c06aae268b9c6553db929c62a272e38dbefcb9d09858eb0f843bc401a"></a>Chronometre&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae4482d04c06aae268b9c6553db929c62a65f4b8ba8dc329c05ccb6befb6f317ac"></a>NbModes&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00065">65</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62ac60ca63a242f50cd90bb06d4b47ddd56">Minuteur</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a272e38dbefcb9d09858eb0f843bc401a">Chronometre</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a65f4b8ba8dc329c05ccb6befb6f317ac">NbModes</a>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
+<div class="ttc" id="aclass_pomodoro_html_ae4482d04c06aae268b9c6553db929c62a272e38dbefcb9d09858eb0f843bc401a"><div class="ttname"><a href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a272e38dbefcb9d09858eb0f843bc401a">Pomodoro::Chronometre</a></div><div class="ttdeci">@ Chronometre</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00068">pomodoro/pomodoro.h:68</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ae4482d04c06aae268b9c6553db929c62a65f4b8ba8dc329c05ccb6befb6f317ac"><div class="ttname"><a href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62a65f4b8ba8dc329c05ccb6befb6f317ac">Pomodoro::NbModes</a></div><div class="ttdeci">@ NbModes</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00069">pomodoro/pomodoro.h:69</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ae4482d04c06aae268b9c6553db929c62ac60ca63a242f50cd90bb06d4b47ddd56"><div class="ttname"><a href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62ac60ca63a242f50cd90bb06d4b47ddd56">Pomodoro::Minuteur</a></div><div class="ttdeci">@ Minuteur</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00067">pomodoro/pomodoro.h:67</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,22 +348,29 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                  : <a class="code" href="class_q_widget.html">QWidget</a>(parent), <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>(<span class="keyword">new</span> Ui::GUIPomodoro)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">ouvrirBaseDeDonnees</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">initialiserGui</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">connecterSignauxSlots</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="aclass_pomodoro_html_a81ec2d88bcec88334fb564cde73290c5"><div class="ttname"><a href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">Pomodoro::ouvrirBaseDeDonnees</a></div><div class="ttdeci">void ouvrirBaseDeDonnees()</div><div class="ttdoc">Instancie l'objet et l'accès à base de données.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00087">pomodoro.cpp:87</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a9f6afe6622b36052b5d175176aed6f21"><div class="ttname"><a href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">Pomodoro::connecterSignauxSlots</a></div><div class="ttdeci">void connecterSignauxSlots()</div><div class="ttdoc">Connecte les signaux aux slots pour l'application.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00098">pomodoro.cpp:98</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_aab04bb630bd15697721d362adca29c28"><div class="ttname"><a href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">Pomodoro::initialiserGui</a></div><div class="ttdeci">void initialiserGui()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00070">pomodoro.cpp:70</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_af60663c23b68b195a8a4b0cebc5769b5"><div class="ttname"><a href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">Pomodoro::ui</a></div><div class="ttdeci">Ui::GUIPomodoro * ui</div><div class="ttdoc">la fenêtre graphique associée à cette classe</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00051">pomodoro.h:51</a></div></div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                  :</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_q_widget.html">QWidget</a>(parent), <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>(<span class="keyword">new</span> Ui::GUIPomodoro), <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>(<span class="keyword">nullptr</span>), <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a>(0),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>(<span class="keyword">nullptr</span>), <a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a>(<span class="keyword">false</span>), <a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">ouvrirBaseDeDonnees</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">initialiserGui</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">connecterSignauxSlots</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a657a602bf33455f9a694aa4644b3d611"><div class="ttname"><a href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">Pomodoro::compteRebours</a></div><div class="ttdeci">QTimer * compteRebours</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00080">pomodoro/pomodoro.h:80</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a81ec2d88bcec88334fb564cde73290c5"><div class="ttname"><a href="class_pomodoro.html#a81ec2d88bcec88334fb564cde73290c5">Pomodoro::ouvrirBaseDeDonnees</a></div><div class="ttdeci">void ouvrirBaseDeDonnees()</div><div class="ttdoc">Instancie l'objet et l'accès à base de données.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00109">pomodoro/pomodoro.cpp:109</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a931e5f1c84f4605d7a1228ca5cf4b482"><div class="ttname"><a href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">Pomodoro::tempsRestant</a></div><div class="ttdeci">int tempsRestant</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00079">pomodoro/pomodoro.h:79</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a9f6afe6622b36052b5d175176aed6f21"><div class="ttname"><a href="class_pomodoro.html#a9f6afe6622b36052b5d175176aed6f21">Pomodoro::connecterSignauxSlots</a></div><div class="ttdeci">void connecterSignauxSlots()</div><div class="ttdoc">Connecte les signaux aux slots pour l'application.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00120">pomodoro/pomodoro.cpp:120</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_aab04bb630bd15697721d362adca29c28"><div class="ttname"><a href="class_pomodoro.html#aab04bb630bd15697721d362adca29c28">Pomodoro::initialiserGui</a></div><div class="ttdeci">void initialiserGui()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00092">pomodoro/pomodoro.cpp:92</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ac661ddb1a50a802866d24a3330bcf840"><div class="ttname"><a href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">Pomodoro::pause</a></div><div class="ttdeci">bool pause</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00082">pomodoro/pomodoro.h:82</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ae133064a0e59324ef99412cce66d7dc0"><div class="ttname"><a href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">Pomodoro::bddPomodoro</a></div><div class="ttdeci">BaseDeDonnees * bddPomodoro</div><div class="ttdoc">l'objet BaseDeDonnees</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00078">pomodoro/pomodoro.h:78</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_af0f4ce1b09e243075cb53214bd755b6b"><div class="ttname"><a href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">Pomodoro::pomodoro</a></div><div class="ttdeci">bool pomodoro</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00081">pomodoro/pomodoro.h:81</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_af60663c23b68b195a8a4b0cebc5769b5"><div class="ttname"><a href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">Pomodoro::ui</a></div><div class="ttdeci">Ui::GUIPomodoro * ui</div><div class="ttdoc">la fenêtre graphique associée à cette classe</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00077">pomodoro/pomodoro.h:77</a></div></div>
 <div class="ttc" id="aclass_q_widget_html"><div class="ttname"><a href="class_q_widget.html">QWidget</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8cpp_source.html#l00098">connecterSignauxSlots()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00070">initialiserGui()</a>, et <a class="el" href="pomodoro_8cpp_source.html#l00087">ouvrirBaseDeDonnees()</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00092">initialiserGui()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">ouvrirBaseDeDonnees()</a>.</p>
 
 </div>
 </div>
@@ -277,15 +392,15 @@ Attributs privés</h2></td></tr>
 <p>Destructeur de la classe <a class="el" href="class_pomodoro.html" title="Affiche les différents écrans de l&#39;application Pomodoro.">Pomodoro</a>. </p>
 <p>Libère les ressources de l'application </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00034">34</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00037">37</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="ttc" id="aclass_base_de_donnees_html_a457401c0816b888c77ce915997545f4e"><div class="ttname"><a href="class_base_de_donnees.html#a457401c0816b888c77ce915997545f4e">BaseDeDonnees::detruireInstance</a></div><div class="ttdeci">static void detruireInstance()</div><div class="ttdoc">Définition méthode detruireInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00064">basededonnees.cpp:64</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="basededonnees_8cpp_source.html#l00064">BaseDeDonnees::detruireInstance()</a>, et <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="basededonnees_8cpp_source.html#l00064">BaseDeDonnees::detruireInstance()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
 </div>
 </div>
@@ -316,14 +431,14 @@ Attributs privés</h2></td></tr>
 
 <p>Selectionne et affiche l'écran. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00045">45</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;ecrans-&gt;setCurrentIndex(ecran);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;ecrans-&gt;setCurrentIndex(ecran);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00054">afficherEcranAccueil()</a>, et <a class="el" href="pomodoro_8cpp_source.html#l00064">afficherEcranTache()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">afficherEcranAccueil()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00073">afficherEcranCycle()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00079">afficherEcranSession()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00067">afficherEcranTache()</a>.</p>
 
 </div>
 </div>
@@ -352,16 +467,86 @@ Attributs privés</h2></td></tr>
 
 <p>Affiche l'écran d'accueil. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00054">54</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Pomodoro&quot;</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Accueil);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="ttc" id="aclass_pomodoro_html_a3f0531555dd62f4aaf4e929d0ec5a3e2"><div class="ttname"><a href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">Pomodoro::afficherEcran</a></div><div class="ttdeci">void afficherEcran(Pomodoro::Ecran ecran)</div><div class="ttdoc">Selectionne et affiche l'écran.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00045">pomodoro.cpp:45</a></div></div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">57</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Pomodoro&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Accueil);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a3f0531555dd62f4aaf4e929d0ec5a3e2"><div class="ttname"><a href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">Pomodoro::afficherEcran</a></div><div class="ttdeci">void afficherEcran(Pomodoro::Ecran ecran)</div><div class="ttdoc">Selectionne et affiche l'écran.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00048">pomodoro/pomodoro.cpp:48</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8cpp_source.html#l00045">afficherEcran()</a>, et <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">afficherEcran()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00098">connecterSignauxSlots()</a>, et <a class="el" href="pomodoro_8cpp_source.html#l00070">initialiserGui()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00085">afficherTexteTache()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00092">initialiserGui()</a>.</p>
+
+</div>
+</div>
+<a id="ab52c6863751634881c91d1d8b876cacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52c6863751634881c91d1d8b876cacd">&#9670;&nbsp;</a></span>afficherEcranCycle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::afficherEcranCycle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00073">73</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Édition d&#39;un cycle&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Cycle);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">afficherEcran()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>.</p>
+
+</div>
+</div>
+<a id="ad7566a578f95331c2beae99fdbabf4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7566a578f95331c2beae99fdbabf4de">&#9670;&nbsp;</a></span>afficherEcranSession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::afficherEcranSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00079">79</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Édition d&#39;une session&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>((Pomodoro::Ecran::Session));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">afficherEcran()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>.</p>
 
 </div>
 </div>
@@ -390,15 +575,94 @@ Attributs privés</h2></td></tr>
 
 <p>Affiche l'écran d'une tâche. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00064">64</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Édition d&#39;une tâche&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Tache);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTitre-&gt;setText(<span class="stringliteral">&quot;Édition d&#39;une tâche&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_pomodoro.html#a3f0531555dd62f4aaf4e929d0ec5a3e2">afficherEcran</a>(Pomodoro::Ecran::Tache);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8cpp_source.html#l00045">afficherEcran()</a>, et <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">afficherEcran()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00098">connecterSignauxSlots()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>.</p>
+
+</div>
+</div>
+<a id="a15d77e21dc71a95f1f9a9bbbc7eee44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d77e21dc71a95f1f9a9bbbc7eee44d">&#9670;&nbsp;</a></span>afficherTexteTache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::afficherTexteTache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00085">85</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QString texte = <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;editionNomTache-&gt;text();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;labelTache-&gt;setText(texte);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a4ec0cae3c2696613adf0906a17416a23"><div class="ttname"><a href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Pomodoro::afficherEcranAccueil</a></div><div class="ttdeci">void afficherEcranAccueil()</div><div class="ttdoc">Affiche l'écran d'accueil.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00057">pomodoro/pomodoro.cpp:57</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">afficherEcranAccueil()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>.</p>
+
+</div>
+</div>
+<a id="a6b0ee31af9b62170a3c487cd1ea3362b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0ee31af9b62170a3c487cd1ea3362b">&#9670;&nbsp;</a></span>arreterPomodoro</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::arreterPomodoro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">247</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>-&gt;stop();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> = 0;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a>     = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a>        = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro-&gt;setText(<span class="stringliteral">&quot;Démarrer&quot;</span>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeCompteARebours-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeChronometre-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;pomodoro&quot;</span> &lt;&lt; <a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00080">compteRebours</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00082">pause</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00081">pomodoro</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00079">tempsRestant</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">mettreAJourAffichageDuree()</a>.</p>
 
 </div>
 </div>
@@ -427,25 +691,170 @@ Attributs privés</h2></td></tr>
 
 <p>Connecte les signaux aux slots pour l'application. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00098">98</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEditionTache, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>()));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Pour les tests</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonValidationEditionTache,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonAnnulationEditionTache,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="aclass_pomodoro_html_a4ec0cae3c2696613adf0906a17416a23"><div class="ttname"><a href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">Pomodoro::afficherEcranAccueil</a></div><div class="ttdeci">void afficherEcranAccueil()</div><div class="ttdoc">Affiche l'écran d'accueil.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00054">pomodoro.cpp:54</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_a7c36845d9abfaec6a81d7a2bc3ff0469"><div class="ttname"><a href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Pomodoro::afficherEcranTache</a></div><div class="ttdeci">void afficherEcranTache()</div><div class="ttdoc">Affiche l'écran d'une tâche.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8cpp_source.html#l00064">pomodoro.cpp:64</a></div></div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">120</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a9dabc5f2c3ca8f519f7388fadfcf4a52">demarrerPomodoro</a>()));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEditionTache, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>()));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Pour les tests</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonValidationEditionTache,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonValidationEditionTache,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            &amp;QPushButton::clicked,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            &amp;<a class="code" href="class_pomodoro.html#a15d77e21dc71a95f1f9a9bbbc7eee44d">Pomodoro::afficherTexteTache</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonAnnulationEditionTache,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            SIGNAL(clicked(<span class="keywordtype">bool</span>)),</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEditionCycle, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#ab52c6863751634881c91d1d8b876cacd">afficherEcranCycle</a>()));</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranTache, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>()));</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranSession, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#ad7566a578f95331c2beae99fdbabf4de">afficherEcranSession</a>()));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranAccueil, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEditionSession, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#ad7566a578f95331c2beae99fdbabf4de">afficherEcranSession</a>()));</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranTache_2, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">afficherEcranTache</a>()));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranCycle, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#ab52c6863751634881c91d1d8b876cacd">afficherEcranCycle</a>()));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    connect(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonEcranAccueil_2, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>()));</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a15d77e21dc71a95f1f9a9bbbc7eee44d"><div class="ttname"><a href="class_pomodoro.html#a15d77e21dc71a95f1f9a9bbbc7eee44d">Pomodoro::afficherTexteTache</a></div><div class="ttdeci">void afficherTexteTache()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00085">pomodoro/pomodoro.cpp:85</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a7c36845d9abfaec6a81d7a2bc3ff0469"><div class="ttname"><a href="class_pomodoro.html#a7c36845d9abfaec6a81d7a2bc3ff0469">Pomodoro::afficherEcranTache</a></div><div class="ttdeci">void afficherEcranTache()</div><div class="ttdoc">Affiche l'écran d'une tâche.</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00067">pomodoro/pomodoro.cpp:67</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_a9dabc5f2c3ca8f519f7388fadfcf4a52"><div class="ttname"><a href="class_pomodoro.html#a9dabc5f2c3ca8f519f7388fadfcf4a52">Pomodoro::demarrerPomodoro</a></div><div class="ttdeci">void demarrerPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00151">pomodoro/pomodoro.cpp:151</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ab52c6863751634881c91d1d8b876cacd"><div class="ttname"><a href="class_pomodoro.html#ab52c6863751634881c91d1d8b876cacd">Pomodoro::afficherEcranCycle</a></div><div class="ttdeci">void afficherEcranCycle()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00073">pomodoro/pomodoro.cpp:73</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_ad7566a578f95331c2beae99fdbabf4de"><div class="ttname"><a href="class_pomodoro.html#ad7566a578f95331c2beae99fdbabf4de">Pomodoro::afficherEcranSession</a></div><div class="ttdeci">void afficherEcranSession()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00079">pomodoro/pomodoro.cpp:79</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8cpp_source.html#l00054">afficherEcranAccueil()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00064">afficherEcranTache()</a>, et <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">afficherEcranAccueil()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00073">afficherEcranCycle()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00079">afficherEcranSession()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00067">afficherEcranTache()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00085">afficherTexteTache()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00019">Pomodoro()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00020">Pomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a9dabc5f2c3ca8f519f7388fadfcf4a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dabc5f2c3ca8f519f7388fadfcf4a52">&#9670;&nbsp;</a></span>demarrerPomodoro</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::demarrerPomodoro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">151</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="class_pomodoro.html#aa8d8392999eb60ea3d95c4171b4604ca">gererBoutonPomodoro</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// déjà démarré ?</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a>)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeCompteARebours-&gt;isChecked())</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#ifdef DEMO</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> = <a class="code" href="pomodoro_2pomodoro_8h.html#a5c82f8c239ee7c2407bf8d7a4589dbfc">DUREE_POMODORO</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> = <a class="code" href="pomodoro_2pomodoro_8h.html#a5c82f8c239ee7c2407bf8d7a4589dbfc">DUREE_POMODORO</a> * 60;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;CompteARebours&quot;</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;tempsRestant&quot;</span> &lt;&lt; <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeChronometre-&gt;isChecked())</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> = 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Chronometre&quot;</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;tempsRestant&quot;</span> &lt;&lt; <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a> = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>-&gt;setInterval(<a class="code" href="pomodoro_2pomodoro_8h.html#a0267fb4517945d4a214056f371095e6f">TOUTES_LES_SECONDES</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="comment">// Connecter le signal timeout du QTimer au slot</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        connect(<a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;<a class="code" href="class_pomodoro.html#a49d398e4b0749365da3862d8addb94b0">Pomodoro::mettreAJourAffichageDuree</a>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="class_pomodoro.html#a49d398e4b0749365da3862d8addb94b0">mettreAJourAffichageDuree</a>();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="class_pomodoro.html#a657a602bf33455f9a694aa4644b3d611">compteRebours</a>-&gt;start();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeCompteARebours-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeChronometre-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;pomodoro&quot;</span> &lt;&lt; <a class="code" href="class_pomodoro.html#af0f4ce1b09e243075cb53214bd755b6b">pomodoro</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a49d398e4b0749365da3862d8addb94b0"><div class="ttname"><a href="class_pomodoro.html#a49d398e4b0749365da3862d8addb94b0">Pomodoro::mettreAJourAffichageDuree</a></div><div class="ttdeci">void mettreAJourAffichageDuree()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00193">pomodoro/pomodoro.cpp:193</a></div></div>
+<div class="ttc" id="aclass_pomodoro_html_aa8d8392999eb60ea3d95c4171b4604ca"><div class="ttname"><a href="class_pomodoro.html#aa8d8392999eb60ea3d95c4171b4604ca">Pomodoro::gererBoutonPomodoro</a></div><div class="ttdeci">void gererBoutonPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00260">pomodoro/pomodoro.cpp:260</a></div></div>
+<div class="ttc" id="apomodoro_2pomodoro_8h_html_a0267fb4517945d4a214056f371095e6f"><div class="ttname"><a href="pomodoro_2pomodoro_8h.html#a0267fb4517945d4a214056f371095e6f">TOUTES_LES_SECONDES</a></div><div class="ttdeci">#define TOUTES_LES_SECONDES</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00027">pomodoro/pomodoro.h:27</a></div></div>
+<div class="ttc" id="apomodoro_2pomodoro_8h_html_a5c82f8c239ee7c2407bf8d7a4589dbfc"><div class="ttname"><a href="pomodoro_2pomodoro_8h.html#a5c82f8c239ee7c2407bf8d7a4589dbfc">DUREE_POMODORO</a></div><div class="ttdeci">#define DUREE_POMODORO</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8h_source.html#l00020">pomodoro/pomodoro.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00080">compteRebours</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00020">DUREE_POMODORO</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00260">gererBoutonPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">mettreAJourAffichageDuree()</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00081">pomodoro</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00079">tempsRestant</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00027">TOUTES_LES_SECONDES</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>.</p>
+
+</div>
+</div>
+<a id="aa8d8392999eb60ea3d95c4171b4604ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d8392999eb60ea3d95c4171b4604ca">&#9670;&nbsp;</a></span>gererBoutonPomodoro</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::gererBoutonPomodoro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00260">260</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro-&gt;text() == <span class="stringliteral">&quot;Démarrer&quot;</span>)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro-&gt;setText(<span class="stringliteral">&quot;Mettre en pause&quot;</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;affichageDuree-&gt;setStyleSheet(</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          <span class="stringliteral">&quot;background-color: rgb(255, 0, 0);color: rgb(255, 255, 255);border: 2px solid rgb(113, &quot;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          <span class="stringliteral">&quot;113, 113);border-width: 2px;border-radius: 10px;&quot;</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro-&gt;text() == <span class="stringliteral">&quot;Mettre en pause&quot;</span>)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonGestionPomodoro-&gt;setText(<span class="stringliteral">&quot;Démarrer&quot;</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;affichageDuree-&gt;setStyleSheet(</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <span class="stringliteral">&quot;background-color: rgb(0, 255, 0);color: rgb(255, 255, 255);border: 2px solid rgb(113, &quot;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          <span class="stringliteral">&quot;113, 113);border-width: 2px;border-radius: 10px;&quot;</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;pause&quot;</span> &lt;&lt; <a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00082">pause</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>.</p>
 
 </div>
 </div>
@@ -472,22 +881,106 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00070">70</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef RASPBERRY_PI</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    showFullScreen();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    setFixedSize(qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).width(),</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).height());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// showMaximized();</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00092">92</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#ifdef RASPBERRY_PI</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    showFullScreen();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    setFixedSize(qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).width(),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                 qApp-&gt;desktop()-&gt;availableGeometry(<span class="keyword">this</span>).height());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// showMaximized();</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_pomodoro.html#a4ec0cae3c2696613adf0906a17416a23">afficherEcranAccueil</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8cpp_source.html#l00054">afficherEcranAccueil()</a>, et <a class="el" href="pomodoro_8h_source.html#l00051">ui</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">afficherEcranAccueil()</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00019">Pomodoro()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00020">Pomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a49d398e4b0749365da3862d8addb94b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d398e4b0749365da3862d8addb94b0">&#9670;&nbsp;</a></span>mettreAJourAffichageDuree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pomodoro::mettreAJourAffichageDuree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">193</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#ac661ddb1a50a802866d24a3330bcf840">pause</a>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    QString temps;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeCompteARebours-&gt;isChecked())</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="comment">// Vérifier si le temps restant est écoulé</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> &lt;= 0)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <a class="code" href="class_pomodoro.html#a6b0ee31af9b62170a3c487cd1ea3362b">arreterPomodoro</a>();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="comment">// Calculer les minutes et les secondes</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">int</span> minutes  = <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> / 60;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">int</span> secondes = <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> % 60;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="comment">// Convertir les minutes et les secondes en chaînes de caractères avec le format &quot;mm:ss&quot;</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        temps = QString(<span class="stringliteral">&quot;%1:%2&quot;</span>).arg(QString::number(minutes).rightJustified(2, <span class="charliteral">&#39;0&#39;</span>),</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                     QString::number(secondes).rightJustified(2, <span class="charliteral">&#39;0&#39;</span>));</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;affichageDuree-&gt;display(temps);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;CompteARebours&quot;</span> &lt;&lt; temps;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">// Réduire le temps restant d&#39;une seconde</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> -= 1;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;boutonModeChronometre-&gt;isChecked())</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">// Vérifier si le temps a atteint la durée</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#ifdef DEMO</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> &gt;= <a class="code" href="pomodoro_2pomodoro_8h.html#a5c82f8c239ee7c2407bf8d7a4589dbfc">DUREE_POMODORO</a>)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> &gt;= <a class="code" href="pomodoro_2pomodoro_8h.html#a5c82f8c239ee7c2407bf8d7a4589dbfc">DUREE_POMODORO</a> * 60)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <a class="code" href="class_pomodoro.html#a6b0ee31af9b62170a3c487cd1ea3362b">arreterPomodoro</a>();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">// Mettre à jour l&#39;affichage du chronomètre</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">int</span> minutes  = <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> / 60;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">int</span> secondes = <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> % 60;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        temps        = QString(<span class="stringliteral">&quot;%1:%2&quot;</span>).arg(QString::number(minutes).rightJustified(2, <span class="charliteral">&#39;0&#39;</span>),</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                     QString::number(secondes).rightJustified(2, <span class="charliteral">&#39;0&#39;</span>));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="class_pomodoro.html#af60663c23b68b195a8a4b0cebc5769b5">ui</a>-&gt;affichageDuree-&gt;display(temps);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Chronometre&quot;</span> &lt;&lt; temps;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// Augmenter le temps restant de 1 seconde</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="class_pomodoro.html#a931e5f1c84f4605d7a1228ca5cf4b482">tempsRestant</a> += 1;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="ttc" id="aclass_pomodoro_html_a6b0ee31af9b62170a3c487cd1ea3362b"><div class="ttname"><a href="class_pomodoro.html#a6b0ee31af9b62170a3c487cd1ea3362b">Pomodoro::arreterPomodoro</a></div><div class="ttdeci">void arreterPomodoro()</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_2pomodoro_8cpp_source.html#l00247">pomodoro/pomodoro.cpp:247</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00020">DUREE_POMODORO</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00082">pause</a>, <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00079">tempsRestant</a>, et <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">ui</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>.</p>
 
 </div>
 </div>
@@ -516,24 +1009,81 @@ Attributs privés</h2></td></tr>
 
 <p>Instancie l'objet et l'accès à base de données. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8cpp_source.html#l00087">87</a> du fichier <a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a> = <a class="code" href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">ouvrir</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">estOuverte</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">109</a> du fichier <a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a> = <a class="code" href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">ouvrir</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">bddPomodoro</a>-&gt;<a class="code" href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">estOuverte</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="ttc" id="aclass_base_de_donnees_html_a1797e248ed8a7fb220bc7a29565fe397"><div class="ttname"><a href="class_base_de_donnees.html#a1797e248ed8a7fb220bc7a29565fe397">BaseDeDonnees::estOuverte</a></div><div class="ttdeci">bool estOuverte()</div><div class="ttdoc">Retourne l'état d'ouverture à la base de données.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00122">basededonnees.cpp:122</a></div></div>
 <div class="ttc" id="aclass_base_de_donnees_html_a1cea5a739386ba076c7f265205e82608"><div class="ttname"><a href="class_base_de_donnees.html#a1cea5a739386ba076c7f265205e82608">BaseDeDonnees::getInstance</a></div><div class="ttdeci">static BaseDeDonnees * getInstance()</div><div class="ttdoc">Définition méthode getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00047">basededonnees.cpp:47</a></div></div>
 <div class="ttc" id="aclass_base_de_donnees_html_afd42c2c410192c28e1094c66e874cb9b"><div class="ttname"><a href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">BaseDeDonnees::ouvrir</a></div><div class="ttdeci">bool ouvrir(QString nomBase=FICHIER_BDD)</div><div class="ttdoc">Définition méthode ouvrir()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00084">basededonnees.cpp:84</a></div></div>
-<div class="ttc" id="aclass_pomodoro_html_ae133064a0e59324ef99412cce66d7dc0"><div class="ttname"><a href="class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0">Pomodoro::bddPomodoro</a></div><div class="ttdeci">BaseDeDonnees * bddPomodoro</div><div class="ttdoc">l'objet BaseDeDonnees</div><div class="ttdef"><b>Definition:</b> <a href="pomodoro_8h_source.html#l00052">pomodoro.h:52</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="pomodoro_8h_source.html#l00052">bddPomodoro</a>, <a class="el" href="basededonnees_8cpp_source.html#l00122">BaseDeDonnees::estOuverte()</a>, <a class="el" href="basededonnees_8cpp_source.html#l00047">BaseDeDonnees::getInstance()</a>, et <a class="el" href="basededonnees_8cpp_source.html#l00084">BaseDeDonnees::ouvrir()</a>.</p>
+<p class="reference">Références <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00078">bddPomodoro</a>, <a class="el" href="basededonnees_8cpp_source.html#l00122">BaseDeDonnees::estOuverte()</a>, <a class="el" href="basededonnees_8cpp_source.html#l00047">BaseDeDonnees::getInstance()</a>, et <a class="el" href="basededonnees_8cpp_source.html#l00084">BaseDeDonnees::ouvrir()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00019">Pomodoro()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00020">Pomodoro()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des champs</h2>
+<a id="a205c5c10f7e96317482a33768260cb9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205c5c10f7e96317482a33768260cb9d">&#9670;&nbsp;</a></span>actif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::actif = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>avec sonnette ou pas </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00142">142</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00298">setActivationPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01114">terminerTimerPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a4a73988895bb45dc9914f9d56e3c8989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a73988895bb45dc9914f9d56e3c8989">&#9670;&nbsp;</a></span>autoPause</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::autoPause = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>passe automatiquement en pause </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00150">150</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">gererModeAutomatique()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a9334a07767119e1032c17f3e5067b0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9334a07767119e1032c17f3e5067b0c0">&#9670;&nbsp;</a></span>autoPomodoro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::autoPomodoro = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00149">149</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">gererModeAutomatique()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>.</p>
+
+</div>
+</div>
 <a id="ae133064a0e59324ef99412cce66d7dc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae133064a0e59324ef99412cce66d7dc0">&#9670;&nbsp;</a></span>bddPomodoro</h2>
 
@@ -556,9 +1106,273 @@ Attributs privés</h2></td></tr>
 
 <p>l'objet <a class="el" href="class_base_de_donnees.html" title="Déclaration de la classe permettant l&#39;accès à la base de données SQLite.">BaseDeDonnees</a> </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8h_source.html#l00052">52</a> du fichier <a class="el" href="pomodoro_8h_source.html">pomodoro.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00078">78</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00087">ouvrirBaseDeDonnees()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">ouvrirBaseDeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a657a602bf33455f9a694aa4644b3d611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657a602bf33455f9a694aa4644b3d611">&#9670;&nbsp;</a></span>compteRebours</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* Pomodoro::compteRebours</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00080">80</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a8062d7264dc0ae58306f784edf4e8b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8062d7264dc0ae58306f784edf4e8b96">&#9670;&nbsp;</a></span>duree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::duree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>durée d'un pomodoro en secondes </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00145">145</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00996">initialiserPreferences()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01089">setDuree()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a701d88334e37f10a1eb342295a1f866c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701d88334e37f10a1eb342295a1f866c">&#9670;&nbsp;</a></span>etat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h.html#a0e93aa118d39096a35211c077019cc25">EtatPomodoro</a> Pomodoro::etat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>état du pomodoro. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00144">144</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01159">afficherHorloge()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00810">cliquerBoutonPause()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00746">cliquerBoutonPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00304">enregistreEtatPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">gererModeAutomatique()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00520">getEtatPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00996">initialiserPreferences()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01114">terminerTimerPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a008861d71db1a65429250f774a25359f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008861d71db1a65429250f774a25359f">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>l'identifiant </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00141">141</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01104">demarrerTimerPomodoro()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="ac3ff1b3e28430a22c92974371c617b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ff1b3e28430a22c92974371c617b4a">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pomodoro.html#ae4482d04c06aae268b9c6553db929c62">Mode</a> Pomodoro::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>minuteur ou chronomètre </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00151">151</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="ae60f9ee1cae5d40acecbf73a0349ebe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60f9ee1cae5d40acecbf73a0349ebe9">&#9670;&nbsp;</a></span>nbPomodori</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::nbPomodori</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nombre de pomodori avant une pause longue </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00148">148</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00338">gererModeAutomatique()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="ac661ddb1a50a802866d24a3330bcf840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac661ddb1a50a802866d24a3330bcf840">&#9670;&nbsp;</a></span>pause</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::pause</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00082">82</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00260">gererBoutonPomodoro()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">mettreAJourAffichageDuree()</a>.</p>
+
+</div>
+</div>
+<a id="a83e1835eece03bae30e359b2cec3108a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e1835eece03bae30e359b2cec3108a">&#9670;&nbsp;</a></span>pauseCourte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::pauseCourte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>durée de la pause courte en secondes </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00146">146</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01094">setDureePauseCourte()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a3482d1bcc63a864b104a51a4f8ac0fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3482d1bcc63a864b104a51a4f8ac0fbc">&#9670;&nbsp;</a></span>pauseLongue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::pauseLongue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>durée de la pause longue en secondes </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00147">147</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00635">configurerPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01099">setDureePauseLongue()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="af0f4ce1b09e243075cb53214bd755b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f4ce1b09e243075cb53214bd755b6b">&#9670;&nbsp;</a></span>pomodoro</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::pomodoro</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00081">81</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a0ee0d286d38a011b790a18cfbf78ab9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee0d286d38a011b790a18cfbf78ab9c">&#9670;&nbsp;</a></span>sonnette</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pomodoro::sonnette = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>avec sonnette ou pas </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html#l00143">143</a> du fichier <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8h_source.html">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00691">configurerSonnette()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01039">initialiserPomodoro()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00996">initialiserPreferences()</a>, <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00546">setActivationSonnette()</a>, et <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l00411">setEtatPomodoro()</a>.</p>
+
+</div>
+</div>
+<a id="a931e5f1c84f4605d7a1228ca5cf4b482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931e5f1c84f4605d7a1228ca5cf4b482">&#9670;&nbsp;</a></span>tempsRestant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pomodoro::tempsRestant</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00079">79</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">mettreAJourAffichageDuree()</a>.</p>
 
 </div>
 </div>
@@ -584,15 +1398,15 @@ Attributs privés</h2></td></tr>
 
 <p>la fenêtre graphique associée à cette classe </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="pomodoro_8h_source.html#l00051">51</a> du fichier <a class="el" href="pomodoro_8h_source.html">pomodoro.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="pomodoro_2pomodoro_8h_source.html#l00077">77</a> du fichier <a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00045">afficherEcran()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00054">afficherEcranAccueil()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00064">afficherEcranTache()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00098">connecterSignauxSlots()</a>, <a class="el" href="pomodoro_8cpp_source.html#l00070">initialiserGui()</a>, et <a class="el" href="pomodoro_8cpp_source.html#l00034">~Pomodoro()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00048">afficherEcran()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00057">afficherEcranAccueil()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00073">afficherEcranCycle()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00079">afficherEcranSession()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00067">afficherEcranTache()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00085">afficherTexteTache()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00247">arreterPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00120">connecterSignauxSlots()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00151">demarrerPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00260">gererBoutonPomodoro()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00092">initialiserGui()</a>, <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00193">mettreAJourAffichageDuree()</a>, et <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00037">~Pomodoro()</a>.</p>
 
 </div>
 </div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li><a class="el" href="pomodoro_8h_source.html">pomodoro.h</a></li>
-<li><a class="el" href="pomodoro_8cpp_source.html">pomodoro.cpp</a></li>
+<hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="pomodoro_2pomodoro_8h_source.html">pomodoro/pomodoro.h</a></li>
+<li><a class="el" href="pomodoro_2pomodoro_8cpp_source.html">pomodoro/pomodoro.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -601,7 +1415,7 @@ Attributs privés</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_pomodoro.html">Pomodoro</a></li>
-    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
   </ul>
 </div>
 </body>

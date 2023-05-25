@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro:  Fichier source de WidgetMosaic.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.2</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_widget_mosaic_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">WidgetMosaic.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_widget_mosaic_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_widget_8h.html">Widget.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_point_8h.html">Point.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_codingfield.html">Codingfield</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keyword">namespace </span>UI {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html">WidgetMosaic</a> : <span class="keyword">public</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a1499a76a48728462ccb9dad083f80c66">WidgetMosaic</a>(int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">nbColumns</a> = 3, int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">nbRows</a> = 2);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a1499a76a48728462ccb9dad083f80c66">WidgetMosaic</a>(<a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html#a5eead61e04b2c9f278d65761e73a15e5">parent</a>, <a class="code" href="struct_codingfield_1_1_u_i_1_1_point.html">Point</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html#ac538e3fba9c3d3f80a8832e3075a40b9">position</a>, <a class="code" href="struct_codingfield_1_1_u_i_1_1_size.html">Size</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html#a22bbd7856c8d687249f2acdf2cf89072">size</a>, int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">nbColumns</a> = 3, int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">nbRows</a> = 2);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      <span class="keyword">virtual</span> <a class="code" href="namespace_codingfield_1_1_u_i.html#a13825d245905d3360942c25a2197e921">Color</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acfaba7795b8bccc4f8759d1965ed3f9d">GetBackgroundColor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#ac63b51a7c6371a0e417cb8e7e2be2e7f">Draw</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a593e526ef5001bb3b49418b0a8ca5b0b">Run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a3af4a6c473c5f3b815f65a7cae00a075">AddChild</a>(<a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a5d08d16968795293bedd1c56f4326b4f">OnButtonAPressed</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a05556e6bffc49983a95a1b567662701f">OnButtonBPressed</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a2b7cdae8c365d1b6c6a7db9693e25b52">OnButtonBLongPush</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#afdf63794ddaf91870a438af00d5b651b">OnButtonCPressed</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a79f71ab45f50e6551c758fc10693e595">GetSelected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#ac5cdb5f913ab49c63e45654b0319385a">IsZoomOnSelected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a1e8e0b2abf10880da6448312af6bca28">SetZoomOnSelectedCallback</a>(std::function&lt;<span class="keywordtype">void</span> (<a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* widget, <span class="keywordtype">bool</span>)&gt; func);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#adf6ab5db19ed8b2a0fc29b692ef2db0d">   24</a></span>&#160;      int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#adf6ab5db19ed8b2a0fc29b692ef2db0d">indexSelected</a> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aed2e97194cd2ffe862ce8b4ffae13aa7">   25</a></span>&#160;      int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aed2e97194cd2ffe862ce8b4ffae13aa7">border</a> = 5;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">   26</a></span>&#160;      int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">nbColumns</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">   27</a></span>&#160;      int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">nbRows</a>;      </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <a class="code" href="struct_codingfield_1_1_u_i_1_1_size.html">Size</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa1ac449572ee7d4fa0e2b2fc2425e495">ComputeWidgetSize</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="struct_codingfield_1_1_u_i_1_1_size.html">Size</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa1ac449572ee7d4fa0e2b2fc2425e495">ComputeWidgetSize</a>(int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">nbColumns</a>, int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">nbRows</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="struct_codingfield_1_1_u_i_1_1_point.html">Point</a> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acf935c1912b81afa0b6def347ca6f2a1">ComputeWidgetPosition</a>(<span class="keyword">const</span> <a class="code" href="struct_codingfield_1_1_u_i_1_1_size.html">Size</a>&amp; widgetSize, int32_t <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html#ac538e3fba9c3d3f80a8832e3075a40b9">position</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa5956ac26ddb0db5dee2c792c4c6fed0">   32</a></span>&#160;      <a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa5956ac26ddb0db5dee2c792c4c6fed0">selectedWidget</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a6e739033bcecdec2e1ffb9360f78225d">   33</a></span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a6e739033bcecdec2e1ffb9360f78225d">zoomOnSelected</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acc68da1f4a0cf4cfc9fbb0a0fcdb12e4">ZoomOnSelected</a>(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#af13e4cbc2ee8cbbd8fc4a94f421772d7">   35</a></span>&#160;      std::function&lt;void (<a class="code" href="class_codingfield_1_1_u_i_1_1_widget.html">Widget</a>* widget, <span class="keywordtype">bool</span>)&gt; <a class="code" href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#af13e4cbc2ee8cbbd8fc4a94f421772d7">zoomOnSelectedCallback</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="ttc" id="a_point_8h_html"><div class="ttname"><a href="_point_8h.html">Point.h</a></div></div>
+<div class="ttc" id="a_widget_8h_html"><div class="ttname"><a href="_widget_8h.html">Widget.h</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_html"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget.html">Codingfield::UI::Widget</a></div><div class="ttdef"><b>Definition:</b> <a href="_widget_8h_source.html#l00017">Widget.h:17</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_html_a22bbd7856c8d687249f2acdf2cf89072"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget.html#a22bbd7856c8d687249f2acdf2cf89072">Codingfield::UI::Widget::size</a></div><div class="ttdeci">Size size</div><div class="ttdef"><b>Definition:</b> <a href="_widget_8h_source.html#l00088">Widget.h:88</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_html_a5eead61e04b2c9f278d65761e73a15e5"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget.html#a5eead61e04b2c9f278d65761e73a15e5">Codingfield::UI::Widget::parent</a></div><div class="ttdeci">Widget * parent</div><div class="ttdef"><b>Definition:</b> <a href="_widget_8h_source.html#l00086">Widget.h:86</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_html_ac538e3fba9c3d3f80a8832e3075a40b9"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget.html#ac538e3fba9c3d3f80a8832e3075a40b9">Codingfield::UI::Widget::position</a></div><div class="ttdeci">Point position</div><div class="ttdef"><b>Definition:</b> <a href="_widget_8h_source.html#l00087">Widget.h:87</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html">Codingfield::UI::WidgetMosaic</a></div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00008">WidgetMosaic.h:8</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a05556e6bffc49983a95a1b567662701f"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a05556e6bffc49983a95a1b567662701f">Codingfield::UI::WidgetMosaic::OnButtonBPressed</a></div><div class="ttdeci">virtual void OnButtonBPressed() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00093">WidgetMosaic.cpp:93</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a1499a76a48728462ccb9dad083f80c66"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a1499a76a48728462ccb9dad083f80c66">Codingfield::UI::WidgetMosaic::WidgetMosaic</a></div><div class="ttdeci">WidgetMosaic(int32_t nbColumns=3, int32_t nbRows=2)</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00010">WidgetMosaic.cpp:10</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a1e8e0b2abf10880da6448312af6bca28"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a1e8e0b2abf10880da6448312af6bca28">Codingfield::UI::WidgetMosaic::SetZoomOnSelectedCallback</a></div><div class="ttdeci">void SetZoomOnSelectedCallback(std::function&lt; void(Widget *widget, bool)&gt; func)</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00148">WidgetMosaic.cpp:148</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a2b7cdae8c365d1b6c6a7db9693e25b52"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a2b7cdae8c365d1b6c6a7db9693e25b52">Codingfield::UI::WidgetMosaic::OnButtonBLongPush</a></div><div class="ttdeci">virtual void OnButtonBLongPush() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00104">WidgetMosaic.cpp:104</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a3af4a6c473c5f3b815f65a7cae00a075"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a3af4a6c473c5f3b815f65a7cae00a075">Codingfield::UI::WidgetMosaic::AddChild</a></div><div class="ttdeci">virtual void AddChild(Widget *widget) override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00030">WidgetMosaic.cpp:30</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a593e526ef5001bb3b49418b0a8ca5b0b"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a593e526ef5001bb3b49418b0a8ca5b0b">Codingfield::UI::WidgetMosaic::Run</a></div><div class="ttdeci">void Run() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00152">WidgetMosaic.cpp:152</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a5d08d16968795293bedd1c56f4326b4f"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a5d08d16968795293bedd1c56f4326b4f">Codingfield::UI::WidgetMosaic::OnButtonAPressed</a></div><div class="ttdeci">virtual void OnButtonAPressed() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00081">WidgetMosaic.cpp:81</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a623bebf1287f1f95dd6ff073e44482e8"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a623bebf1287f1f95dd6ff073e44482e8">Codingfield::UI::WidgetMosaic::nbColumns</a></div><div class="ttdeci">int32_t nbColumns</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00026">WidgetMosaic.h:26</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a6e739033bcecdec2e1ffb9360f78225d"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a6e739033bcecdec2e1ffb9360f78225d">Codingfield::UI::WidgetMosaic::zoomOnSelected</a></div><div class="ttdeci">bool zoomOnSelected</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00033">WidgetMosaic.h:33</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a7961b80c3eb75c6811c982ffa4003f7d"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a7961b80c3eb75c6811c982ffa4003f7d">Codingfield::UI::WidgetMosaic::nbRows</a></div><div class="ttdeci">int32_t nbRows</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00027">WidgetMosaic.h:27</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_a79f71ab45f50e6551c758fc10693e595"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#a79f71ab45f50e6551c758fc10693e595">Codingfield::UI::WidgetMosaic::GetSelected</a></div><div class="ttdeci">const Widget * GetSelected() const</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00041">WidgetMosaic.cpp:41</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_aa1ac449572ee7d4fa0e2b2fc2425e495"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa1ac449572ee7d4fa0e2b2fc2425e495">Codingfield::UI::WidgetMosaic::ComputeWidgetSize</a></div><div class="ttdeci">Size ComputeWidgetSize()</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00122">WidgetMosaic.cpp:122</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_aa5956ac26ddb0db5dee2c792c4c6fed0"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aa5956ac26ddb0db5dee2c792c4c6fed0">Codingfield::UI::WidgetMosaic::selectedWidget</a></div><div class="ttdeci">Widget * selectedWidget</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00032">WidgetMosaic.h:32</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_ac5cdb5f913ab49c63e45654b0319385a"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#ac5cdb5f913ab49c63e45654b0319385a">Codingfield::UI::WidgetMosaic::IsZoomOnSelected</a></div><div class="ttdeci">bool IsZoomOnSelected() const</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00144">WidgetMosaic.cpp:144</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_ac63b51a7c6371a0e417cb8e7e2be2e7f"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#ac63b51a7c6371a0e417cb8e7e2be2e7f">Codingfield::UI::WidgetMosaic::Draw</a></div><div class="ttdeci">void Draw() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00018">WidgetMosaic.cpp:18</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_acc68da1f4a0cf4cfc9fbb0a0fcdb12e4"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acc68da1f4a0cf4cfc9fbb0a0fcdb12e4">Codingfield::UI::WidgetMosaic::ZoomOnSelected</a></div><div class="ttdeci">void ZoomOnSelected(bool enabled)</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00045">WidgetMosaic.cpp:45</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_acf935c1912b81afa0b6def347ca6f2a1"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acf935c1912b81afa0b6def347ca6f2a1">Codingfield::UI::WidgetMosaic::ComputeWidgetPosition</a></div><div class="ttdeci">Point ComputeWidgetPosition(const Size &amp;widgetSize, int32_t position)</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00133">WidgetMosaic.cpp:133</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_acfaba7795b8bccc4f8759d1965ed3f9d"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#acfaba7795b8bccc4f8759d1965ed3f9d">Codingfield::UI::WidgetMosaic::GetBackgroundColor</a></div><div class="ttdeci">virtual Color GetBackgroundColor() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00014">WidgetMosaic.cpp:14</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_adf6ab5db19ed8b2a0fc29b692ef2db0d"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#adf6ab5db19ed8b2a0fc29b692ef2db0d">Codingfield::UI::WidgetMosaic::indexSelected</a></div><div class="ttdeci">int32_t indexSelected</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00024">WidgetMosaic.h:24</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_aed2e97194cd2ffe862ce8b4ffae13aa7"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aed2e97194cd2ffe862ce8b4ffae13aa7">Codingfield::UI::WidgetMosaic::border</a></div><div class="ttdeci">int32_t border</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00025">WidgetMosaic.h:25</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_af13e4cbc2ee8cbbd8fc4a94f421772d7"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#af13e4cbc2ee8cbbd8fc4a94f421772d7">Codingfield::UI::WidgetMosaic::zoomOnSelectedCallback</a></div><div class="ttdeci">std::function&lt; void(Widget *widget, bool)&gt; zoomOnSelectedCallback</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8h_source.html#l00035">WidgetMosaic.h:35</a></div></div>
+<div class="ttc" id="aclass_codingfield_1_1_u_i_1_1_widget_mosaic_html_afdf63794ddaf91870a438af00d5b651b"><div class="ttname"><a href="class_codingfield_1_1_u_i_1_1_widget_mosaic.html#afdf63794ddaf91870a438af00d5b651b">Codingfield::UI::WidgetMosaic::OnButtonCPressed</a></div><div class="ttdeci">virtual void OnButtonCPressed() override</div><div class="ttdef"><b>Definition:</b> <a href="_widget_mosaic_8cpp_source.html#l00110">WidgetMosaic.cpp:110</a></div></div>
+<div class="ttc" id="anamespace_codingfield_1_1_u_i_html_a13825d245905d3360942c25a2197e921"><div class="ttname"><a href="namespace_codingfield_1_1_u_i.html#a13825d245905d3360942c25a2197e921">Codingfield::UI::Color</a></div><div class="ttdeci">uint32_t Color</div><div class="ttdef"><b>Definition:</b> <a href="_widget_8h_source.html#l00012">Widget.h:12</a></div></div>
+<div class="ttc" id="anamespace_codingfield_html"><div class="ttname"><a href="namespace_codingfield.html">Codingfield</a></div><div class="ttdef"><b>Definition:</b> <a href="_app_screen_8h_source.html#l00005">AppScreen.h:5</a></div></div>
+<div class="ttc" id="astruct_codingfield_1_1_u_i_1_1_point_html"><div class="ttname"><a href="struct_codingfield_1_1_u_i_1_1_point.html">Codingfield::UI::Point</a></div><div class="ttdef"><b>Definition:</b> <a href="_point_8h_source.html#l00006">Point.h:6</a></div></div>
+<div class="ttc" id="astruct_codingfield_1_1_u_i_1_1_size_html"><div class="ttname"><a href="struct_codingfield_1_1_u_i_1_1_size.html">Codingfield::UI::Size</a></div><div class="ttdef"><b>Definition:</b> <a href="_size_8h_source.html#l00006">Size.h:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5089cb05d7d6eec230914696a8cdce07.html">simulateurs</a></li><li class="navelem"><a class="el" href="dir_1361598bd5bf0c78bdbe0a893cafe4d0.html">m5-pomodoro</a></li><li class="navelem"><a class="el" href="dir_1129e7d3f1d1ba83aaff50fbafeb830c.html">lib</a></li><li class="navelem"><a class="el" href="dir_cdb436480d2f2aedd8aec7164fd87aa1.html">gui</a></li><li class="navelem"><a class="el" href="_widget_mosaic_8h.html">WidgetMosaic.h</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

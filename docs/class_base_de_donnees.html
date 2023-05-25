@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projet pomodoro
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.2</span>
    </div>
    <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
   </td>
@@ -293,7 +293,7 @@ Attributs privés statiques</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="basededonnees_8h_source.html#l00052">bdd</a>, et <a class="el" href="basededonnees_8h_source.html#l00053">nbAcces</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00034">Pomodoro::~Pomodoro()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00037">Pomodoro::~Pomodoro()</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Attributs privés statiques</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00087">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Attributs privés statiques</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="basededonnees_8cpp_source.html#l00020">BaseDeDonnees()</a>, <a class="el" href="basededonnees_8h_source.html#l00052">bdd</a>, et <a class="el" href="basededonnees_8h_source.html#l00053">nbAcces</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00087">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ Attributs privés statiques</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="pomodoro_8cpp_source.html#l00087">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="pomodoro_2pomodoro_8cpp_source.html#l00109">Pomodoro::ouvrirBaseDeDonnees()</a>.</p>
 
 </div>
 </div>
@@ -674,7 +674,7 @@ Attributs privés statiques</h2></td></tr>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="comment">// on récupère sous forme de QString la valeur de tous les champs sélectionnés</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">// et on les stocke dans une liste de QString</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().count(); i++)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a>(); i++)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <span class="keywordflow">if</span>(!r.isNull(i))</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        donnees &lt;&lt; r.value(i).toString();</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#ifdef DEBUG_BDD</span></div>
@@ -701,8 +701,9 @@ Attributs privés statiques</h2></td></tr>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a71f4dadfcc8e5bd512584925769c3019"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a></div><div class="ttdeci">int count(const String &amp;str, const String &amp;sub)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01274">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1274</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
+<p class="reference">Références <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01274">count()</a>, et <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
 
 </div>
 </div>
@@ -863,7 +864,7 @@ Attributs privés statiques</h2></td></tr>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                {</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                    <span class="comment">// on récupère sous forme de QString la valeur de tous les champs sélectionnés</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                    <span class="comment">// et on les stocke dans une liste de QString</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().count(); i++)</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a>(); i++)</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        data &lt;&lt; r.value(i).toString();</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#ifdef DEBUG_BDD</span></div>
@@ -903,7 +904,7 @@ Attributs privés statiques</h2></td></tr>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
+<p class="reference">Références <a class="el" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01274">count()</a>, et <a class="el" href="basededonnees_8h_source.html#l00051">db</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1004,7 @@ Attributs privés statiques</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_base_de_donnees.html">BaseDeDonnees</a></li>
-    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
   </ul>
 </div>
 </body>

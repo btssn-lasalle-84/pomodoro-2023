@@ -17,7 +17,7 @@ relationcanvas 128298 relation_ref 134570 // <unidirectional association>
 end
 relationcanvas 128682 relation_ref 134826 // <unidirectional association>
   from ref 128042 z 3006 to ref 128170
-  role_a_pos 1105 233 3000 no_role_b
+  role_a_pos 1105 302 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 end
