@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet pomodoro:  Fichier source de temps.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet pomodoro
+   &#160;<span id="projectnumber">0.2</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('esp32-pomodoro_2lib_2temps_2temps_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">esp32-pomodoro/lib/temps/temps.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="esp32-pomodoro_2lib_2temps_2temps_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TEMPS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TEMPS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_temps.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_temps.html">Temps</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_temps.html#a444a47b94fab853df97c4cc052849baf">   17</a></span>&#160;        uint64_t <a class="code" href="class_temps.html#a444a47b94fab853df97c4cc052849baf">valeur</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_temps.html#a0146b538b96214826a580019b4684daa">Temps</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_temps.html#a0146b538b96214826a580019b4684daa">Temps</a>(uint64_t secondes);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_temps.html#a0146b538b96214826a580019b4684daa">Temps</a>(<span class="keywordtype">int</span> heure, <span class="keywordtype">int</span> minute, <span class="keywordtype">int</span> seconde=0);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_temps.html#a0146b538b96214826a580019b4684daa">Temps</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#ad6fed0acaceaf106155eea3ee540f8d1">operator =</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        uint64_t <a class="code" href="class_temps.html#a344fc00b32893198ad2fdc6375af022e">getValeur</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#ad6613adb74606fc5a547cc200a934c9d">operator+=</a>(<span class="keyword">const</span> uint64_t &amp;s);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#ad6613adb74606fc5a547cc200a934c9d">operator+=</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#a29cde82809687de424cc03670ebd940f">operator-=</a>(<span class="keyword">const</span> uint64_t &amp;s);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#a29cde82809687de424cc03670ebd940f">operator-=</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_temps.html#a7cce9296e43f581200fe7946899de787">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_temps.html#acf0baff0a3a0839b97e4d03ebc0bf91e">operator!=</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#a02bcd8e4735f56b6eb64ff642756a255">operator++</a>(); <span class="comment">// prefixe</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a02bcd8e4735f56b6eb64ff642756a255">operator++</a>(<span class="keywordtype">int</span> n); <span class="comment">// postfixe</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_temps.html">Temps</a>&amp; <a class="code" href="class_temps.html#ad57843e8f203e407f4199fe1f475bc91">operator--</a>();<span class="comment">// prefixe</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#ad57843e8f203e407f4199fe1f475bc91">operator--</a>(<span class="keywordtype">int</span> n); <span class="comment">// postfixe</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a732c699a698832832b6b1f109a726549">operator +</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t, <span class="keyword">const</span> uint64_t &amp;s);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a732c699a698832832b6b1f109a726549">operator +</a>(<span class="keyword">const</span> uint64_t &amp;s, <span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a732c699a698832832b6b1f109a726549">operator +</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;r);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a1d529eb55779c2974cf33884b2ca4444">operator -</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t, <span class="keyword">const</span> uint64_t &amp;s);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a1d529eb55779c2974cf33884b2ca4444">operator -</a>(<span class="keyword">const</span> uint64_t &amp;s, <span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;t);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">friend</span> <a class="code" href="class_temps.html">Temps</a> <a class="code" href="class_temps.html#a1d529eb55779c2974cf33884b2ca4444">operator -</a>(<span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_temps.html">Temps</a> &amp;r);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a9f3b6807edc17c8b903f8e0c360b410a">getSeconde</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a57d3dd489230b6851b19569d8314d230">getMinute</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a1590b7fa418dcc5f6ce8f5d47abc52c8">getHeure</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a701c27e8d05afbdab138473bc0fd101a">getJour</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        String <a class="code" href="class_temps.html#a4c6ad8071063762a53f5a5339b8c24a0">getHHMMSS</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        String <a class="code" href="class_temps.html#abc7c0e01404aa298544928e4b51bb9b1">getMMSS</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_temps.html#a09cf827489fe06d5c707ff539c0e74eb">reset</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_temps.html#a4afdcbee6ca630dd109d871d3eefa329">setTemps</a>(uint64_t secondes);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_temps.html#a4afdcbee6ca630dd109d871d3eefa329">setTemps</a>(<span class="keywordtype">int</span> heure, <span class="keywordtype">int</span> minute, <span class="keywordtype">int</span> seconde=0);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a9f3b6807edc17c8b903f8e0c360b410a">getSeconde</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a57d3dd489230b6851b19569d8314d230">getMinute</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a1590b7fa418dcc5f6ce8f5d47abc52c8">getHeure</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_temps.html#a701c27e8d05afbdab138473bc0fd101a">getJour</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">static</span> String <a class="code" href="class_temps.html#a4c6ad8071063762a53f5a5339b8c24a0">getHHMMSS</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> String <a class="code" href="class_temps.html#abc7c0e01404aa298544928e4b51bb9b1">getMMSS</a>(uint64_t timestamp);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//TEMPS_H</span></div>
+<div class="ttc" id="aclass_temps_html"><div class="ttname"><a href="class_temps.html">Temps</a></div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8h_source.html#l00014">esp32-pomodoro/lib/temps/temps.h:15</a></div></div>
+<div class="ttc" id="aclass_temps_html_a0146b538b96214826a580019b4684daa"><div class="ttname"><a href="class_temps.html#a0146b538b96214826a580019b4684daa">Temps::Temps</a></div><div class="ttdeci">Temps()</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00014">esp32-pomodoro/lib/temps/temps.cpp:14</a></div></div>
+<div class="ttc" id="aclass_temps_html_a02bcd8e4735f56b6eb64ff642756a255"><div class="ttname"><a href="class_temps.html#a02bcd8e4735f56b6eb64ff642756a255">Temps::operator++</a></div><div class="ttdeci">Temps &amp; operator++()</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00232">esp32-pomodoro/lib/temps/temps.cpp:232</a></div></div>
+<div class="ttc" id="aclass_temps_html_a09cf827489fe06d5c707ff539c0e74eb"><div class="ttname"><a href="class_temps.html#a09cf827489fe06d5c707ff539c0e74eb">Temps::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00093">esp32-pomodoro/lib/temps/temps.cpp:93</a></div></div>
+<div class="ttc" id="aclass_temps_html_a1590b7fa418dcc5f6ce8f5d47abc52c8"><div class="ttname"><a href="class_temps.html#a1590b7fa418dcc5f6ce8f5d47abc52c8">Temps::getHeure</a></div><div class="ttdeci">int getHeure() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00055">esp32-pomodoro/lib/temps/temps.cpp:55</a></div></div>
+<div class="ttc" id="aclass_temps_html_a1d529eb55779c2974cf33884b2ca4444"><div class="ttname"><a href="class_temps.html#a1d529eb55779c2974cf33884b2ca4444">Temps::operator-</a></div><div class="ttdeci">friend Temps operator-(const Temps &amp;t, const uint64_t &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00215">esp32-pomodoro/lib/temps/temps.cpp:215</a></div></div>
+<div class="ttc" id="aclass_temps_html_a29cde82809687de424cc03670ebd940f"><div class="ttname"><a href="class_temps.html#a29cde82809687de424cc03670ebd940f">Temps::operator-=</a></div><div class="ttdeci">Temps &amp; operator-=(const uint64_t &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00172">esp32-pomodoro/lib/temps/temps.cpp:172</a></div></div>
+<div class="ttc" id="aclass_temps_html_a344fc00b32893198ad2fdc6375af022e"><div class="ttname"><a href="class_temps.html#a344fc00b32893198ad2fdc6375af022e">Temps::getValeur</a></div><div class="ttdeci">uint64_t getValeur() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00040">esp32-pomodoro/lib/temps/temps.cpp:40</a></div></div>
+<div class="ttc" id="aclass_temps_html_a444a47b94fab853df97c4cc052849baf"><div class="ttname"><a href="class_temps.html#a444a47b94fab853df97c4cc052849baf">Temps::valeur</a></div><div class="ttdeci">uint64_t valeur</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8h_source.html#l00017">esp32-pomodoro/lib/temps/temps.h:17</a></div></div>
+<div class="ttc" id="aclass_temps_html_a4afdcbee6ca630dd109d871d3eefa329"><div class="ttname"><a href="class_temps.html#a4afdcbee6ca630dd109d871d3eefa329">Temps::setTemps</a></div><div class="ttdeci">void setTemps(uint64_t secondes)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00098">esp32-pomodoro/lib/temps/temps.cpp:98</a></div></div>
+<div class="ttc" id="aclass_temps_html_a4c6ad8071063762a53f5a5339b8c24a0"><div class="ttname"><a href="class_temps.html#a4c6ad8071063762a53f5a5339b8c24a0">Temps::getHHMMSS</a></div><div class="ttdeci">String getHHMMSS() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00065">esp32-pomodoro/lib/temps/temps.cpp:65</a></div></div>
+<div class="ttc" id="aclass_temps_html_a57d3dd489230b6851b19569d8314d230"><div class="ttname"><a href="class_temps.html#a57d3dd489230b6851b19569d8314d230">Temps::getMinute</a></div><div class="ttdeci">int getMinute() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00050">esp32-pomodoro/lib/temps/temps.cpp:50</a></div></div>
+<div class="ttc" id="aclass_temps_html_a701c27e8d05afbdab138473bc0fd101a"><div class="ttname"><a href="class_temps.html#a701c27e8d05afbdab138473bc0fd101a">Temps::getJour</a></div><div class="ttdeci">int getJour() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00060">esp32-pomodoro/lib/temps/temps.cpp:60</a></div></div>
+<div class="ttc" id="aclass_temps_html_a732c699a698832832b6b1f109a726549"><div class="ttname"><a href="class_temps.html#a732c699a698832832b6b1f109a726549">Temps::operator+</a></div><div class="ttdeci">friend Temps operator+(const Temps &amp;t, const uint64_t &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00198">esp32-pomodoro/lib/temps/temps.cpp:198</a></div></div>
+<div class="ttc" id="aclass_temps_html_a7cce9296e43f581200fe7946899de787"><div class="ttname"><a href="class_temps.html#a7cce9296e43f581200fe7946899de787">Temps::operator==</a></div><div class="ttdeci">bool operator==(const Temps &amp;t) const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00188">esp32-pomodoro/lib/temps/temps.cpp:188</a></div></div>
+<div class="ttc" id="aclass_temps_html_a9f3b6807edc17c8b903f8e0c360b410a"><div class="ttname"><a href="class_temps.html#a9f3b6807edc17c8b903f8e0c360b410a">Temps::getSeconde</a></div><div class="ttdeci">int getSeconde() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00045">esp32-pomodoro/lib/temps/temps.cpp:45</a></div></div>
+<div class="ttc" id="aclass_temps_html_abc7c0e01404aa298544928e4b51bb9b1"><div class="ttname"><a href="class_temps.html#abc7c0e01404aa298544928e4b51bb9b1">Temps::getMMSS</a></div><div class="ttdeci">String getMMSS() const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00080">esp32-pomodoro/lib/temps/temps.cpp:80</a></div></div>
+<div class="ttc" id="aclass_temps_html_acf0baff0a3a0839b97e4d03ebc0bf91e"><div class="ttname"><a href="class_temps.html#acf0baff0a3a0839b97e4d03ebc0bf91e">Temps::operator!=</a></div><div class="ttdeci">bool operator!=(const Temps &amp;t) const</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00193">esp32-pomodoro/lib/temps/temps.cpp:193</a></div></div>
+<div class="ttc" id="aclass_temps_html_ad57843e8f203e407f4199fe1f475bc91"><div class="ttname"><a href="class_temps.html#ad57843e8f203e407f4199fe1f475bc91">Temps::operator--</a></div><div class="ttdeci">Temps &amp; operator--()</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00245">esp32-pomodoro/lib/temps/temps.cpp:245</a></div></div>
+<div class="ttc" id="aclass_temps_html_ad6613adb74606fc5a547cc200a934c9d"><div class="ttname"><a href="class_temps.html#ad6613adb74606fc5a547cc200a934c9d">Temps::operator+=</a></div><div class="ttdeci">Temps &amp; operator+=(const uint64_t &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00156">esp32-pomodoro/lib/temps/temps.cpp:156</a></div></div>
+<div class="ttc" id="aclass_temps_html_ad6fed0acaceaf106155eea3ee540f8d1"><div class="ttname"><a href="class_temps.html#ad6fed0acaceaf106155eea3ee540f8d1">Temps::operator=</a></div><div class="ttdeci">Temps &amp; operator=(const Temps &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="esp32-pomodoro_2lib_2temps_2temps_8cpp_source.html#l00030">esp32-pomodoro/lib/temps/temps.cpp:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5089cb05d7d6eec230914696a8cdce07.html">simulateurs</a></li><li class="navelem"><a class="el" href="dir_1e882bc2ad51d066f639f88ba1df7f6d.html">esp32-pomodoro</a></li><li class="navelem"><a class="el" href="dir_cb6616832e705b99a89862fa94d1361e.html">lib</a></li><li class="navelem"><a class="el" href="dir_0a176c48839cbe84a776d4bb20c0be0c.html">temps</a></li><li class="navelem"><a class="el" href="esp32-pomodoro_2lib_2temps_2temps_8h.html">temps.h</a></li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+  </ul>
+</div>
+</body>
+</html>

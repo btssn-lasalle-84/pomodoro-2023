@@ -1,0 +1,117 @@
+format 224
+
+classinstance 128042 class_ref 134826 // Pomodoro
+  name ""   xyz 327 4 2000 life_line_z 2000
+classinstance 128426 class_ref 134570 // BaseDeDonnees
+  name ""   xyz 756 4 2000 life_line_z 2000
+classinstance 130218 class_ref 128130 // Utilisateur
+  name ""   xyz 50 4 2000 life_line_z 2000
+fragment 130986 "alt"
+  xyzwh 230 660 1985 601 527
+end
+fragment 131114 "alt"
+  xyzwh 258 737 1990 549 306
+  separator 5457
+end
+textcanvas 131242 "[minuteur]"
+  xyzwh 347 754 2000 131 30
+textcanvas 131370 "[chronometre]"
+  xyzwh 344 917 2000 181 30
+textcanvas 131498 "[pas démarré]"
+  xyzwh 315 676 2000 182 30
+durationcanvas 128170 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 93 2010 11 162
+end
+durationcanvas 128554 classinstance_ref 128426 // :BaseDeDonnees
+  xyzwh 871 146 2010 11 25
+end
+durationcanvas 128810 classinstance_ref 128426 // :BaseDeDonnees
+  xyzwh 871 208 2010 11 25
+end
+durationcanvas 129066 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 312 2010 11 40
+end
+durationcanvas 129322 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 400 2010 11 40
+end
+durationcanvas 130346 classinstance_ref 130218 // :Utilisateur
+  xyzwh 115 537 2010 11 40
+end
+durationcanvas 130474 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 537 2010 11 101
+  overlappingdurationcanvas 130730
+    xyzwh 404 589 2020 11 43
+  end
+end
+durationcanvas 131626 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 847 2010 11 40
+end
+durationcanvas 131882 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 981 2010 11 40
+end
+durationcanvas 132138 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 1074 2010 11 40
+end
+durationcanvas 132394 classinstance_ref 128042 // :Pomodoro
+  xyzwh 398 1154 2010 11 25
+end
+reflexivemsg 128298 synchronous
+  to durationcanvas_ref 128170
+  yz 93 2015 msg operation_ref 136490 // "ouvrirBaseDeDonnees() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 412 63
+msg 128682 synchronous
+  from durationcanvas_ref 128170
+  to durationcanvas_ref 128554
+  yz 146 2015 msg operation_ref 134570 // "getInstance() : BaseDeDonnees"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 554 116
+msg 128938 synchronous
+  from durationcanvas_ref 128170
+  to durationcanvas_ref 128810
+  yz 208 2015 msg operation_ref 134826 // "ouvrir(in nomBase : QString = FICHIER_BDD) : bool"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 594 178
+reflexivemsg 129194 synchronous
+  to durationcanvas_ref 129066
+  yz 312 2015 msg operation_ref 136362 // "initialiserGui() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 411 285
+reflexivemsg 129450 synchronous
+  to durationcanvas_ref 129322
+  yz 400 2015 msg operation_ref 136618 // "connecterSignauxSlots() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 411 370
+msg 130602 asynchronous
+  from durationcanvas_ref 130346
+  to durationcanvas_ref 130474
+  yz 537 2015 explicitmsg "clic sur le bouton Démarrer"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 86 507
+reflexivemsg 130858 synchronous
+  to durationcanvas_ref 130730
+  yz 589 2025 msg operation_ref 144298 // "demarrerPomodoro() : void"
+  stereotype "<<slot>>" xyz 441 594 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 416 557
+reflexivemsg 131754 synchronous
+  to durationcanvas_ref 131626
+  yz 847 2015 explicitmsg "initialiserDuree()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 409 818
+reflexivemsg 132010 synchronous
+  to durationcanvas_ref 131882
+  yz 981 2015 explicitmsg "mettreAZero()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 408 952
+reflexivemsg 132266 synchronous
+  to durationcanvas_ref 132138
+  yz 1074 2015 explicitmsg "demarrerHorloge()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 412 1050
+reflexivemsg 132522 synchronous
+  to durationcanvas_ref 132394
+  yz 1154 2015 msg operation_ref 144170 // "mettreAJourAffichageDuree() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 411 1120
+end

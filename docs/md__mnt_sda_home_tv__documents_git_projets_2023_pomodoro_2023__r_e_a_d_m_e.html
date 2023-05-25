@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projet pomodoro
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.2</span>
    </div>
    <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
   </td>
@@ -88,16 +88,30 @@ $(document).ready(function(){initNavTree('md__mnt_sda_home_tv__documents_git_pro
 <div class="title">README </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><img src="https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&amp;logoColor=fff&amp;style=plastic" alt="C++ Badge" class="inline"/> <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&amp;logoColor=fff&amp;style=plastic" alt="Raspberry Pi Badge" class="inline"/> <img src="https://badgen.net/badge/Qt/5.12.8/green" alt="" class="inline"/></p>
-<p><a href="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment"><img src="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop" alt="pages-build-deployment" style="pointer-events: none;" class="inline"/></a></p>
+<div class="textblock"><p><img src="https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&amp;logoColor=fff&amp;style=plastic" alt="C++ Badge" class="inline"/> <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&amp;logoColor=fff&amp;style=plastic" alt="Raspberry Pi Badge" class="inline"/></p>
+<p><img src="https://badgen.net/badge/Qt/5.12.8/green" alt="" class="inline"/> <a href="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml"><img src="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/make-qt.yml/badge.svg" alt="qt-build" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment"><img src="https://github.com/btssn-lasalle-84/pomodoro-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=develop" alt="pages-build-deployment" style="pointer-events: none;" class="inline"/></a></p>
 <h1>Le projet pomodoro-2023</h1>
+<ul>
+<li><a href="#le-projet-pomodoro-2023">Le projet pomodoro-2023</a><ul>
+<li><a href="#documentation-du-code">Documentation du code</a></li>
+<li><a href="#base-de-donn%C3%A9es">Base de données</a></li>
+<li><a href="#versions">Versions</a><ul>
+<li><a href="#02">0.2</a></li>
+<li><a href="#01">0.1</a></li>
+</ul>
+</li>
+<li><a href="#auteur">Auteur</a></li>
+</ul>
+</li>
+</ul>
+<hr  />
 <p>La <b>technique <a class="el" href="class_pomodoro.html" title="Affiche les différents écrans de l&#39;application Pomodoro.">Pomodoro</a></b> est une technique de gestion du temps développée par Francesco Cirillo à la fin des années 1980. Cette méthode se base sur l'usage d'un minuteur permettant de respecter des périodes de 20 minutes appelées pomodori (qui signifie en italien « tomates »).</p>
 <p>Francesco Cirillo propose une approche se basant notamment sur un minuteur mécanique. L’idée du projet est donc de conserver un “objet concret” pour en faire un minuteur connecté.</p>
 <p><img src="methode-pomodoro.png" alt="" class="inline"/></p>
 <p>Le système est composé :</p>
 <ul>
-<li>d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons)</li>
-<li>d’une tablette tactile (Android) pour le pilotage à distance et la gestion des tâches</li>
+<li>d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons) [Étudiant EC]</li>
+<li>d’une application Qt sur Raspberry Pi et écran tactile pour le pilotage à distance et la gestion des tâches [Étudiant IR]</li>
 </ul>
 <hr  />
 <h2>Documentation du code</h2>
@@ -214,7 +228,23 @@ $(document).ready(function(){initNavTree('md__mnt_sda_home_tv__documents_git_pro
 <div class="line">);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">-- ---------------------------------------------------------------------</span></div>
-</div><!-- fragment --><hr  />
+</div><!-- fragment --><h2>Versions</h2>
+<p><img src="livraisons.png" alt="" class="inline"/></p>
+<h3>0.2</h3>
+<p><img src="jira-tickets-v0.2.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.2-1.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.2-2.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.2-3.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.2-4.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.2-5.png" alt="" class="inline"/></p>
+<h3>0.1</h3>
+<p><img src="jira-tickets-v0.1.png" alt="" class="inline"/></p>
+<p><img src="screenshot-pomodoro-v0.1.png" alt="" class="inline"/></p>
+<h2>Auteur</h2>
+<ul>
+<li>Étudiant IR : Pierre HIRSCH</li>
+</ul>
+<hr  />
 <p> ©️ LaSalle Avignon 2023 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -223,7 +253,7 @@ $(document).ready(function(){initNavTree('md__mnt_sda_home_tv__documents_git_pro
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
   </ul>
 </div>
 </body>

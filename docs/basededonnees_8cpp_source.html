@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="projet-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projet pomodoro
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.2</span>
    </div>
    <div id="projectbrief">BTS SNIR LaSalle Avignon 2023</div>
   </td>
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('basededonnees_8cpp_source.html',''); i
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="comment">// on récupère sous forme de QString la valeur de tous les champs sélectionnés</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">// et on les stocke dans une liste de QString</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().count(); i++)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a>(); i++)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <span class="keywordflow">if</span>(!r.isNull(i))</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        donnees &lt;&lt; r.value(i).toString();</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#ifdef DEBUG_BDD</span></div>
@@ -416,7 +416,7 @@ $(document).ready(function(){initNavTree('basededonnees_8cpp_source.html',''); i
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                {</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                    <span class="comment">// on récupère sous forme de QString la valeur de tous les champs sélectionnés</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                    <span class="comment">// et on les stocke dans une liste de QString</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().count(); i++)</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; r.record().<a class="code" href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a>(); i++)</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        data &lt;&lt; r.value(i).toString();</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#ifdef DEBUG_BDD</span></div>
@@ -468,6 +468,7 @@ $(document).ready(function(){initNavTree('basededonnees_8cpp_source.html',''); i
 <div class="ttc" id="aclass_base_de_donnees_html_ac4d0c514f439b3a19dc35c159955373a"><div class="ttname"><a href="class_base_de_donnees.html#ac4d0c514f439b3a19dc35c159955373a">BaseDeDonnees::BaseDeDonnees</a></div><div class="ttdeci">BaseDeDonnees()</div><div class="ttdoc">Définition du constructeur par défaut de la classe BaseDeDonnees.</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00020">basededonnees.cpp:20</a></div></div>
 <div class="ttc" id="aclass_base_de_donnees_html_adf2f80dac25cf41e624d52bb7ae82cac"><div class="ttname"><a href="class_base_de_donnees.html#adf2f80dac25cf41e624d52bb7ae82cac">BaseDeDonnees::bdd</a></div><div class="ttdeci">static BaseDeDonnees * bdd</div><div class="ttdoc">pointeur sur l'instance unique</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8h_source.html#l00052">basededonnees.h:52</a></div></div>
 <div class="ttc" id="aclass_base_de_donnees_html_afd42c2c410192c28e1094c66e874cb9b"><div class="ttname"><a href="class_base_de_donnees.html#afd42c2c410192c28e1094c66e874cb9b">BaseDeDonnees::ouvrir</a></div><div class="ttdeci">bool ouvrir(QString nomBase=FICHIER_BDD)</div><div class="ttdoc">Définition méthode ouvrir()</div><div class="ttdef"><b>Definition:</b> <a href="basededonnees_8cpp_source.html#l00084">basededonnees.cpp:84</a></div></div>
+<div class="ttc" id="asimulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_html_a71f4dadfcc8e5bd512584925769c3019"><div class="ttname"><a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a71f4dadfcc8e5bd512584925769c3019">count</a></div><div class="ttdeci">int count(const String &amp;str, const String &amp;sub)</div><div class="ttdef"><b>Definition:</b> <a href="simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp_source.html#l01274">simulateurs/esp32-pomodoro/lib/pomodoro/pomodoro.cpp:1274</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -475,7 +476,7 @@ $(document).ready(function(){initNavTree('basededonnees_8cpp_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_372818afe09c84bc40c08830a0caadc2.html">pomodoro</a></li><li class="navelem"><a class="el" href="basededonnees_8cpp.html">basededonnees.cpp</a></li>
-    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Dimanche 9 Avril 2023 19:16:10 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
+    <li class="footer"><img class="footer" src="lasalle-logo.png" height="31" alt="La Salle Avignon"/>&nbsp;<b>Campus La Salle Avignon</b>&nbsp;-&nbsp;9 Rue Notre Dame des 7 douleurs&nbsp;-&nbsp;BP 50165&nbsp;-&nbsp;84008 Avignon&nbsp;-&nbsp;Généré le Jeudi 25 Mai 2023 06:25:32 pour Projet pomodoro par&nbsp;<a href="https://www.doxygen.org/index.html">doxygen</a>&nbsp;1.9.1&nbsp;</li>
   </ul>
 </div>
 </body>

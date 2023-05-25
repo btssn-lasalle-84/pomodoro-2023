@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1080</height>
+    <height>1081</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -83,7 +83,7 @@ color: rgb(255, 255, 255);</string>
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="ecranAccueil">
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -274,31 +274,19 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QLCDNumber" name="Timer">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
+              <widget class="QLCDNumber" name="affichageDuree">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
                  <height>100</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <pointsize>24</pointsize>
-                </font>
-               </property>
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(255, 255, 255);
 border: 2px solid rgb(113, 113, 113);
 border-width: 2px;
-border-radius: 10px;
-</string>
+border-radius: 10px;</string>
                </property>
               </widget>
              </item>
@@ -374,6 +362,9 @@ color: rgb(255, 255, 255);</string>
                     <property name="text">
                      <string>Compte à rebours</string>
                     </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -387,7 +378,7 @@ color: rgb(255, 255, 255);</string>
                      <string>Chronomètre</string>
                     </property>
                     <property name="checked">
-                     <bool>true</bool>
+                     <bool>false</bool>
                     </property>
                    </widget>
                   </item>
@@ -687,11 +678,11 @@ color: rgb(255, 255, 255);</string>
         <rect>
          <x>90</x>
          <y>500</y>
-         <width>541</width>
+         <width>521</width>
          <height>140</height>
         </rect>
        </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <layout class="QHBoxLayout" name="horizontalLayoutNombreCycles">
         <item>
          <widget class="QTextEdit" name="textEdit_4">
           <property name="styleSheet">
@@ -718,15 +709,15 @@ p, li { white-space: pre-wrap; }
       <widget class="QWidget" name="verticalLayoutWidget_7">
        <property name="geometry">
         <rect>
-         <x>1290</x>
-         <y>370</y>
+         <x>1300</x>
+         <y>270</y>
          <width>552</width>
          <height>391</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
+       <layout class="QVBoxLayout" name="verticalLayoutNavigationCycle">
         <item>
-         <widget class="QPushButton" name="pushButton_5">
+         <widget class="QPushButton" name="boutonEcranTache">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -751,7 +742,7 @@ color: rgb(255, 255, 255);</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_6">
+         <widget class="QPushButton" name="boutonEcranSession">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -776,7 +767,7 @@ color: rgb(255, 255, 255);</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_7">
+         <widget class="QPushButton" name="boutonEcranAccueil">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -811,7 +802,7 @@ color: rgb(255, 255, 255);</string>
          <height>181</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_10">
+       <layout class="QVBoxLayout" name="verticalLayoutTexteCycle">
         <item>
          <widget class="QTextEdit" name="textEdit_3">
           <property name="styleSheet">
@@ -828,82 +819,8 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="verticalLayoutWidget_9">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>1921</width>
-         <height>181</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_11">
-        <item>
-         <widget class="QLabel" name="labelTitre_3">
-          <property name="maximumSize">
-           <size>
-            <width>1920</width>
-            <height>209</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>48</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(255, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Éditer un cycle</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
      </widget>
      <widget class="QWidget" name="ecranSession">
-      <widget class="QWidget" name="verticalLayoutWidget_10">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>1921</width>
-         <height>211</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_12">
-        <item>
-         <widget class="QLabel" name="labelTitre_4">
-          <property name="maximumSize">
-           <size>
-            <width>1920</width>
-            <height>209</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>48</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(255, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Éditer une session</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
       <widget class="QWidget" name="horizontalLayoutWidget_5">
        <property name="geometry">
         <rect>
@@ -913,7 +830,7 @@ background-color: rgb(255, 0, 0);</string>
          <height>140</height>
         </rect>
        </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <layout class="QHBoxLayout" name="horizontalLayoutNomSession">
         <item>
          <widget class="QTextEdit" name="textEdit_6">
           <property name="styleSheet">
@@ -949,15 +866,15 @@ background-color: rgb(136, 138, 133);</string>
       <widget class="QWidget" name="verticalLayoutWidget_11">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>490</y>
-         <width>321</width>
+         <x>410</x>
+         <y>500</y>
+         <width>331</width>
          <height>66</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_13">
+       <layout class="QVBoxLayout" name="verticalLayoutBoutonSession">
         <item>
-         <widget class="QPushButton" name="pushButton_8">
+         <widget class="QPushButton" name="boutonValidationEditionSession">
           <property name="font">
            <font>
             <pointsize>16</pointsize>
@@ -983,7 +900,7 @@ background-color: rgb(255, 0, 0);</string>
          <height>140</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_14">
+       <layout class="QVBoxLayout" name="verticalLayoutTexteSession">
         <item>
          <widget class="QTextEdit" name="textEdit_5">
           <property name="styleSheet">
@@ -1009,34 +926,9 @@ p, li { white-space: pre-wrap; }
          <height>391</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_15">
+       <layout class="QVBoxLayout" name="verticalLayoutNavigationSession">
         <item>
-         <widget class="QPushButton" name="pushButton_11">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>550</width>
-            <height>112</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>32</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 0, 0);
-color: rgb(255, 255, 255);</string>
-          </property>
-          <property name="text">
-           <string>Éditer une tâche</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_10">
+         <widget class="QPushButton" name="boutonEcranCycle">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -1061,7 +953,32 @@ color: rgb(255, 255, 255);</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_9">
+         <widget class="QPushButton" name="boutonEcranTache_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>550</width>
+            <height>112</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>32</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Éditer une tâche</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="boutonEcranAccueil_2">
           <property name="enabled">
            <bool>false</bool>
           </property>

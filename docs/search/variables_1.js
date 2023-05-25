@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['db_89',['db',['../class_base_de_donnees.html#a3e738dcf443370c46a541677ab619f06',1,'BaseDeDonnees']]]
+  ['backgroundcolor_1067',['backgroundColor',['../class_codingfield_1_1_u_i_1_1_image.html#a12be3cd3079d0256aada2eace9e069b9',1,'Codingfield::UI::Image::backgroundColor()'],['../class_codingfield_1_1_u_i_1_1_label.html#a1392515189ddc352ddacfba533d4e1d6',1,'Codingfield::UI::Label::backgroundColor()'],['../class_codingfield_1_1_u_i_1_1_button.html#ae08c805a9910e5e2050a544d06958a09',1,'Codingfield::UI::Button::backgroundColor()']]],
+  ['backgroundcolorupdated_1068',['backgroundColorUpdated',['../class_codingfield_1_1_u_i_1_1_button.html#a0014dbdae62cd9c3f7c14e743d4337b0',1,'Codingfield::UI::Button::backgroundColorUpdated()'],['../class_codingfield_1_1_u_i_1_1_image.html#ac4bf09466caa26c41ebcca38bcddb097',1,'Codingfield::UI::Image::backgroundColorUpdated()'],['../class_codingfield_1_1_u_i_1_1_label.html#a42da863c78a1856b25aad0d5dfd1265b',1,'Codingfield::UI::Label::backgroundColorUpdated()']]],
+  ['barheight_1069',['barHeight',['../class_codingfield_1_1_u_i_1_1_app_screen.html#a8373ad1022ff586649f3e39af9a745a2',1,'Codingfield::UI::AppScreen']]],
+  ['batteryposition_1070',['batteryPosition',['../class_codingfield_1_1_u_i_1_1_header_bar.html#ad2a6e12fba3d4cdb0c39f164f9c09829',1,'Codingfield::UI::HeaderBar']]],
+  ['batterystatus_1071',['batteryStatus',['../class_codingfield_1_1_u_i_1_1_header_bar.html#a51b1c9a1a552d5fb2811b9e83d021f5b',1,'Codingfield::UI::HeaderBar']]],
+  ['bdd_1072',['bdd',['../class_base_de_donnees.html#adf2f80dac25cf41e624d52bb7ae82cac',1,'BaseDeDonnees']]],
+  ['bddpomodoro_1073',['bddPomodoro',['../class_pomodoro.html#ae133064a0e59324ef99412cce66d7dc0',1,'Pomodoro']]],
+  ['border_1074',['border',['../class_codingfield_1_1_u_i_1_1_widget_mosaic.html#aed2e97194cd2ffe862ce8b4ffae13aa7',1,'Codingfield::UI::WidgetMosaic']]],
+  ['bordercolor_1075',['borderColor',['../class_codingfield_1_1_u_i_1_1_button.html#ac863d54b79d940974219674024eb00f5',1,'Codingfield::UI::Button::borderColor()'],['../class_codingfield_1_1_u_i_1_1_label.html#a3e00b33a7aa3b99a1927f6e8758e1cf8',1,'Codingfield::UI::Label::borderColor()'],['../class_codingfield_1_1_u_i_1_1_image.html#ab0f95f729e206341436d272e7685d43a',1,'Codingfield::UI::Image::borderColor()']]],
+  ['bottombar_1076',['bottomBar',['../class_codingfield_1_1_u_i_1_1_app_screen.html#a86b6bd5c67cfff8cae9e3210f6c7ccd0',1,'Codingfield::UI::AppScreen']]],
+  ['boutonoff_1077',['boutonOff',['../simulateurs_2m5-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#afa2b3e5138474d3bcdf6b60fc6e98efb',1,'pomodoro.cpp']]],
+  ['boutonpause_1078',['boutonPause',['../simulateurs_2m5-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a5f8561754ee07f5a5c426e5fda33dc32',1,'pomodoro.cpp']]],
+  ['boutonpomodoro_1079',['boutonPomodoro',['../simulateurs_2m5-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a58ee839b3703a758cd63ac02adde58cb',1,'pomodoro.cpp']]],
+  ['boutonpomodorovalide_1080',['boutonPomodoroValide',['../simulateurs_2esp32-pomodoro_2lib_2pomodoro_2pomodoro_8cpp.html#a756f7d8f13580158365a4878b4a356b2',1,'pomodoro.cpp']]],
+  ['btnatext_1081',['btnAText',['../class_codingfield_1_1_u_i_1_1_button_info_bar.html#ab55f23af31e5a3797f7c8749b8046670',1,'Codingfield::UI::ButtonInfoBar']]],
+  ['btnbtext_1082',['btnBText',['../class_codingfield_1_1_u_i_1_1_button_info_bar.html#a4fdef1a7c9b8989e8b4f72be0b13f6f2',1,'Codingfield::UI::ButtonInfoBar']]],
+  ['btnctext_1083',['btnCText',['../class_codingfield_1_1_u_i_1_1_button_info_bar.html#a2f3bb557cb4b01c0eb5358e1323c1193',1,'Codingfield::UI::ButtonInfoBar']]],
+  ['button_1084',['button',['../class_codingfield_1_1_u_i_1_1_button.html#a636b5f309bac9fc464562cac004eb279',1,'Codingfield::UI::Button']]]
 ];
