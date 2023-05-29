@@ -8,8 +8,9 @@
   - [Documentation du code](#documentation-du-code)
   - [Base de données](#base-de-donn%C3%A9es)
   - [Versions](#versions)
-    - [0.2](#02)
+    - [1.0](#10)
     - [0.1](#01)
+  - [Diagramme de classes](#diagramme-de-classes)
   - [Auteur](#auteur)
 
 ---
@@ -24,6 +25,8 @@ Le système est composé :
 
 - d’un minuteur connecté (ESP32, écran tactile, avertisseur sonore et éventuellement boutons) [Étudiant EC]
 - d’une application Qt sur Raspberry Pi et écran tactile pour le pilotage à distance et la gestion des tâches [Étudiant IR]
+
+![](images/uc-pomodoro.png)
 
 ---
 
@@ -153,8 +156,7 @@ CREATE TABLE IF NOT EXISTS Preferences (
 
 ![](images/livraisons.png)
 
-
-### 0.2
+### 1.0
 
 ![](images/jira-tickets-v0.2.png)
 
@@ -174,9 +176,13 @@ CREATE TABLE IF NOT EXISTS Preferences (
 
 ![](images/screenshot-pomodoro-v0.1.png)
 
+## Diagramme de classes
+
+![](images/dc-pomodoro.png)
+
 ## Auteur
 
-- Étudiant IR : Pierre HIRSCH
+- Étudiant IR : Pierre HIRSCH <pierre.hirsch.pro@gmail.com>
 
 ---
 ©️ LaSalle Avignon 2023
