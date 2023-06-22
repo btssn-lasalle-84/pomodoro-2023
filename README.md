@@ -6,11 +6,12 @@
 
 - [Le projet pomodoro-2023](#le-projet-pomodoro-2023)
   - [Documentation du code](#documentation-du-code)
-  - [Base de données](#base-de-donn%C3%A9es)
+  - [Vidéo](#vid%C3%A9o)
   - [Versions](#versions)
     - [1.0](#10)
     - [0.1](#01)
   - [Diagramme de classes](#diagramme-de-classes)
+  - [Base de données](#base-de-donn%C3%A9es)
   - [Auteur](#auteur)
 
 ---
@@ -33,6 +34,36 @@ Le système est composé :
 ## Documentation du code
 
 https://btssn-lasalle-84.github.io/pomodoro-2023/
+
+## Vidéo
+
+[<img src="https://img.youtube.com/vi/vf-A-YhR_b4/maxresdefault.jpg" width="50%">](https://youtu.be/vf-A-YhR_b4)
+
+## Versions
+
+![](images/livraisons.png)
+
+### 1.0
+
+![](images/jira-tickets-v0.2.png)
+
+![](images/screenshot-pomodoro-v0.2-1.png)
+
+![](images/screenshot-pomodoro-v0.2-2.png)
+
+![](images/screenshot-pomodoro-v0.2-3.png)
+
+![](images/screenshot-pomodoro-v0.2-4.png)
+
+![](images/screenshot-pomodoro-v0.2-5.png)
+
+### 0.1
+
+![](images/jira-tickets-v0.1.png)
+
+## Diagramme de classes
+
+![](images/dc-pomodoro.png)
 
 ## Base de données
 
@@ -151,34 +182,6 @@ CREATE TABLE IF NOT EXISTS Preferences (
 
 -- ---------------------------------------------------------------------
 ```
-
-## Versions
-
-![](images/livraisons.png)
-
-### 1.0
-
-![](images/jira-tickets-v0.2.png)
-
-![](images/screenshot-pomodoro-v0.2-1.png)
-
-![](images/screenshot-pomodoro-v0.2-2.png)
-
-![](images/screenshot-pomodoro-v0.2-3.png)
-
-![](images/screenshot-pomodoro-v0.2-4.png)
-
-![](images/screenshot-pomodoro-v0.2-5.png)
-
-### 0.1
-
-![](images/jira-tickets-v0.1.png)
-
-![](images/screenshot-pomodoro-v0.1.png)
-
-## Diagramme de classes
-
-![](images/dc-pomodoro.png)
 
 ## Auteur
 
